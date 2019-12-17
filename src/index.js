@@ -1,10 +1,39 @@
+import 'semantic-ui-css/semantic.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import Home from './components/Home';
+import './styles/styles.scss';
+import HomePage from './components/HomePage';
+import TeamPage from './components/TeamPage';
+import AboutUsPage from './components/AboutUsPage';
+import ProjectsPage from './components/ProjectsPage';
+import ContactPage from './components/ContactPage';
+import BlogPage from './components/BlogPage';
+import NotFoundPage from './components/NotFoundPage';
+import PropTypes from 'prop-types';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<Home />, document.getElementById('root'));
+const App = ({ base }) => (
+    <BrowserRouter basename={base}>
+        <div className="outer_div">
+            <Switch>
+                <Route path="/" component={HomePage} exact={true}/>
+                <Route path="/about" component={AboutUsPage} />
+                <Route path="/team" component={TeamPage} />
+                <Route path="/contact" component={ContactPage} />
+                <Route path="/projects" component={ProjectsPage} />
+                <Route path="/blog" component={BlogPage} />
+                <Route component={NotFoundPage} />
+            </Switch>
+        </div>
+    </BrowserRouter>
+);
+
+App.propTypes = {
+    base: PropTypes.string,
+};
+
+ReactDOM.render(<App />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

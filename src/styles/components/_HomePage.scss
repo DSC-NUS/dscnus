@@ -100,8 +100,38 @@
     }
 }
 
-.home-button {
+.home-button-text {
     font-size: 1.6rem;
     font-weight: 0;
     text-align: center;
+    cursor: pointer;
+}
+
+.home-button {
+    &, 
+    &:link,
+    &:visited {
+        transition: 0.2s all;    
+        cursor: pointer;
+    }
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($dark-grey, 0.2);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+
+    &:active,
+    &:focus {
+        transform: translateY(-1px);
+        box-shadow: 0 0.5rem 1rem rgba($dark-grey, 0.2);
+    }
+
+}
+
+.home-section-recent-events {
+    padding: $xl-size;
 }

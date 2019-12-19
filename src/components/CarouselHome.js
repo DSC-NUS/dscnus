@@ -36,6 +36,7 @@ class CarouselHome extends Component {
                 <div className="cards-slider">
                     <div className="cards-slider-wrapper">
                         <Card
+                            className="carouselhome-card"
                             image={property.picture} 
                             header={property.header}
                             description={property.description}  />
@@ -44,13 +45,15 @@ class CarouselHome extends Component {
                 </div>
 
 
-                <section>
-                    <Button circular icon = 'left chevron' 
-                    onClick={() => this.prevProperty()} 
-                    disabled={property.index==0}/>
-                    <Button circular icon = 'right chevron' 
-                    onClick={() => this.nextProperty()}
-                    disabled={property.index==data.properties.length-1} />
+                <section className="carouselhome-slider-section">
+                    <div className="carouselhome-slider">
+                        <Button circular icon = 'left chevron' 
+                        onClick={() => this.prevProperty()} 
+                        disabled={property.index==0}/>
+                        <Button circular icon = 'right chevron' 
+                        onClick={() => this.nextProperty()}
+                        disabled={property.index==data.properties.length-1} />
+                    </div>
                 </section>
             </div>
         )

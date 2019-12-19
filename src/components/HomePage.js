@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Button } from 'semantic-ui-react';
+import { Grid, Button, Divider } from 'semantic-ui-react';
 import PageHeader from './PageHeader.js';
 import Footer from './Footer.js'
 import CarouselHome from './CarouselHome.js';
@@ -17,7 +17,13 @@ class Home extends Component {
                     <div class="home-header__text-box">
                         <h1 class="home-heading-primary">
                             <span class="home-heading-primary--main">NUS Developer Student Clubs</span>
-                            <span class="home-heading-primary--sub">#TECHFORGOOD</span>
+                            <Divider/>
+                            <span class="home-heading-primary--sub">#TECHFOR
+                                <span style={{color:"#ea3f31"}}>G</span>
+                                <span style={{color:"#4285f4"}}>O</span>
+                                <span style={{color:"#f4b400"}}>O</span>
+                                <span style={{color:"#0f9d58"}}>D</span>
+                            </span>
                         </h1>
                     </div>
                 </header>
@@ -34,9 +40,11 @@ class Home extends Component {
                                         color="yellow" 
                                         onClick={this.handleItemClick}
                                         as={Link}
-                                        to='/team'>
-                                            <div class="home-button">Our Team</div>
-                                        </Button>
+                                        to='/team'
+                                        className="home-button"
+                                        size='huge'>
+                                        <div class="home-button-text">Our Team</div>
+                                    </Button>
                                 </div>
                             </Grid.Column>
                             <Grid.Column>
@@ -61,15 +69,17 @@ class Home extends Component {
                                         color="yellow"
                                         onClick={this.handleItemClick}
                                         as={Link}
-                                        to='/about'>
-                                            <div class="home-button">About Us</div>
+                                        to='/about'
+                                        size='huge'
+                                        className="home-button">
+                                            <div class="home-button-text">About Us</div>
                                         </Button>
                                 </div>
                             </Grid.Column>
                         </Grid.Row>
                     </Grid>
                 </section>
-                <section>
+                <section className="home-section-recent-events">
                     <Grid.Row>
                         <h2 class="home-our-recent-events">
                             Recent Events

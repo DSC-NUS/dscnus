@@ -1,16 +1,30 @@
-
 .cards-slider{
-    position: relative;
-    max-width: 226px;
+    // position: relative;
+    max-width: 500px;
+    text-align: center;
     margin: 0 auto;
 
-    &:after{
-        content: '';
-        display: block;
-        width: 100%;
-        height: 264px;
-        position: absolute;
-        top: 0;
-        left:0;
-    }
+    // &:after{
+    //     content: '';
+    //     display: block;
+    //     width: 100%;
+    //     height: 264px;
+    //     position: absolute;
+    //     top: 0;
+    //     left:0;
+    // }
+}
+
+.carouselhome-card {
+    display: block !important;
+    margin: 0 auto !important;
+}
+
+.carouselhome-slider-section {
+    text-align: center;
+}
+
+.carouselhome-slider {
+    display: block;
+    margin: 10px;
 }

@@ -6,7 +6,7 @@ import logo from '../assets/PageHeader/dscnuslogo.png'
 class PageHeader extends Component {
     render() {
         return (
-            <div>
+            <div class="menu">
                 <Responsive as={Segment} minWidth={800} className="responsive">
                     <Menu stackable inverted className="menu">
                         <Menu.Item

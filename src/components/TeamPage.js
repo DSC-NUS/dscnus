@@ -5,7 +5,13 @@ import PageHeader from './PageHeader';
 const TeamPage = () => (
     <div>
         {<PageHeader/>}
-        TeamPage
+        <header class="about-header">
+            <div class="about-header__text-box">
+                <h1 class="about-heading-primary">
+                    <span class="about-heading-primary--main">Our Core Team</span>
+                </h1>
+            </div>
+        </header>
     </div>
 );
 

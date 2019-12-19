@@ -1,0 +1,16 @@
+
+.cards-slider{
+    position: relative;
+    max-width: 226px;
+    margin: 0 auto;
+
+    &:after{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 264px;
+        position: absolute;
+        top: 0;
+        left:0;
+    }
+}

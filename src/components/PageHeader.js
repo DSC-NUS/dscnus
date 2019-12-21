@@ -5,8 +5,14 @@ import logo from '../assets/PageHeader/dscnuslogo.png'
 
 class PageHeader extends Component {
     state = {
-        inverted: true
+        inverted: true,
+        activeItem: ''
     }
+
+    handleItemClick = (e, { name }) => {
+        this.setState({ activeItem: name })
+    }
+
     listenScrollEvent = e => {
         if (window.scrollY > 400) {
             this.setState({
@@ -36,7 +42,7 @@ class PageHeader extends Component {
                         <Menu.Menu position="right">
                             <Menu.Item
                                 name='home'
-                                //active={activeItem === 'home'}
+                                active={this.state.activeItem === 'home'}
                                 as={Link}
                                 to="/"
                                 onClick={this.handleItemClick}
@@ -49,12 +55,14 @@ class PageHeader extends Component {
                                     <Dropdown.Item
                                         onClick={this.handleItemClick}
                                         as={Link}
+                                        active={this.state.activeItem === 'about'}
                                         to='/about'>
                                             About Us
                                     </Dropdown.Item>
                                     <Dropdown.Item
                                         onClick={this.handleItemClick}
                                         as={Link}
+                                        active={this.state.activeItem === 'team'}
                                         to='/team'>
                                         Our Core Team
                                     </Dropdown.Item>
@@ -63,7 +71,7 @@ class PageHeader extends Component {
 
                             <Menu.Item
                                 name='projects'
-                                //active={activeItem === 'projects'}
+                                active={this.state.activeItem === 'projects'}
                                 onClick={this.handleItemClick}
                                 as={Link}
                                 to='/projects'>
@@ -72,7 +80,7 @@ class PageHeader extends Component {
 
                             <Menu.Item
                                 name='blog'
-                                //active={activeItem === 'blog'}
+                                active={this.state.activeItem === 'blog'}
                                 onClick={this.handleItemClick}
                                 as={Link}
                                 to='/blog'>
@@ -81,7 +89,7 @@ class PageHeader extends Component {
 
                             <Menu.Item
                                 name='contact'
-                                //active={activeItem === 'contact'}
+                                active={this.state.activeItem === 'contact'}
                                 onClick={this.handleItemClick}
                                 as={Link}
                                 to='/contact'>

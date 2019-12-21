@@ -14,10 +14,10 @@ class Home extends Component {
                 {<PageHeader />}
                 <header class="home-header">
                     <div class="home-header__text-box">
-                        <h1 class="home-heading-primary">
-                            <span class="home-heading-primary--main">NUS Developer Student Clubs</span>
+                        <h1 class="heading-primary">
+                            <span class="heading-primary--main">NUS Developer Student Clubs</span>
                             <Divider/>
-                            <span class="home-heading-primary--sub">#TECHFOR
+                            <span class="heading-primary--sub">#TECHFOR
                                 <span style={{color:"#ea3f31"}}>G</span>
                                 <span style={{color:"#4285f4"}}>O</span>
                                 <span style={{color:"#f4b400"}}>O</span>
@@ -31,7 +31,7 @@ class Home extends Component {
                         <Grid.Row verticalAlign='middle'>
                             <Grid.Column>
                                 <div class="home-header__text-box">                             
-                                    <h2 class="home-heading-secondary">
+                                    <h2 class="heading-secondary">
                                         Who Are We?
                                     </h2>
                                     <p>DSC NUS is made up of people from diverse backgrounds, majors, years of study, genders and races.<br/>We come together to push our mission of #TechforGood.</p>
@@ -47,7 +47,7 @@ class Home extends Component {
                                 </div>
                             </Grid.Column>
                             <Grid.Column>
-                                <img src={whoarewe} alt="Who Are We"/>
+                                <img src={whoarewe} alt="Who Are We" className="home-section-whoweare-image"/>
                             </Grid.Column>
                         </Grid.Row>
                     </Grid>
@@ -56,11 +56,11 @@ class Home extends Component {
                     <Grid columns={2} stackable textAlign='center'>
                         <Grid.Row verticalAlign='middle'>
                             <Grid.Column>
-                                <img class="ui fluid image" alt="What We Do" src={whatwedo} />  
+                                <img class="ui fluid image" alt="What We Do" src={whatwedo} className="home-section-whatwedo-image"/>  
                             </Grid.Column>
                             <Grid.Column>
                                 <div class="home-header__text-box">                             
-                                        <h2 class="home-heading-secondary">
+                                        <h2 class="heading-secondary">
                                             What we do?
                                         </h2>
                                         <p>Our team have a shared purpose and drive to help local communities thrive.  We strive to bring technology to the people who have limited access, giving them more opportunities to lead better lives. </p>
@@ -80,7 +80,7 @@ class Home extends Component {
                 </section>
                 <section className="home-section-recent-events">
                     <Grid.Row>
-                        <h2 class="home-our-recent-events">
+                        <h2 class="heading-secondary home-section-recent-events-header">
                             Recent Events
                         </h2>
                     </Grid.Row>

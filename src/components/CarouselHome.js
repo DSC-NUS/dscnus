@@ -51,10 +51,20 @@ class CarouselHome extends Component {
 
                 <section className="carouselhome-slider-section">
                     <div className="carouselhome-slider">
-                        <Button circular icon = 'left chevron' 
-                        onClick={() => this.prevProperty()} />
-                        <Button circular icon = 'right chevron' 
-                        onClick={() => this.nextProperty()} />
+                        <Button 
+                            circular 
+                            icon='left chevron' 
+                            basic 
+                            color='blue'
+                            onClick={() => this.prevProperty()} 
+                        />
+                        <Button 
+                            circular 
+                            icon='right chevron' 
+                            basic 
+                            color='blue'
+                            onClick={() => this.nextProperty()} 
+                        />
                     </div>
                 </section>
             </div>

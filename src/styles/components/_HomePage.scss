@@ -4,6 +4,7 @@
     background-size: cover;
     background-position: top;
     position: relative;
+    min-height: 400px;
 
     &__text-box {
         position: absolute;
@@ -14,11 +15,11 @@
     }
 }
 
-.home-heading-primary {
+.heading-primary {
     color: $color-white;
     text-transform: uppercase;   
     backface-visibility: hidden;
-    margin-bottom: 6rem;
+    margin-bottom: $xl-size;
     text-align: center;
  
     &--main {
@@ -44,10 +45,10 @@
     }
 }
 
-.home-heading-secondary {
-    font-size: 3.3rem;
+.heading-secondary {
+    font-size: $font-size-header-secondary;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 700;
 
     @include respond(tab-port) {
         font-size: 3rem;
@@ -65,36 +66,27 @@
     @include respond(tab-port) {
         padding: 20rem 0;
     }
+
+    &-image {
+        display: block
+    }
 }
 
 .home-section-whoarewe {
     background-color: $color-white;
-    padding: 0pt;
     color: black;
 
     @include respond(tab-port) {
         padding: 20rem 0;
     }
-}
 
-.home-our-recent-events {
-    font-size: 3rem;
-    text-transform: none;
-    font-weight: 500;
-    text-align: center;
-    padding: 1.5rem;
-
-    @include respond(tab-port) {
-        font-size: 3rem;
-    }
-
-    @include respond(phone) {
-        font-size: 2.5rem;
+    &-image {
+        display: block
     }
 }
 
 .home-button-text {
-    font-size: 1.6rem;
+    font-size: $font-size-large;
     font-weight: 0;
     text-align: center;
     cursor: pointer;
@@ -126,5 +118,16 @@
 }
 
 .home-section-recent-events {
-    padding: $xl-size;
+    text-align: center;
+    padding: $l-size;
+    &-header {
+        padding: $m-size;
+        @include respond(tab-port) {
+            font-size: 3rem;
+        }
+    
+        @include respond(phone) {
+            font-size: 2.5rem;
+        }
+    }
 }

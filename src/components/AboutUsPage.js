@@ -1,5 +1,5 @@
 import React from 'react';
-import { } from 'semantic-ui-react';
+import {Grid } from 'semantic-ui-react';
 import PageHeader from './PageHeader';
 
 const AboutUsPage = () => (
@@ -13,6 +13,21 @@ const AboutUsPage = () => (
                 </h1>
             </div>
         </header>
+        <section>
+            <Grid>
+                <Grid.Row verticalAlign = "middle">
+                    <Grid.Column>
+                        <div> 
+                            <iframe frameborder="0" aria-label="YouTube Video, Developer Student Clubs Leaders Summit - Goa 2018" src="https://www.youtube.com/embed/wTLe8nwJ_Lw" allowfullscreen=""></iframe>
+                        </div>
+                    </Grid.Column>
+                    <Grid.Column>
+
+                    </Grid.Column>
+                </Grid.Row>
+            </Grid>
+
+        </section>
     </div>
 );
 

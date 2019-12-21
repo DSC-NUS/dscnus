@@ -6,7 +6,6 @@ import CarouselHome from './CarouselHome.js';
 import { Link } from 'react-router-dom';
 import whoarewe from '../assets/HomePage/whoarewe.jpg'
 import whatwedo from '../assets/HomePage/whatwedo.jpg'
-//import { Link } from 'react-router-dom';
 
 class Home extends Component {
     render() {
@@ -48,7 +47,7 @@ class Home extends Component {
                                 </div>
                             </Grid.Column>
                             <Grid.Column>
-                                <img src={whoarewe} />
+                                <img src={whoarewe} alt="Who Are We"/>
                             </Grid.Column>
                         </Grid.Row>
                     </Grid>
@@ -57,7 +56,7 @@ class Home extends Component {
                     <Grid columns={2} stackable textAlign='center'>
                         <Grid.Row verticalAlign='middle'>
                             <Grid.Column>
-                                <img class="ui fluid image" src={whatwedo} />  
+                                <img class="ui fluid image" alt="What We Do" src={whatwedo} />  
                             </Grid.Column>
                             <Grid.Column>
                                 <div class="home-header__text-box">                             

@@ -1,18 +1,37 @@
 import React, { Component } from 'react';
-import { Menu, Dropdown, Segment, Responsive, Button, Icon, Sidebar, Header, Image } from 'semantic-ui-react';
+import { Menu, Dropdown, Segment, Responsive } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/PageHeader/dscnuslogo.png'
 
 class PageHeader extends Component {
+    state = {
+        inverted: true
+    }
+    listenScrollEvent = e => {
+        if (window.scrollY > 400) {
+            this.setState({
+                inverted: false
+            })
+        } else {
+            this.setState({
+                inverted: true
+            })
+        }
+    }
+    
+    componentDidMount() {
+        window.addEventListener('scroll', this.listenScrollEvent)
+    }
+
     render() {
         return (
             <div class="menu">
                 <Responsive as={Segment} minWidth={800} className="responsive">
-                    <Menu stackable inverted className="menu">
+                    <Menu stackable inverted={this.state.inverted} className="menu">
                         <Menu.Item
                             as={Link}
                             to='/'>
-                        <img src={logo} className="logo"/>
+                        <img src={logo} alt="DSC NUS Logo" className="logo"/>
                         </Menu.Item>
                         <Menu.Menu position="right">
                             <Menu.Item

@@ -3,14 +3,7 @@
     background-image: linear-gradient(to right bottom, rgba($dark-yellow-grey, 0.6), rgba($dark-yellow-grey, 0.6)), url("../../assets/HomePage/homepage.jpg");
     background-size: cover;
     background-position: top;
-    //position: relative;
-
-    /*&__text-box {
-        display: block;
-        width: 50%;
-        margin: 0 auto;
-        padding-top: 100px;
-    }*/
+    position: relative;
 
     &__text-box {
         position: absolute;

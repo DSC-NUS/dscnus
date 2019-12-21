@@ -18,7 +18,7 @@ const AboutUsPage = () => (
                 <Grid.Row verticalAlign = "middle">
                     <Grid.Column>
                         <div> 
-                            <iframe frameborder="0" aria-label="YouTube Video, Developer Student Clubs Leaders Summit - Goa 2018" src="https://www.youtube.com/embed/wTLe8nwJ_Lw" allowfullscreen=""></iframe>
+                            <iframe title="Developer Student Clubs Leaders Summit - Goa 2018" frameborder="0" aria-label="YouTube Video, Developer Student Clubs Leaders Summit - Goa 2018" src="https://www.youtube.com/embed/wTLe8nwJ_Lw" allowfullscreen=""></iframe>
                         </div>
                     </Grid.Column>
                     <Grid.Column>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { } from 'semantic-ui-react';
 import PageHeader from './PageHeader';
+import Footer from './Footer';
 
 const TeamPage = () => (
     <div>
@@ -12,6 +13,7 @@ const TeamPage = () => (
                 </h1>
             </div>
         </header>
+        {<Footer />}
     </div>
 );
 

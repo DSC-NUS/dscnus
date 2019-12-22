@@ -3,7 +3,6 @@ import { Menu, Grid, Icon } from "semantic-ui-react";
 import logo from '../assets/Footer/dscnusfulllogo.png';
 
 const Footer = () => (
-    <Menu inverted className="footer__menu">
         <footer class="footer">
             <div class="footer__logo-box">
                 <img src={logo} alt="Logo" class="footer__logo" />
@@ -37,7 +36,6 @@ const Footer = () => (
                 </Grid.Row>
             </Grid>
         </footer>
-    </Menu>
 );
 
 export default Footer;

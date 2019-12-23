@@ -1,47 +1,96 @@
 .blog {
-    background-image: linear-gradient(to right bottom, rgba($light-grey, 0.8), rgba(#42b7f4, 0.8)), url('../../assets/BlogPage/blogbg.jpg');
-    background-size: cover;
+    background-color: $color-light-grey;
 
     &__header {
         text-align: center;
-        padding: $l-size;
-        // color: $color-white;
+        padding: 10rem;
+        background-image: linear-gradient(to right bottom, $color-blue, $color-teal);
+        color: $color-white;
     }
 
     &__content {
-        padding: 0 5rem;
+        padding: $l-size;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+
+    &__articles {
+        flex: 0 0 70%;
+        margin-right: $l-size;
+    }
+
+    &__sidebar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     &__card {
         background-color: $color-white;
-        padding: $xl-size
+        border-radius: 1rem;
+        overflow: hidden;
+
+        &:not(:last-child) {
+            margin-bottom: $l-size;
+        }
+    }
+
+    &__card-content {
+        padding: $l-size;
     }
 
     &__imagebox {
         img {
             width: 100%;
         }
-        margin-bottom: 20px;
-    }
-
-    &__text-box {
-        margin-bottom: 20px;
     }
 }
 
-.lcol-3 {
-    float: left;
-    width: 75%;
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &__box {
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__button {
+        border: none;
+        margin: 3px;
+    }
+
+    &__input {
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+        background-color: $color-light-grey;
+        border: none;
+        padding: .7rem 2rem;
+        border-radius: 100px;
+        width: 80%;
+        transition: all .2s;
+
+        &:focus {
+            outline: none;
+            width: 100%;
+            background-color: $color-grey;
+        }
+
+        &::-webkit-input-placeholder {
+            font-weight: 100;
+            color: $color-medium-grey;
+        }
+    }
 }
 
-.rcol-1 {
-    float: left;
-    width: 25%;
-    padding-left: 20px;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+.heading-tertiary {
+    font-size: $font-size-header-tertiary;
+    font-weight: 700;
+    text-align: center;
 }

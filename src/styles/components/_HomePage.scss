@@ -1,6 +1,6 @@
 .home-header {
     height: 95vh;
-    background-image: linear-gradient(to right bottom, rgba($dark-yellow-grey, 0.6), rgba($dark-yellow-grey, 0.6)), url("../../assets/HomePage/homepage.jpg");
+    background-image: linear-gradient(to right bottom, rgba($color-dark-yellow-grey, 0.6), rgba($color-dark-yellow-grey, 0.6)), url("../../assets/HomePage/homepage.jpg");
     background-size: cover;
     background-position: top;
     position: relative;
@@ -68,7 +68,7 @@
     }
 
     &-image {
-        display: block
+        display: inline-block;
     }
 }
 
@@ -101,7 +101,7 @@
     }
     &:hover {
         transform: translateY(-3px);
-        box-shadow: 0 1rem 2rem rgba($dark-grey, 0.2);
+        box-shadow: 0 1rem 2rem rgba($color-dark-grey, 0.2);
 
         &::after {
             transform: scaleX(1.4) scaleY(1.6);
@@ -112,7 +112,7 @@
     &:active,
     &:focus {
         transform: translateY(-1px);
-        box-shadow: 0 0.5rem 1rem rgba($dark-grey, 0.2);
+        box-shadow: 0 0.5rem 1rem rgba($color-dark-grey, 0.2);
     }
 
 }

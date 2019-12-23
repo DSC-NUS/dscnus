@@ -51,6 +51,19 @@
             width: 100%;
         }
     }
+
+    &__list-item {
+        transition: all .2s;
+
+        a {
+            color: inherit;
+        }
+
+        &:hover {
+            color: $color-blue;
+            transform: translateY(-3px);
+        }
+    }
 }
 
 .search {

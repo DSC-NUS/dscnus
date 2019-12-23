@@ -104,3 +104,9 @@
         text-align: center;
     }
 }
+
+.message {
+    margin-top: $l-size !important;
+    font-family: inherit !important;
+    font-size: $font-size-small !important;
+}

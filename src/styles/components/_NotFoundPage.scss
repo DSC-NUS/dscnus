@@ -1,0 +1,11 @@
+.notfound {
+    margin: 0 auto;
+    padding: 6rem;
+    text-align: center;
+    min-height: calc(100vh - 29.4rem);
+
+    &__span {
+        display: block;
+        margin-bottom: $l-size;
+    }
+}

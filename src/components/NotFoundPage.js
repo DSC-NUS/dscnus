@@ -1,16 +1,20 @@
 import React from 'react';
-import { Container, Divider } from 'semantic-ui-react';
-import { Link } from 'react-router-dom';
+import { Divider } from 'semantic-ui-react';
 import PageHeader from './PageHeader';
+import Footer from './Footer';
 
 const NotFoundPage = () => (
     <div>
         {<PageHeader/>}
-        <Container text>
-            Page Not Found<br/>
+        <div className="notfound">
+            <h1>
+                <span className="heading-secondary notfound__span">Oh No...</span>
+                <span className="heading-tertiary notfound__span">Page Not Found</span>    
+            </h1><br/>
             <Divider hidden />
-            <Link to="/">Go to Homepage</Link>
-        </Container>
+            <a href="/" className="btn btn-yellow">Go to Homepage</a>
+        </div>
+        {<Footer/>}
     </div>
 );
 

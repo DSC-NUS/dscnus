@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Icon } from 'semantic-ui-react';
+import { Icon, Message } from 'semantic-ui-react';
 import PageHeader from './PageHeader';
 import Footer from './Footer';
 
@@ -15,6 +15,7 @@ class ContactPage extends Component {
     }
 
     handleSubmit = (e) => {
+        console.log(e)
         e.preventDefault();
         if (this.state.email.match(/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/)) {
             this.setState({emailError: false});
@@ -23,54 +24,30 @@ class ContactPage extends Component {
             return this.setState({emailError: true});
         } 
 
-    fetch('http://localhost:3000/send',{
-        method: "POST",
-        body: JSON.stringify(this.state),
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
-        },
-    }).then(
-    	(response) => (response.json())
-    ).then((response)=>{
-        if (response.status === 'success'){
-            this.setState({
-                success: true,
-                firstname: '',
-                lastname: '',
-                email: '',
-                message: '',
-            });
-        } else if (response.status === 'fail') {
-            this.setState({failure: true});
-        }
-    })
-        
-        // axios.post("https://api.emailjs.com/api/v1.0/email/send", {
-        //     "service_id": "gmail",
-        //     "template_id": "contactform",
-        //     "user_id": process.env.EMAILJS_APIKEY,
-        //     "template_params": {
-        //         "name": this.state.firstname + " " + this.state.lastname,
-        //         "email": this.state.email,
-        //         "subject": "Message from DSC NUS Website",
-        //         "message": this.state.message
-        //     }
-        // }).then(body => {
-        //     // console.log("body", body);
-        //     if (body.data === "OK") {
-        //         this.setState({
-        //             success: true,
-        //             firstname: '',
-        //             lastname: '',
-        //             email: '',
-        //             message: '',
-        //         });
-        //     }
-        // }).catch((e) => {
-        //     // console.log(e);
-        //     this.setState({failure: true});
-        // });
+        console.log(this.state)
+
+        fetch('http://localhost:3000/send',{
+            method: "POST",
+            body: JSON.stringify(this.state),
+            headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+            },
+        }).then(
+            (response) => (response.json())
+        ).then((response) => {
+            if (response.success === true){
+                this.setState({
+                    success: true,
+                    firstname: '',
+                    lastname: '',
+                    email: '',
+                    message: '',
+                });
+            } else if (response.status === 'fail') {
+                this.setState({failure: true});
+            }
+        })
     }
 
     onEmailChange = (e) => {
@@ -101,32 +78,58 @@ class ContactPage extends Component {
                     <h1 className="heading-secondary">Let's stay connected!</h1>
                 </div>
                 <div className="contact__content">
-                    <div className="contact__form">
+                    <form className="contact__form" onSubmit={(event) => this.handleSubmit(event)}>
                         <h2 className="heading-tertiary">Contact Us</h2>
                         <p className="subheading contact__form-header">Please fill out the quick form and we'll get in touch with you shortly!</p>
-                        <label for="first-name">First Name</label>
+                        <label for="firstname">First Name</label>
                         <input 
                             type="text" 
                             className="contact__form-input" 
                             placeholder="First name"
-                            name="first-name"
+                            name="firstname"
+                            value={this.state.firstname} 
+                            onChange={this.onFirstNameChange}
                         />
-                        <label for="last-name">Last Name</label>
+                        <label for="lastname">Last Name</label>
+                        <input 
+                            type="text" 
+                            className="contact__form-input" 
+                            placeholder="Last name"
+                            name="lastname"
+                            value={this.state.lastname} 
+                            onChange={this.onLastNameChange}
+                        />
+                        <label for="email">Email</label>
                         <input 
                             type="textarea" 
                             className="contact__form-input" 
-                            placeholder="Last name"
-                            name="last-name"
+                            placeholder="example@mail.com"
+                            name="email"
+                            value={this.state.email} 
+                            onChange={this.onEmailChange}
                         />
                         <label for="Message">Your Message</label>
-                        <input 
+                        <textarea 
                             type="text" 
+                            cols="40" rows="5"
                             className="contact__form-input contact__form-textarea" 
                             placeholder="Type here..."
                             name="message"
+                            required
+                            value={this.state.message} 
+                            onChange={this.onMessageChange}
                         />
-                        <button className="btn btn-inline">Submit</button>
-                    </div>
+                        <button className="btn btn-inline" type="submit">Submit</button>
+                        {this.state.emailError && (
+                            <Message error header="Invalid Email" className="message" content="Please input a valid email."/>
+                        )}
+                        {this.state.failure && (
+                            <Message error header="Failure" className="message" content="Failed to send. Please try again later!"/>
+                        )}
+                        {this.state.success && (
+                            <Message success header="Success" className="message" content="Your message has been sent successfully."/>
+                        )}
+                    </form>
                     <div className="contact__alternatives">
                         <h2 className="contact__alternatives-heading">Other Ways To Connect</h2>
                         <p className="subheading">You can also contact us on these platforms</p>

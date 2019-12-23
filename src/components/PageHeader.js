@@ -31,7 +31,7 @@ class PageHeader extends Component {
 
     render() {
         return (
-            <div class="menu">
+            <div className="menu">
                 <Responsive as={Segment} minWidth={800} className="responsive">
                     <Menu stackable inverted={this.state.inverted} className="menu">
                         <Menu.Item

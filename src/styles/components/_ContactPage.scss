@@ -1,0 +1,106 @@
+.contact {
+    background-color: $color-light-grey;
+
+    &__header {
+        text-align: center;
+        padding: 10rem;
+        background-image: linear-gradient(to right bottom, rgba($color-blue, 0.65), rgba($color-teal, 0.65)), url(../../assets/ContactPage/contactbg.jpg);
+        background-size: cover;
+        background-position: center;
+        // background-blend-mode: color;
+        color: $color-white;
+        text-shadow: .5rem .5rem .5rem rgba($color-dark-grey, 0.5);
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-evenly;
+        padding: $l-size $s-size;
+    }
+
+    &__form {
+        display: flex;
+        flex: 0 0 50%;
+        flex-direction: column;
+        justify-content: center;
+        
+        border: 1.5px solid $color-grey;
+        padding: $l-size;
+        box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+    }
+
+    &__form-input {
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+        background-color: $color-light-grey;
+        border: none;
+        padding: .7rem 2rem;
+        margin: 0.2rem 0;
+        border-radius: 100px;
+
+        &:not(:last-child) {
+            margin-bottom: 1.7rem;
+        }
+
+        &:focus {
+            outline: none;
+            background-color: $color-grey;
+        }
+
+        &::-webkit-input-placeholder {
+            font-weight: 100;
+            color: $color-medium-grey;
+        }
+    }
+
+    &__form-textarea {
+        height: 10rem;
+        border-radius: 10px;
+    }
+
+    &__form-header {
+        padding-bottom: $m-size;
+        text-align: center;
+    }
+
+    &__alternatives {
+        padding: 10rem 0;
+    }
+
+    &__alternatives-heading {
+        font-size: 2.2rem;
+    }
+
+    &__link {
+        color: $color-blue !important;
+
+        &:hover {
+            box-shadow: none !important;
+        }
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__list-item {
+        &:not(:last-child) {
+            margin-bottom: .8rem;
+            transition: all .2s;
+        }
+
+        a {
+            color: $color-blue;
+        }
+
+        &:hover {
+            transform: translateY(-3px);
+        }
+    }
+
+    &__icons-box {
+        padding: 7rem 0;
+        text-align: center;
+    }
+}

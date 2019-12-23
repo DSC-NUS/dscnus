@@ -4,8 +4,12 @@
     &__header {
         text-align: center;
         padding: 10rem;
-        background-image: linear-gradient(to right bottom, $color-blue, $color-teal);
+        background-image: linear-gradient(to right bottom, rgba($color-blue, 0.65), rgba($color-teal, 0.65)), url(../../assets/BlogPage/blogbg.jpg);
+        background-size: cover;
+        background-position: center;
+        // background-blend-mode: color;
         color: $color-white;
+        text-shadow: .2rem .5rem .5rem rgba($color-dark-grey, 0.5);
     }
 
     &__content {
@@ -31,6 +35,7 @@
         background-color: $color-white;
         border-radius: 1rem;
         overflow: hidden;
+        box-shadow: 0 .2rem .8rem rgba(0,0,0,.2);
 
         &:not(:last-child) {
             margin-bottom: $l-size;
@@ -41,7 +46,7 @@
         padding: $l-size;
     }
 
-    &__imagebox {
+    &__image-box {
         img {
             width: 100%;
         }
@@ -87,10 +92,4 @@
             color: $color-medium-grey;
         }
     }
-}
-
-.heading-tertiary {
-    font-size: $font-size-header-tertiary;
-    font-weight: 700;
-    text-align: center;
 }

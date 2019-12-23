@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, Divider, Icon } from 'semantic-ui-react';
+import { Icon } from 'semantic-ui-react';
 import PageHeader from './PageHeader';
 import Footer from './Footer';
 import logo from '../assets/HomePage/event1.jpg';
@@ -14,7 +14,7 @@ const BlogPage = () => (
         <div className="blog__content">
             <div className="blog__articles">
                 <div className="blog__card">
-                    <div className="blog__imagebox">
+                    <div className="blog__image-box">
                         <img src={logo} alt="event"/>
                     </div>
                     <div className="blog__card-content">
@@ -23,7 +23,7 @@ const BlogPage = () => (
                     </div>
                 </div>
                 <div className="blog__card">
-                    <div className="blog__imagebox">
+                    <div className="blog__image-box">
                         <img src={logo} alt="event"/>
                     </div>
                     <div className="blog__card-content">

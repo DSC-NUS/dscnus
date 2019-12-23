@@ -1,0 +1,54 @@
+.heading-primary {
+    color: $color-white;
+    text-transform: uppercase;   
+    backface-visibility: hidden;
+    margin-bottom: $xl-size;
+    text-align: center;
+    text-shadow: .2rem .5rem .5rem rgba($color-dark-grey, 0.5);
+ 
+    &--main {
+        font-size: 5rem;
+        line-height: 5rem;
+        letter-spacing: 1.5rem;
+
+        @include respond(phone) {
+            letter-spacing: 1rem;
+            font-size: 5rem;
+        }
+    }
+    
+    &--sub {
+        display: block;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 1.75rem;
+
+        @include respond(phone) {
+            letter-spacing: .5rem;
+        }
+    }
+}
+
+.heading-secondary {
+    font-size: $font-size-header-secondary;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    @include respond(tab-port) {
+        font-size: 3rem;
+    }
+
+    @include respond(phone) {
+        font-size: 2.5rem;
+    }
+}
+
+.heading-tertiary {
+    font-size: $font-size-header-tertiary;
+    font-weight: 700;
+    text-align: center;
+}
+
+.subheading {
+    font-size: 1.2rem;
+}

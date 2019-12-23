@@ -15,119 +15,60 @@
     }
 }
 
-.heading-primary {
-    color: $color-white;
-    text-transform: uppercase;   
-    backface-visibility: hidden;
-    margin-bottom: $xl-size;
-    text-align: center;
- 
-    &--main {
-        font-size: 5rem;
-        line-height: 5rem;
-        letter-spacing: 1.5rem;
+.section {
+    background-color: $color-white;
+    color: black;
 
-        @include respond(phone) {
-            letter-spacing: 1rem;
-            font-size: 5rem;
-        }
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    
-    &--sub {
-        display: block;
-        font-size: 20px;
-        font-weight: 700;
-        letter-spacing: 1.75rem;
 
-        @include respond(phone) {
-            letter-spacing: .5rem;
-        }
+    &__image-box {
+        flex: 0 0 50%;
+        margin-top: .5rem;
+        text-align: center;
+    }
+
+    &__image {
+        width: 100%;
+        height: auto;
+    }
+
+    &__text-box {
+        padding: $l-size;
+        text-align: center;
     }
 }
 
-.heading-secondary {
-    font-size: $font-size-header-secondary;
-    text-transform: uppercase;
-    font-weight: 700;
+.section-blue {
+    background-color: $color-blue !important;
+    color: $color-light-grey !important;
+}
 
+.section-vertical {
+    min-height: 53rem;
+    text-align: center;
+    padding: $l-size;
+
+    &__text-box {
+        padding: $l-size;
+        text-align: center;
+    }
+
+    &__image-box {
+        text-align: center;
+    }
+}
+
+.recent-events__header {
+    padding: $m-size;
     @include respond(tab-port) {
         font-size: 3rem;
     }
 
     @include respond(phone) {
         font-size: 2.5rem;
-    }
-}
-
-.home-section-whatwedo {
-    background-color: $color-blue;
-    color: white;
-
-    @include respond(tab-port) {
-        padding: 20rem 0;
-    }
-
-    &-image {
-        display: inline-block;
-    }
-}
-
-.home-section-whoarewe {
-    background-color: $color-white;
-    color: black;
-
-    @include respond(tab-port) {
-        padding: 20rem 0;
-    }
-
-    &-image {
-        display: block
-    }
-}
-
-.home-button-text {
-    font-size: $font-size-large;
-    font-weight: 0;
-    text-align: center;
-    cursor: pointer;
-}
-
-.home-button {
-    &, 
-    &:link,
-    &:visited {
-        transition: 0.2s all;    
-        cursor: pointer;
-    }
-    &:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 1rem 2rem rgba($color-dark-grey, 0.2);
-
-        &::after {
-            transform: scaleX(1.4) scaleY(1.6);
-            opacity: 0;
-        }
-    }
-
-    &:active,
-    &:focus {
-        transform: translateY(-1px);
-        box-shadow: 0 0.5rem 1rem rgba($color-dark-grey, 0.2);
-    }
-
-}
-
-.home-section-recent-events {
-    text-align: center;
-    padding: $l-size;
-    &-header {
-        padding: $m-size;
-        @include respond(tab-port) {
-            font-size: 3rem;
-        }
-    
-        @include respond(phone) {
-            font-size: 2.5rem;
-        }
     }
 }

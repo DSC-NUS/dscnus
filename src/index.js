@@ -2,6 +2,7 @@ import 'semantic-ui-css/semantic.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/styles.scss';
+import ArticlePage from './components/ArticlePage';
 import HomePage from './components/HomePage';
 import TeamPage from './components/TeamPage';
 import AboutUsPage from './components/AboutUsPage';
@@ -22,7 +23,8 @@ const App = ({ base }) => (
                 <Route path="/team" component={TeamPage} />
                 <Route path="/contact" component={ContactPage} />
                 <Route path="/projects" component={ProjectsPage} />
-                <Route path="/blog" component={BlogPage} />
+                <Route path="/blog/:id" component={ArticlePage} />
+                <Route path="/blog" component={BlogPage}/>
                 <Route component={NotFoundPage} />
             </Switch>
         </div>

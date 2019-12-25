@@ -21,6 +21,34 @@ const carouselhomedata = {
         "header": "Grand Launch Party", 
         "description": "Welcoming our sub-comm members into the club!"
     },
+    {
+        "_id": "GrandLaunchEvent", 
+        "index": 3,
+        "picture": "./event1.jpg", 
+        "header": "Grand Launch Party", 
+        "description": "Welcoming our sub-comm members into the club!"
+    },
+    {
+        "_id": "GrandLaunchEvent", 
+        "index": 4,
+        "picture": "./event2.jpg", 
+        "header": "Grand Launch Party", 
+        "description": "Welcoming our sub-comm members into the club!"
+    },
+    {
+        "_id": "GrandLaunchEvent", 
+        "index": 5,
+        "picture": "./event1.jpg", 
+        "header": "Grand Launch Party", 
+        "description": "Welcoming our sub-comm members into the club!"
+    },
+    {
+        "_id": "GrandLaunchEvent", 
+        "index": 6,
+        "picture": "./event3.jpg", 
+        "header": "Grand Launch Party", 
+        "description": "Welcoming our sub-comm members into the club!"
+    },
     ]
 }
 

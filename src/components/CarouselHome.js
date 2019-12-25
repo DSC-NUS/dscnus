@@ -1,6 +1,7 @@
 import React, {Component, useState} from 'react';
-import { Card, Button } from 'semantic-ui-react'
+import {Button } from 'semantic-ui-react'
 import data from '../data/carouselhomedata.js'
+import Card from "./Card.js"
 
 const imagePath = require.context('./../assets/HomePage/', true);
 
@@ -37,18 +38,6 @@ class CarouselHome extends Component {
         const {properties, property, imageName} = this.state;
         return(
             <div class="carousel">
-                <div className="cards-slider">
-                    <div className="cards-slider-wrapper">
-                        <Card
-                            className="carouselhome-card"
-                            image={imageName} 
-                            header={property.header}
-                            description={property.description}  />
-                    </div>
-
-                </div>
-
-
                 <section className="carouselhome-slider-section">
                     <div className="carouselhome-slider">
                         <Button 
@@ -67,6 +56,19 @@ class CarouselHome extends Component {
                         />
                     </div>
                 </section>
+                <div className={`cards-slider active-slide-${property.index}`}>
+                    <div className="cards-slider-wrapper" style={{
+                  'transform': `translateX(-${property.index*(100/properties.length)}%)`
+                }}>
+                        {
+                        properties.map(property => <Card key={property._id} property={property} />)
+                        }
+
+                    </div>
+
+                </div>
+
+
             </div>
         )
     }

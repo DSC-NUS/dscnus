@@ -1,0 +1,27 @@
+.projects-header {
+    background-image: linear-gradient(to right bottom, rgba($color-dark-yellow-grey, 0.5), rgba($color-dark-yellow-grey, 0.5)), url("../../assets/AboutUsPage/aboutuspagebg.jpg") !important;
+}
+
+.projects {
+    padding: $l-size;
+    display: flex;
+    flex-direction: column;
+
+    &__list {
+        list-style: none;
+        font-size: 1.4rem;
+    }
+
+    &__list-icon {
+        cursor: default !important;
+    }
+
+    &__project {
+        margin-bottom: $l-size;
+    }
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}

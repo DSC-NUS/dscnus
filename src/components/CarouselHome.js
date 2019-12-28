@@ -1,5 +1,5 @@
 import React, {Component, useState} from 'react';
-import {Button } from 'semantic-ui-react'
+import { Button } from 'semantic-ui-react'
 import data from '../data/carouselhomedata.js'
 import Card from "./Card.js"
 
@@ -20,7 +20,8 @@ class CarouselHome extends Component {
         const newIndex = (this.state.property.index+1) % data.properties.length
         this.setState({
             property: data.properties[newIndex],
-            imageName: imagePath(`${data.properties[newIndex].picture}`)
+            imageName: imagePath('./event1.jpg')
+            //imagePath(`${data.properties[newIndex].picture}`)
         })
 
     }

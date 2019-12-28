@@ -18,6 +18,7 @@
 .section {
     background-color: $color-white;
     color: black;
+    display: flex;
 
     &__content {
         display: flex;
@@ -29,11 +30,14 @@
         flex: 0 0 50%;
         margin-top: .5rem;
         text-align: center;
+        padding: $s-size;
     }
 
     &__image {
         width: 100%;
         height: auto;
+        display: block;
+        box-shadow: 0 .2rem .8rem rgba(0,0,0,.2);
     }
 
     &__text-box {

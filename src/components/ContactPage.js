@@ -144,7 +144,7 @@ class ContactPage extends Component {
                         <ul className="contact__list">
                             <li className="contact__list-item">Partnerships: <a href="mailto:partnerships.head.dscnus@gmail.com">partnerships.head.dscnus@gmail.com</a></li>
                             <li className="contact__list-item">Recruitment: <a href="mailto:people.head.dscnus@gmail.com">people.head.dscnus@gmail.com</a></li>
-                            <li className="contact__list-item">Others: <a href="mailto:external.lead.dscnus@gmail.com">external.lead.dscnus@gmail.com</a></li>
+                            <li className="contact__list-item">Others: <a href="mailto:lead.dscnus@gmail.com">lead.dscnus@gmail.com</a></li>
                         </ul>
                     </div>
                 </div>

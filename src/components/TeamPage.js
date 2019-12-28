@@ -26,7 +26,7 @@ const TeamPage = () => (
                     <div class="card__image-box">
                         <img src={shawnten} alt="Shawn Ten" className="card__image"/>
                     </div>
-                    <div className="card__text-box">
+                    <div className="card__content--center">
                         <h3 class="heading-tertiary">
                             Shawn Ten
                         </h3>
@@ -49,7 +49,7 @@ const TeamPage = () => (
                     <div class="card__image-box">
                         <img src={shawnten} alt="Shawn Ten" className="card__image"/>
                     </div>
-                    <div className="card__text-box">
+                    <div className="card__content--center">
                         <h3 class="heading-tertiary">
                             Shawn Ten
                         </h3>
@@ -61,7 +61,7 @@ const TeamPage = () => (
                     <div class="card__image-box">
                         <img src={shawnten} alt="Shawn Ten" className="card__image"/>
                     </div>
-                    <div className="card__text-box">
+                    <div className="card__content--center">
                         <h3 class="heading-tertiary">
                             Shawn Ten
                         </h3>
@@ -73,7 +73,7 @@ const TeamPage = () => (
                     <div class="card__image-box">
                         <img src={shawnten} alt="Shawn Ten" className="card__image"/>
                     </div>
-                    <div className="card__text-box">
+                    <div className="card__content--center">
                         <h3 class="heading-tertiary">
                             Shawn Ten
                         </h3>
@@ -85,7 +85,7 @@ const TeamPage = () => (
                     <div class="card__image-box">
                         <img src={shawnten} alt="Shawn Ten" className="card__image"/>
                     </div>
-                    <div className="card__text-box">
+                    <div className="card__content--center">
                         <h3 class="heading-tertiary">
                             Shawn Ten
                         </h3>

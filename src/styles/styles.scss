@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 @import './base/base';
-@import './base/settings';
-@import './base/mixins';
-@import './base/typography';
 @import './base/button';
+@import './base/card';
+@import './base/mixins';
+@import './base/settings';
+@import './base/typography';
 @import './components/AboutUsPage';
 @import './components/ArticlePage';
 @import './components/BlogPage';

@@ -8,24 +8,24 @@ import different from '../assets/AboutUsPage/different.jpg'
 const AboutUsPage = () => (
     <div>
         {<PageHeader/>}
-        <header class="home-header about-header">
-            <div class="home-header__text-box">
-                <h1 class="heading-primary">
-                    <span class="heading-primary--main">About DSC NUS</span>
+        <header className="home-header about-header">
+            <div className="home-header__text-box">
+                <h1 className="heading-primary">
+                    <span className="heading-primary--main">About DSC NUS</span>
                 </h1>
                 <section>
                     <div className="about-header__content">
                         <div className="mission-vision">
-                            <h2 class="mission-vision__header">
+                            <h2 className="mission-vision__header">
                                 Our Mission
                             </h2>
-                            <p class="mission-vision__paragraph">Cultivate empathetic learners of technology to engage and impact communities</p>
+                            <p className="mission-vision__paragraph">Cultivate empathetic learners of technology to engage and impact communities</p>
                         </div>
                         <div className="mission-vision">
-                            <h2 class="mission-vision__header">
+                            <h2 className="mission-vision__header">
                                 Our Vision
                             </h2>
-                            <p class="mission-vision__paragraph">DSC NUS is an inclusive community, nurturing learners of technology to engage and impact communities</p>
+                            <p className="mission-vision__paragraph">DSC NUS is an inclusive community, nurturing learners of technology to engage and impact communities</p>
                         </div>
                     </div>
                 </section>
@@ -33,7 +33,7 @@ const AboutUsPage = () => (
         </header>
         <section className="section">
             <div className="section__content">
-                <div class="section__image-box">
+                <div className="section__image-box">
                     <div> 
                         {/* TODO: Change to more appropriate video */}
                         <iframe title="Developer Student Clubs Leaders Summit - Goa 2018" 
@@ -42,11 +42,11 @@ const AboutUsPage = () => (
                         allowfullscreen
                         aria-label="YouTube Video, Developer Student Clubs Leaders Summit - Goa 2018" 
                         src="https://www.youtube.com/embed/wTLe8nwJ_Lw" 
-                        class="section__video"></iframe>
+                        className="section__video"></iframe>
                     </div>
                 </div>
-                <div class="section__text-box">        
-                    <h2 class="heading-secondary">
+                <div className="section__text-box">        
+                    <h2 className="heading-secondary">
                         What is DSC?
                     </h2>
                     <p>Developer Student Clubs (DSC) is a programme presented by Google Developers. DSCs are university-based community groups where students can experience personal growth through developing solutions for their communities. Google does not own or manage DSCs- they are run by the Lead from each university. Watch the video to learn more!</p>
@@ -55,13 +55,13 @@ const AboutUsPage = () => (
         </section>
         <section className="section">
             <div className="section__content">
-                <div class="section__text-box">     
-                    <h2 class="heading-secondary">
+                <div className="section__text-box">     
+                    <h2 className="heading-secondary">
                         How is DSC NUS different?
                     </h2>
                     <p>We set ourselves apart from the other DSC chapters by focusing on developing diverse solutions (not restricted to mobile and apps) for Non-Profit Organizations. Areas we are interested in include but are not limited to: the environment, education, elderly, children, healthcare, special needs and anything related to benefiting communities.</p>
                 </div> 
-                <div class="section__image-box">
+                <div className="section__image-box">
                     <img 
                         className="section__image" 
                         alt="What We Do" 
@@ -70,9 +70,9 @@ const AboutUsPage = () => (
                 </div>
             </div>
         </section>
-        <section class="section-vertical section-green">
+        <section className="section-vertical section-green">
             <div className="section-vertical__text-box">
-                <h1 class="heading-secondary">
+                <h1 className="heading-secondary">
                     How did we start?
                 </h1>
                 <p>Our Lead (Jason Yip) signed up to represent Developer Student Club NUS and was fortunate enough attend the DSC Southeast Asia Summit in Kuala Lumpur this year. The 7 Leads from Singapore had the opportunity to meet other Leads from SEA and Googlers from all over the world! Check out the life-changing event.</p>

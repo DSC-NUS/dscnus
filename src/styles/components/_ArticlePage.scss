@@ -1,0 +1,36 @@
+.article{
+    display: flex;
+    flex-direction: column;
+
+    &__header {
+        text-align: center;
+        padding: 10rem;
+        color: $color-white;
+        background-image: linear-gradient(to right bottom, rgba($color-blue, 0.65), rgba($color-teal, 0.65)), url(../../assets/BlogPage/blogbg.jpg);
+        background-size: cover;
+        background-position: center;
+        text-shadow: .2rem .5rem .5rem rgba($color-dark-grey, 0.5);
+    }
+
+    &__image-box {
+        height: 80vh;
+        align-self: center;
+        text-align: center;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    &__heading {
+        
+    }
+
+    &__content {
+        padding: $l-size 20rem;
+        margin: 0 auto;
+        h3 {
+             text-align: left !important;
+        }
+    }
+}

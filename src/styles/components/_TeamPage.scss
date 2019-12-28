@@ -7,32 +7,6 @@
     text-align: center;
 }
 
-.card {
-    background-color: $color-white;
-    border-radius: 10px;
-    width: 30rem;
-    overflow: hidden;
-    box-shadow: 0 .2rem .8rem rgba(0,0,0,.2);
-
-    &__text-box {
-        text-align: center;
-        padding: $m-size $l-size;
-    }
-
-    &__image {
-        width: 100%;
-        height: auto;
-    }
-
-    &__image-box {
-        max-width: 30rem;
-    }
-
-    &:not(:last-child) {
-        margin-right: $m-size;
-    }
-}
-
 .section-teampage {
     background-color: $color-light-grey !important;
     padding: $l-size;

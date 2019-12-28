@@ -62,54 +62,65 @@ class BlogPage extends Component {
                 <div className="blog__content">
                     <div className="blog__articles">
                     
-                    {/* This is a template */}
-                    <Link className="blog__card blog__card--clickable" to="/blog/123">
-                        <div className="blog__image-box">
-                            <img src={logo} alt="event"/>
-                        </div>
-                        <div className="blog__card-content">
-                            <h2>Title</h2>
-                            <p>Description</p>
-                        </div>
-                    </Link>
-                    {/* End of template */}
-
-                    {!!this.state.articles && this.state.articles.constructor === Array && this.state.articles.map((article) => (
-                        <div className="blog__card" as={ Link } to={`/blog/${article._id}`} key={article._id}>
-                            <div className="blog__image-box">
+                        {/* This is a template */}
+                        <Link className="card card--clickable blog__article" to="/blog/123">
+                            <div className="card__image-box">
                                 <img src={logo} alt="event"/>
                             </div>
-                            <div className="blog__card-content">
-                                <h2>{article.title}</h2>
-                                <p>{article.description}</p>
+                            <div className="card__content">
+                                <h2>Title</h2>
+                                <p>Description</p>
                             </div>
-                        </div>
-                    ))}
-                    {!!!this.state.articles && !this.state.error && (
-                        <Message info>
-                        There are no articles at the moment!
-                        </Message>
-                    )}
-                    {this.state.error && (
-                        <Message error>
-                        There was an error. Please try again later!
-                        </Message>
-                    )}
+                        </Link>
+                        <Link className="card card--clickable blog__article" to="/blog/123">
+                            <div className="card__image-box">
+                                <img src={logo} alt="event"/>
+                            </div>
+                            <div className="card__content">
+                                <h2>Title</h2>
+                                <p>Description</p>
+                            </div>
+                        </Link>
+                        {/* End of template */}
+
+                        {!!this.state.articles && this.state.articles.constructor === Array && this.state.articles.map((article) => (
+                            <Link className="card card--clickable blog__article" to={`/blog/${article._id}`} key={article._id}>
+                                <div className="card__image-box">
+                                    <img src={logo} alt="event"/>
+                                </div>
+                                <div className="card__content">
+                                    <h2>{article.title}</h2>
+                                    <p>{article.description}</p>
+                                </div>
+                            </Link>
+                        ))}
+                        {!!!this.state.articles && !this.state.error && (
+                            <Message info>
+                            There are no articles at the moment!
+                            </Message>
+                        )}
+                        {this.state.error && (
+                            <Message error>
+                            There was an error. Please try again later!
+                            </Message>
+                        )}
                     </div>
 
                     <div className="blog__sidebar">
-                        <div className="blog__card">
-                            <div className="blog__card-content">
+                        <div className="card blog__article">
+                            <div className="card__content">
                                 <h2 className="heading-tertiary">Recent Posts</h2>
                                 <ul className="blog__list">
+                                    <li className="blog__list-item"><a href='blog/123'>Title</a></li>
+                                    <li className="blog__list-item"><a href='/blog/123'>Title</a></li>
                                     {this.state.recents && this.state.recents.constructor === Array && this.state.recents.map((recent) => (
                                         <li className="blog__list-item"><a href={`/blog/${recent._id}`}>{recent.title}</a></li>
                                     ))}
                                 </ul>
                             </div>
                         </div>
-                        <div className="blog__card">
-                            <div className="blog__card-content">
+                        <div className="card">
+                            <div className="card__content">
                                 <div className="search">
                                     <h2 className="heading-tertiary">Search</h2>
                                     <div className="search__box">

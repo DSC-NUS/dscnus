@@ -54,11 +54,9 @@ class Home extends Component {
                     </div>
                 </section>
                 <section className="section-vertical">
-                    <Grid.Row>
-                        <h2 class="heading-secondary recent-events__header">
-                            Recent Events
-                        </h2>
-                    </Grid.Row>
+                    <h2 class="heading-secondary recent-events__header">
+                        Recent Events
+                    </h2>
                     {<CarouselHome/>}
                 </section>
                 {<Footer />}

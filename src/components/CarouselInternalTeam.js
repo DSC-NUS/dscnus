@@ -1,4 +1,4 @@
-import React, {Component, useState} from 'react';
+import React, { Component } from 'react';
 import { Button, Grid, Card } from 'semantic-ui-react'
 import data from '../data/carouselteaminternal.js'
 
@@ -35,10 +35,10 @@ class CarouselHome extends Component {
     }
 
     render(){
-        const {properties, property, imageName} = this.state;
+        const { property, imageName } = this.state;
         return(
-            <div class="carousel">
-                <Grid>
+            <div class="team__carousel">
+                <Grid centered>
                     <Grid.Column width={3}>
                     <Button 
                             circular 
@@ -66,7 +66,6 @@ class CarouselHome extends Component {
                         />
                     </Grid.Column>
                 </Grid>
-
             </div>
         )
     }

@@ -13,7 +13,7 @@ class BlogPage extends Component {
     }
 
     fetchArticles = () => {
-        fetch('http://localhost:3000/articles', {
+        fetch('http://localhost:3001/articles', {
             method: "GET"
         }).then(response => response.json()
         ).then((response) => {
@@ -28,7 +28,7 @@ class BlogPage extends Component {
     }
 
     fetchRecents = () => {
-        fetch("http://localhost:3000/articles?sortBy=created_at:desc", {
+        fetch("http://localhost:3001/articles?sortBy=created_at:desc", {
             method: "GET"
         }).then((response) => {
             console.log("r" + response)

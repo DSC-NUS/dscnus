@@ -2,7 +2,6 @@ import React from 'react';
 import { Card } from 'semantic-ui-react';
 import PageHeader from './PageHeader';
 import Footer from './Footer';
-import shawnten from '../assets/TeamPage/shawnten.jpg';
 import CarouselInternalTeam from './CarouselInternalTeam.js'
 import CarouselExternalTeam from './CarouselExternalTeam.js'
 
@@ -24,11 +23,13 @@ const TeamPage = () => (
             </h2>
             <p>The Leads...</p>
         </div>
-        <section className="section">
+        <section className="section team__carousel">
             <Card
+            style={{margin: "0 auto"}}
             image={imagePath(`./ANN_3566.jpg`)}
+            header="Header"
+            description="Description"
              />
-
         </section>    
 
         <div className="section-header section-green">

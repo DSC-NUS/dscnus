@@ -3,7 +3,7 @@ import { Button } from 'semantic-ui-react'
 import data from '../data/carouselhomedata.js'
 import Card from "./Card.js"
 
-const imagePath = require.context('./../assets/HomePage/', true);
+const imagePath = require.context('../assets/HomePage/', true);
 
 class CarouselHome extends Component { 
     constructor(props){
@@ -20,8 +20,7 @@ class CarouselHome extends Component {
         const newIndex = (this.state.property.index+1) % data.properties.length
         this.setState({
             property: data.properties[newIndex],
-            imageName: imagePath('./event1.jpg')
-            //imagePath(`${data.properties[newIndex].picture}`)
+            imageName: imagePath(`${data.properties[newIndex].picture}`)
         })
 
     }
@@ -36,10 +35,10 @@ class CarouselHome extends Component {
     }
 
     render(){
-        const {properties, property, imageName} = this.state;
+        const {properties, property} = this.state;
         return(
             <div class="carousel">
-                <section className="carouselhome-slider-section">
+                <div className="carouselhome-slider-section">
                     <div className="carouselhome-slider">
                         <Button 
                             circular 
@@ -56,21 +55,18 @@ class CarouselHome extends Component {
                             onClick={() => this.nextProperty()} 
                         />
                     </div>
-                </section>
+                </div>
                 <div className={`cards-slider active-slide-${property.index}`}>
                     <div className="cards-slider-wrapper" style={{
                   'transform': `translateX(-${property.index*(100/properties.length)}%)`
                 }}>
                         {
-                        properties.map(property => <Card key={property._id} property={property} />)
+                        properties.map(property => <Card key={property._id} property={property} imageName={imagePath(`${properties[property.index].picture}`)} />)
                         }
 
                     </div>
-
                 </div>
-
-
-            </div>
+                </div>
         )
     }
 }

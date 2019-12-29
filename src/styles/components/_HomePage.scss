@@ -52,7 +52,9 @@
 }
 
 .section-vertical {
-    min-height: 53rem;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
     text-align: center;
     padding: $l-size;
 

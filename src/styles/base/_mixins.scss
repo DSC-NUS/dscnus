@@ -1,14 +1,14 @@
 @mixin respond($breakpoint) {
-    @if $breakpoint == phone {
+    @if $breakpoint == $bp-small {
         @media (max-width: 37.5em) { @content }
     }
-    @if $breakpoint == tab-port {
+    @if $breakpoint == $bp-medium {
         @media (max-width: 56.25em) { @content }
     }
-    @if $breakpoint == tab-land {
+    @if $breakpoint == $bp-large {
         @media (max-width: 75em) { @content }
     }
-    @if $breakpoint == big-desktop {
+    @if $breakpoint == $bp-largest {
         @media (min-width: 112.5em) { @content }
     }
 }

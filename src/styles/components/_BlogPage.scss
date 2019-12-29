@@ -18,11 +18,24 @@
         display: flex;
         align-items: flex-start;
         justify-content: space-evenly;
+
+        @media only screen and (max-width: $bp-small) {
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            padding: $m-size;
+        }
     }
 
     &__articles {
         flex: 0 0 70%;
         margin-right: $l-size;
+        @media only screen and (max-width: $bp-small) {
+            margin-bottom: $m-size;
+            margin-right: 0;
+        }
     }
 
     &__article {

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import moment from 'moment';
 import { Icon, Message } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import PageHeader from './PageHeader';
@@ -9,7 +10,8 @@ class BlogPage extends Component {
     state = {
         error: undefined,
         articles: undefined,
-        recents: undefined
+        recents: undefined,
+        filtered: undefined
     }
 
     fetchArticles = () => {
@@ -17,9 +19,8 @@ class BlogPage extends Component {
             method: "GET"
         }).then(response => response.json()
         ).then((response) => {
-            console.log(response)
             if (response.constructor === Array) {
-                this.setState({ articles: response })
+                this.setState({ articles: response, filtered: response })
             }
         }).catch((error) => {
             this.setState({ error: true })
@@ -31,10 +32,8 @@ class BlogPage extends Component {
         fetch("http://localhost:3001/articles?sortBy=created_at:desc", {
             method: "GET"
         }).then((response) => {
-            console.log("r" + response)
             return response.json()
         }).then((response) => {
-            console.log(response)
             if (response.constructor === Array) {
                 this.setState({ recents: response })
             }
@@ -42,13 +41,31 @@ class BlogPage extends Component {
             // if (error.length === 0) 
             //     this.setState({ error: true })
             this.setState({ error: true })
-            // console.log('error2: ' + this.state.error)
         })
     }
 
     componentDidMount() {
         this.fetchArticles()
         this.fetchRecents()
+        this.handleChange = this.handleChange.bind(this);
+    }
+
+    handleChange(e) {
+        console.log("state " + this.state)
+        let currentList = this.state.articles;
+        let newList = [];
+        if (e.target.value !== "") {
+            newList = currentList.filter(item => {
+                const lc = item.title.toLowerCase();
+                const filter = e.target.value.toLowerCase();
+                return lc.includes(filter);
+            });
+        } else {
+            newList = this.props.items;
+        }
+        this.setState({
+            filtered: newList
+        });
     }
 
     render() {
@@ -83,14 +100,15 @@ class BlogPage extends Component {
                         </Link>
                         {/* End of template */}
 
-                        {!!this.state.articles && this.state.articles.constructor === Array && this.state.articles.map((article) => (
+                        {!!this.state.filtered && this.state.filtered.constructor === Array && this.state.filtered.map((article) => (
                             <Link className="card card--clickable blog__article" to={`/blog/${article._id}`} key={article._id}>
                                 <div className="card__image-box">
                                     <img src={logo} alt="event"/>
                                 </div>
                                 <div className="card__content">
                                     <h2>{article.title}</h2>
-                                    <p>{article.description}</p>
+                                    <p className="subheading">{moment(new Date(article.createdAt)).fromNow()}</p>
+                                    <p className="paragraph">{article.description}</p>
                                 </div>
                             </Link>
                         ))}
@@ -114,7 +132,7 @@ class BlogPage extends Component {
                                     <li className="blog__list-item"><a href='blog/123'>Title</a></li>
                                     <li className="blog__list-item"><a href='/blog/123'>Title</a></li>
                                     {this.state.recents && this.state.recents.constructor === Array && this.state.recents.map((recent) => (
-                                        <li className="blog__list-item"><a href={`/blog/${recent._id}`}>{recent.title}</a></li>
+                                        <li className="blog__list-item" key={recent._id}><a href={`/blog/${recent._id}`}>{recent.title}</a></li>
                                     ))}
                                 </ul>
                             </div>
@@ -124,7 +142,7 @@ class BlogPage extends Component {
                                 <div className="search">
                                     <h2 className="heading-tertiary">Search</h2>
                                     <div className="search__box">
-                                        <input type="text" className="search__input" placeholder="Search articles" />
+                                        <input type="text" className="search__input" onChange={this.handleChange} placeholder="Search articles" />
                                         <button className="search__button">
                                             <Icon name="search" />
                                         </button>

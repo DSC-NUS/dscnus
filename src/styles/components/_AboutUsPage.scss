@@ -7,11 +7,27 @@
         border: 3px solid $color-grey;
         padding: $l-size;
         border-radius: 10px;
+
+        @media only screen and (max-width: $bp-small) {
+            flex-direction: column;
+            padding: $m-size;
+            margin: $m-size;
+        }
     }
 }
 
 .mission-vision {
     flex: 0 0 50%;
+
+    &:not(:last-child) {
+        margin-right: 1.4rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        &:not(:last-child) {
+            margin-bottom: 1.4rem;
+        }
+    }
 
     &__header {
         color: $color-white;
@@ -31,6 +47,16 @@
         max-width: 50rem;
         height: 380px;
         padding: $m-size;
+
+        @media only screen and (max-width: $bp-medium) {
+            padding: $s-size;
+            height: 300px;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            padding: $s-size;
+            height: 200px;
+        }
     }
 }
 

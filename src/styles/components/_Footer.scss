@@ -8,13 +8,18 @@
     font-size: 1.4rem;
     color: $color-light-grey;
 
-    @include respond(tab-port) {
-        padding: 8rem 0;
-    }
-
     &__content {
         display: flex;
         padding: 0 $l-size;
+
+        @media only screen and (max-width: $bp-small) {
+            flex-direction: column;
+            padding: 0 $l-size;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            padding: 0 $m-size;
+        }
     }
 
     &__left {
@@ -26,6 +31,10 @@
         align-items: center;
         justify-content: center;
         flex: 1;
+
+        @media only screen and (max-width: $bp-small) {
+            margin-top: $m-size;
+        }
     }
 
     &__logo-box {
@@ -86,14 +95,6 @@
         border-top: 1px solid $color-blue;
         padding-top: 2rem;
         display: inline-block;
-        // width: 80%;
-        // float: right;
-
-        @include respond(tab-port) {
-            width: 100%;
-            text-align: center;
-            float: none;
-        }
     }
 
     &__socialmedia-menu {

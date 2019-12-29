@@ -1,6 +1,7 @@
 // Colors
 $color-dark-yellow-grey: #171400;
 $color-dark-grey: #181818;
+$color-medium-dark-grey: #858484;
 $color-medium-grey: #bdbaba;
 $color-grey: #ebebeb;
 // $color-light-grey: #eaeaea;
@@ -14,8 +15,15 @@ $color-dark-yellow: #d19d04;
 $color-green: #0F9D58;
 $color-teal: #06c1d0;
 
+// Breakpoints
+$bp-largest: 75em;   // 1200px
+$bp-large: 62.5em;   // 1000px
+$bp-medium: 50em;    // 800px;
+$bp-small: 37.5em;    // 600px;
+$bp-smallest: 28.1em;    // 450px;
+
 // Font Size
-$font-size-large: 1.8rem;
+// $font-size-large: 1.8rem;
 $font-size-small: 1.4rem;
 $font-size-header-secondary: 3.3rem;
 $font-size-header-tertiary: 2.5rem;
@@ -25,4 +33,3 @@ $s-size: 1.2rem;
 $m-size: 2rem;
 $l-size: 4rem;
 $xl-size: 6rem;
-$desktop-breakpoint: 45rem;

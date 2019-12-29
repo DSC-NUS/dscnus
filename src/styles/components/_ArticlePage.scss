@@ -22,15 +22,15 @@
         }
     }
 
-    &__heading {
-        
-    }
-
     &__content {
         padding: $l-size 20rem;
         margin: 0 auto;
         h3 {
              text-align: left !important;
         }
+    }
+
+    &__text {
+        margin-top: $l-size;
     }
 }

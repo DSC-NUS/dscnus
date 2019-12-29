@@ -56,7 +56,7 @@ class CarouselHome extends Component {
                         />
                     </div>
                 </div>
-                <div className={`cards-slider active-slide-${property.index}`}>
+                {/* <div className={`cards-slider active-slide-${property.index}`}>
                     <div className="cards-slider-wrapper" style={{
                   'transform': `translateX(-${property.index*(100/properties.length)}%)`
                 }}>
@@ -65,7 +65,7 @@ class CarouselHome extends Component {
                         }
 
                     </div>
-                </div>
+                </div> */}
                 </div>
         )
     }

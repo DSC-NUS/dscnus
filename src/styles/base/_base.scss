@@ -20,14 +20,11 @@ p {
 
 html {
     font-size: 68%;
-    @include respond(tab-land) {
-        font-size: 56.25%;
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 62%;
     }
-    @include respond(tab-port) {
-        font-size: 60%;
-    }
-    @include respond(big-desktop) {
-        font-size: 80%;
+    @media only screen and (max-width: $bp-small) {
+        font-size: 56%;
     }
 }
 

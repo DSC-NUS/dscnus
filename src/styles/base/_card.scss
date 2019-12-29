@@ -18,6 +18,10 @@
 
     &__content {
         padding: $l-size;
+
+        @media only screen and (max-width: $bp-small) {
+            padding: $m-size;
+        }
     }
 
     &__content--center {

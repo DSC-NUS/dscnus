@@ -16,6 +16,11 @@
         display: flex;
         justify-content: space-evenly;
         padding: $l-size $s-size;
+
+        @media only screen and (max-width: $bp-medium) {
+            flex-direction: column;
+            padding: $m-size;
+        }
     }
 
     &__form {
@@ -66,6 +71,14 @@
 
     &__alternatives {
         padding: 10rem 0;
+
+        @media only screen and (max-width: $bp-small) {
+            padding: 5rem;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            padding: 3rem;
+        }
     }
 
     &__alternatives-heading {

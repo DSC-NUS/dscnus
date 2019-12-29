@@ -3,15 +3,31 @@
     background-image: linear-gradient(to right bottom, rgba($color-dark-yellow-grey, 0.6), rgba($color-dark-yellow-grey, 0.6)), url("../../assets/HomePage/homepage.jpg");
     background-size: cover;
     background-position: top;
-    position: relative;
-    min-height: 400px;
+    // position: relative;
+    // min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &__text-box {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
+        width: 50%;
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+        // text-align: center;
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 75%;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            width: 90%;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            width: 100%;
+        }
     }
 }
 
@@ -24,6 +40,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @media only screen and (max-width: $bp-smallest) {
+            flex-direction: column;
+        }
     }
 
     &__image-box {
@@ -43,6 +62,10 @@
     &__text-box {
         padding: $l-size;
         text-align: center;
+
+        @media only screen and (max-width: $bp-smallest) {
+            padding: $m-size;
+        }
     }
 }
 
@@ -58,9 +81,17 @@
     text-align: center;
     padding: $l-size;
 
+    @media only screen and (max-width: $bp-smallest) {
+        padding: $m-size
+    }
+
     &__text-box {
         padding: $l-size;
         text-align: center;
+
+        @media only screen and (max-width: $bp-smallest) {
+            padding: $m-size
+        }
     }
 
     &__image-box {
@@ -70,11 +101,4 @@
 
 .recent-events__header {
     padding: $m-size;
-    @include respond(tab-port) {
-        font-size: 3rem;
-    }
-
-    @include respond(phone) {
-        font-size: 2.5rem;
-    }
 }

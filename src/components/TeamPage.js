@@ -13,7 +13,7 @@ const TeamPage = () => (
         <header class="home-header team-header">
             <div class="home-header__text-box">
                 <h1 class="heading-primary">
-                    <span class="heading-primary--main">Our Core Team</span>
+                    <span class="heading-primary--main">Our Team</span>
                 </h1>
             </div>
         </header>

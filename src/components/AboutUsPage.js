@@ -35,13 +35,12 @@ const AboutUsPage = () => (
             <div className="section__content">
                 <div className="section__image-box">
                     <div> 
-                        {/* TODO: Change to more appropriate video */}
                         <iframe title="Developer Student Clubs Leaders Summit - Goa 2018" 
                         frameborder="0" 
                         border="0"
                         allowfullscreen
                         aria-label="YouTube Video, Developer Student Clubs Leaders Summit - Goa 2018" 
-                        src="https://www.youtube.com/embed/wTLe8nwJ_Lw" 
+                        src="https://www.youtube.com/embed/DcN_hcHXR_0" 
                         className="section__video"></iframe>
                     </div>
                 </div>

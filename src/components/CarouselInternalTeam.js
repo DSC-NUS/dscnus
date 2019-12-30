@@ -49,7 +49,6 @@ class CarouselHome extends Component {
                         />
                     </Grid.Column>
                     <Grid.Column width = {10}>
-                        {/* #TODO: Resize the images  */}
                         <Card
                         image={imageName}
                         header={property.header}

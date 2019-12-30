@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
-import { Grid, Divider } from 'semantic-ui-react';
+import { Grid, Divider, Segment } from 'semantic-ui-react';
 import PageHeader from './PageHeader.js';
 import Footer from './Footer.js'
 import CarouselHome from './CarouselHome.js';
 import whoarewe from '../assets/HomePage/whoarewe.jpg'
 import whatwedo from '../assets/HomePage/whatwedo.jpg'
+import event1 from '../assets/HomePage/event1.jpg'
+import event2 from '../assets/HomePage/event2.jpg'
+import event3 from '../assets/HomePage/event3.jpg'
 
 class Home extends Component {
     render() {
@@ -57,7 +60,35 @@ class Home extends Component {
                     <h2 class="heading-secondary recent-events__header">
                         Recent Events
                     </h2>
-                    {<CarouselHome/>}
+                    <Grid columns={3} divided>
+                        <Grid.Row stretched>
+                        <Grid.Column>
+                            <Segment>
+                                <div>
+                                    <img className="section__image" alt="SEA Google Developers Submit" src={event1} />
+                                    <h2>SEA Google Developer Submit</h2>
+                                </div>
+                            </Segment>
+                        </Grid.Column>
+                        <Grid.Column>
+                            <Segment>
+                                <div>
+                                    <img className="section__image" alt="Core Team" src={event2} />
+                                    <h2>Launch of DSC NUS Core Team</h2> 
+                                </div>
+                            </Segment>
+                        </Grid.Column>
+                        <Grid.Column>
+                            <Segment>
+                                <div>
+                                    <img className="section__image" alt="Grand Launch Party" src={event3} />
+                                    <h2>DSC NUS Grand Launch Party!</h2>
+                                </div>
+                            </Segment>
+
+                        </Grid.Column>
+                        </Grid.Row>
+                    </Grid> 
                 </section>
                 {<Footer />}
             </div>

@@ -39,6 +39,7 @@ const TeamPage = () => (
             <p>The Internal Division focuses on running the club and managing activities and events related to the school and students. Find out more here.</p>
         </div>
         <section className="section">
+            {/* #TODO: Change the size of the card to fit the entire column */}
            {<CarouselInternalTeam/>}
         </section>
 

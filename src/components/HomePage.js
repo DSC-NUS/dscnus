@@ -60,35 +60,26 @@ class Home extends Component {
                     <h2 class="heading-secondary recent-events__header">
                         Recent Events
                     </h2>
-                    <Grid columns={3} divided>
-                        <Grid.Row stretched>
-                        <Grid.Column>
-                            <Segment>
-                                <div>
-                                    <img className="section__image" alt="SEA Google Developers Submit" src={event1} />
-                                    <h2>SEA Google Developer Submit</h2>
-                                </div>
-                            </Segment>
-                        </Grid.Column>
-                        <Grid.Column>
-                            <Segment>
-                                <div>
-                                    <img className="section__image" alt="Core Team" src={event2} />
-                                    <h2>Launch of DSC NUS Core Team</h2> 
-                                </div>
-                            </Segment>
-                        </Grid.Column>
-                        <Grid.Column>
-                            <Segment>
-                                <div>
-                                    <img className="section__image" alt="Grand Launch Party" src={event3} />
-                                    <h2>DSC NUS Grand Launch Party!</h2>
-                                </div>
-                            </Segment>
-
-                        </Grid.Column>
-                        </Grid.Row>
-                    </Grid> 
+                    <div className="recents">
+                        <div className="recents__card">
+                            <div className="recents__image-box">
+                                <img alt="SEA Google Developers Submit" src={event1} />
+                            </div>
+                            <h2>SEA Google Developer Submit</h2>
+                        </div>
+                        <div className="recents__card">
+                            <div className="recents__image-box">
+                                <img alt="Core Team" src={event2} />           
+                            </div>
+                            <h2>Launch of DSC NUS Core Team</h2> 
+                        </div>
+                        <div className="recents__card">
+                            <div className="recents__image-box">
+                                <img alt="Grand Launch Party" src={event3} />
+                            </div>
+                            <h2>DSC NUS Grand Launch Party!</h2>
+                        </div>
+                    </div>
                 </section>
                 {<Footer />}
             </div>

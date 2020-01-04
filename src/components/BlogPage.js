@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import moment from 'moment';
+import path from 'path';
 import { Icon, Message } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import PageHeader from './PageHeader';
 import Footer from './Footer';
 import logo from '../assets/HomePage/event1.jpg';
+import constants from '../data/constants';
 
 class BlogPage extends Component {
     state = {
@@ -15,7 +17,7 @@ class BlogPage extends Component {
     }
 
     fetchArticles = () => {
-        fetch('http://localhost:3001/articles', {
+        fetch(path.join(constants["backend-url"], 'articles'), {
             method: "GET"
         }).then(response => response.json()
         ).then((response) => {
@@ -29,7 +31,7 @@ class BlogPage extends Component {
     }
 
     fetchRecents = () => {
-        fetch("http://localhost:3001/articles?sortBy=created_at:desc", {
+        fetch(path.join(constants["backend-url"], 'articles?sortBy=created_at:desc'), {
             method: "GET"
         }).then((response) => {
             return response.json()
@@ -51,7 +53,7 @@ class BlogPage extends Component {
     }
 
     handleChange(e) {
-        console.log("state " + this.state)
+        // console.log("state " + this.state)
         let currentList = this.state.articles;
         let newList = [];
         if (e.target.value !== "") {

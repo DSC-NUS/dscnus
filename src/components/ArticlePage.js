@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import moment from 'moment';
+import path from 'path';
 import {  } from 'semantic-ui-react';
 import PageHeader from './PageHeader';
 import Footer from './Footer';
 import event from '../assets/HomePage/event1.jpg';
 import ReactHtmlParser from 'react-html-parser';
+import constants from '../data/constants';
 
 class ArticlePage extends Component {
     state = {
@@ -15,7 +17,7 @@ class ArticlePage extends Component {
     }
 
     componentDidMount() {
-        fetch(`http://localhost:3001/articles/${this.props.match.params.id}`, {
+        fetch(path.join(constants["backend-url"], `articles/${this.props.match.params.id}`), {
             method: "GET"
         }).then(response => response.json()
         ).then((response) => {

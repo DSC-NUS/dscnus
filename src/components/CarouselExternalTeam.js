@@ -39,7 +39,7 @@ class CarouselHome extends Component {
         return(
             <div class="team__carousel">
                 <Grid centered>
-                    <Grid.Column width={3}>
+                    <Grid.Column width={3} style={{textAlign: "center"}}>
                     <Button 
                             circular 
                             icon='left chevron' 
@@ -54,9 +54,10 @@ class CarouselHome extends Component {
                         image={imageName}
                         header={property.header}
                         description={property.description}
+                        style={{width: "100%"}}
                         />
                     </Grid.Column>
-                    <Grid.Column width = {3}>
+                    <Grid.Column width = {3} style={{textAlign: "center"}}>
                     <Button 
                             circular 
                             icon='right chevron' 

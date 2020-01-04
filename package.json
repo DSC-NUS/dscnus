@@ -44,5 +44,8 @@
   },
   "devDependencies": {
     "react-alice-carousel": "^1.17.0"
+  },
+  "engines": {
+    "node": "12.14.0"
   }
 }

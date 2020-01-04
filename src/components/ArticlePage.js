@@ -15,6 +15,7 @@ class ArticlePage extends Component {
     }
 
     componentDidMount() {
+        window.scrollTo(0, 0)
         fetch(`http://localhost:3001/articles/${this.props.match.params.id}`, {
             method: "GET"
         }).then(response => response.json()

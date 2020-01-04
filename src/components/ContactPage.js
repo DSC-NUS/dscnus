@@ -66,9 +66,9 @@ class ContactPage extends Component {
         this.setState({ message: e.target.value});
     }
 
-    // componentDidMount() {
-    //     window.scrollTo(0, 0);
-    // }
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
 
     render() {
         return (

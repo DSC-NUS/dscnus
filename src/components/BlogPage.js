@@ -48,6 +48,7 @@ class BlogPage extends Component {
         this.fetchArticles()
         this.fetchRecents()
         this.handleChange = this.handleChange.bind(this);
+        window.scrollTo(0, 0)
     }
 
     handleChange(e) {

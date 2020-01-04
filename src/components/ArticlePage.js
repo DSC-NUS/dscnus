@@ -17,6 +17,7 @@ class ArticlePage extends Component {
     }
 
     componentDidMount() {
+        window.scrollTo(0, 0)
         fetch(path.join(constants["backend-url"], `articles/${this.props.match.params.id}`), {
             method: "GET"
         }).then(response => response.json()

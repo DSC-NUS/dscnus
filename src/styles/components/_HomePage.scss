@@ -100,5 +100,55 @@
 }
 
 .recent-events__header {
-    padding: $m-size;
+    padding-bottom: $m-size;
+}
+
+.recents {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    @media only screen and (max-width: 62.5em) {
+        flex-direction: column;
+    }
+
+    &__image-box {
+        height: 20rem;
+        img {
+            height: 100%;
+            // height: auto;
+            display: block;
+            object-fit: cover;
+            margin: 0 auto;
+        }
+
+        @media only screen and (max-width: 62.5em) {
+            flex: 0 0 50%;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    &__card {
+        flex: 0 0 30%;
+        padding: $l-size $m-size;
+        box-shadow: 0 .2rem .8rem rgba(0,0,0,.2);
+
+        display: flex;
+        flex-direction: column;
+
+        &:not(:last-child) {
+            margin-right: $m-size;
+            @media only screen and (max-width: 62.5em) {
+                margin-bottom: $m-size;
+                margin-right: 0;
+            }
+        }
+        
+        @media only screen and (max-width: $bp-smallest) {
+            padding: $m-size $s-size;
+        }
+    }
 }

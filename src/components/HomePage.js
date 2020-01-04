@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
-import { Grid, Divider } from 'semantic-ui-react';
+import { Divider } from 'semantic-ui-react';
 import PageHeader from './PageHeader.js';
 import Footer from './Footer.js'
-import CarouselHome from './CarouselHome.js';
 import whoarewe from '../assets/HomePage/whoarewe.jpg'
 import whatwedo from '../assets/HomePage/whatwedo.jpg'
+import event1 from '../assets/HomePage/event1.jpg'
+import event2 from '../assets/HomePage/event2.jpg'
+import event3 from '../assets/HomePage/event3.jpg'
 
 class Home extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
     render() {
         return (
             <div>
@@ -49,7 +54,7 @@ class Home extends Component {
                                 What we do?
                             </h2>
                             <p>Our team have a shared purpose and drive to help local communities thrive.  We strive to bring technology to the people who have limited access, giving them more opportunities to lead better lives. </p>
-                            <a href="/team" className="btn btn-yellow">About Us</a>
+                            <a href="/about" className="btn btn-yellow">About Us</a>
                         </div>
                     </div>
                 </section>
@@ -57,7 +62,26 @@ class Home extends Component {
                     <h2 class="heading-secondary recent-events__header">
                         Recent Events
                     </h2>
-                    {<CarouselHome/>}
+                    <div className="recents">
+                        <div className="recents__card">
+                            <div className="recents__image-box">
+                                <img alt="SEA Google Developers Submit" src={event1} />
+                            </div>
+                            <h2>SEA Google Developer Submit</h2>
+                        </div>
+                        <div className="recents__card">
+                            <div className="recents__image-box">
+                                <img alt="Core Team" src={event2} />           
+                            </div>
+                            <h2>Launch of DSC NUS Core Team</h2> 
+                        </div>
+                        <div className="recents__card">
+                            <div className="recents__image-box">
+                                <img alt="Grand Launch Party" src={event3} />
+                            </div>
+                            <h2>DSC NUS Grand Launch Party!</h2>
+                        </div>
+                    </div>
                 </section>
                 {<Footer />}
             </div>

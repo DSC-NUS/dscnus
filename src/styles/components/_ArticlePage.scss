@@ -13,17 +13,18 @@
     }
 
     &__image-box {
-        height: 80vh;
         align-self: center;
         text-align: center;
 
         img {
-            height: 100%;
+            width: 100%;
+            height: auto;
+            display: block;
         }
     }
 
     &__content {
-        padding: $l-size 20rem;
+        padding: $l-size;
         margin: 0 auto;
         h3 {
              text-align: left !important;

@@ -15,7 +15,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 
 const App = ({ base }) => (
-    <BrowserRouter basename={base}>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
         <div className="outer_div">
             <Switch>
                 <Route path="/" component={HomePage} exact={true}/>
@@ -30,10 +30,6 @@ const App = ({ base }) => (
         </div>
     </BrowserRouter>
 );
-
-App.propTypes = {
-    base: PropTypes.string,
-};
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

@@ -50,6 +50,7 @@ class BlogPage extends Component {
         this.fetchArticles()
         this.fetchRecents()
         this.handleChange = this.handleChange.bind(this);
+        window.scrollTo(0, 0)
     }
 
     handleChange(e) {
@@ -131,7 +132,7 @@ class BlogPage extends Component {
                             <div className="card__content">
                                 <h2 className="heading-tertiary">Recent Posts</h2>
                                 <ul className="blog__list">
-                                    <li className="blog__list-item"><a href='blog/123'>Title</a></li>
+                                    <li className="blog__list-item"><a href='/blog/123'>Title</a></li>
                                     <li className="blog__list-item"><a href='/blog/123'>Title</a></li>
                                     {this.state.recents && this.state.recents.constructor === Array && this.state.recents.map((recent) => (
                                         <li className="blog__list-item" key={recent._id}><a href={`/blog/${recent._id}`}>{recent.title}</a></li>

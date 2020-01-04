@@ -37,7 +37,7 @@ class Home extends Component {
                                 Who Are We?
                             </h2>
                             <p>DSC NUS is made up of people from diverse backgrounds, majors, years of study, genders and races.<br/>We come together to push our mission of #TechforGood.</p>
-                            <a href="/team" className="btn btn-yellow">Our Team</a>
+                            <a href="/dscnus/team" className="btn btn-yellow">Our Team</a>
                         </div>
                         <div className="section__image-box">
                             <img src={whoarewe} alt="Who Are We" className="section__image"/>
@@ -54,7 +54,7 @@ class Home extends Component {
                                 What we do?
                             </h2>
                             <p>Our team have a shared purpose and drive to help local communities thrive.  We strive to bring technology to the people who have limited access, giving them more opportunities to lead better lives. </p>
-                            <a href="/about" className="btn btn-yellow">About Us</a>
+                            <a href="/dscnus/about" className="btn btn-yellow">About Us</a>
                         </div>
                     </div>
                 </section>

@@ -37,7 +37,7 @@ class PageHeader extends Component {
                     <Menu stackable inverted={this.state.inverted} className="menu">
                         <Menu.Item
                             as={Link}
-                            to='/'>
+                            to='/dscnus'>
                         <img src={logo} alt="DSC NUS Logo" className="logo"/>
                         </Menu.Item>
                         <Menu.Menu position="right">
@@ -57,14 +57,14 @@ class PageHeader extends Component {
                                         onClick={this.handleItemClick}
                                         as={Link}
                                         active={this.state.activeItem === 'about'}
-                                        to='/about'>
+                                        to='/dscnus/about'>
                                             About Us
                                     </Dropdown.Item>
                                     <Dropdown.Item
                                         onClick={this.handleItemClick}
                                         as={Link}
                                         active={this.state.activeItem === 'team'}
-                                        to='/team'>
+                                        to='/dscnus/team'>
                                         Our Core Team
                                     </Dropdown.Item>
                                 </Dropdown.Menu>
@@ -75,7 +75,7 @@ class PageHeader extends Component {
                                 active={this.state.activeItem === 'projects'}
                                 onClick={this.handleItemClick}
                                 as={Link}
-                                to='/projects'>
+                                to='/dscnus/projects'>
                             Our Projects
                             </Menu.Item>
 
@@ -84,7 +84,7 @@ class PageHeader extends Component {
                                 active={this.state.activeItem === 'blog'}
                                 onClick={this.handleItemClick}
                                 as={Link}
-                                to='/blog'>
+                                to='/dscnus/blog'>
                             Blog
                             </Menu.Item>
 
@@ -93,7 +93,7 @@ class PageHeader extends Component {
                                 active={this.state.activeItem === 'contact'}
                                 onClick={this.handleItemClick}
                                 as={Link}
-                                to='/contact'>
+                                to='/dscnus/contact'>
                             Contact Us
                             </Menu.Item>
                         </Menu.Menu>
@@ -118,7 +118,7 @@ class PageHeader extends Component {
                                 name='home'
                                 active={this.state.activeItem === 'home'}
                                 as={Link}
-                                to="/"
+                                to="/dscnus/"
                                 onClick={this.handleItemClick}
                             >
                             Home
@@ -130,14 +130,14 @@ class PageHeader extends Component {
                                         onClick={this.handleItemClick}
                                         as={Link}
                                         active={this.state.activeItem === 'about'}
-                                        to='/about'>
+                                        to='/dscnus/about'>
                                             About Us
                                     </Dropdown.Item>
                                     <Dropdown.Item
                                         onClick={this.handleItemClick}
                                         as={Link}
                                         active={this.state.activeItem === 'team'}
-                                        to='/team'>
+                                        to='/dscnus/team'>
                                         Our Core Team
                                     </Dropdown.Item>
                                 </Dropdown.Menu>
@@ -148,7 +148,7 @@ class PageHeader extends Component {
                                 active={this.state.activeItem === 'projects'}
                                 onClick={this.handleItemClick}
                                 as={Link}
-                                to='/projects'>
+                                to='/dscnus/projects'>
                             Our Projects
                             </Menu.Item>
 
@@ -157,7 +157,7 @@ class PageHeader extends Component {
                                 active={this.state.activeItem === 'blog'}
                                 onClick={this.handleItemClick}
                                 as={Link}
-                                to='/blog'>
+                                to='/dscnus/blog'>
                             Blog
                             </Menu.Item>
 
@@ -166,7 +166,7 @@ class PageHeader extends Component {
                                 active={this.state.activeItem === 'contact'}
                                 onClick={this.handleItemClick}
                                 as={Link}
-                                to='/contact'>
+                                to='/dscnus/contact'>
                             Contact Us
                             </Menu.Item>
                         </Sidebar>

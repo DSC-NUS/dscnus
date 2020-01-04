@@ -18,13 +18,13 @@ const App = ({ base }) => (
     <BrowserRouter basename={base}>
         <div className="outer_div">
             <Switch>
-                <Route path="/dscnus" component={HomePage} exact={true}/>
-                <Route path="/dscnus/about" component={AboutUsPage} />
-                <Route path="/dscnus/team" component={TeamPage} />
-                <Route path="/dscnus/contact" component={ContactPage} />
-                <Route path="/dscnus/projects" component={ProjectsPage} />
-                <Route path="/dscnus/blog/:id" component={ArticlePage} />
-                <Route path="/dscnus/blog" component={BlogPage}/>
+                <Route path="/" component={HomePage} exact={true}/>
+                <Route path="/about" component={AboutUsPage} />
+                <Route path="/team" component={TeamPage} />
+                <Route path="/contact" component={ContactPage} />
+                <Route path="/projects" component={ProjectsPage} />
+                <Route path="/blog/:id" component={ArticlePage} />
+                <Route path="/blog" component={BlogPage}/>
                 <Route component={NotFoundPage} />
             </Switch>
         </div>
@@ -35,7 +35,7 @@ App.propTypes = {
     base: PropTypes.string,
 };
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App base={process.env.PUBLIC_URL}/>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

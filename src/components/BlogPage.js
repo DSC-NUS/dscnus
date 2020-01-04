@@ -17,7 +17,7 @@ class BlogPage extends Component {
     }
 
     fetchArticles = () => {
-        fetch(path.join(constants["backend-url"], 'articles'), {
+        fetch(constants["backend-url"] + '/articles', {
             method: "GET"
         }).then(response => response.json()
         ).then((response) => {
@@ -31,7 +31,7 @@ class BlogPage extends Component {
     }
 
     fetchRecents = () => {
-        fetch(path.join(constants["backend-url"], 'articles?sortBy=created_at:desc'), {
+        fetch(constants["backend-url"] + '/articles?sortBy=created_at:desc', {
             method: "GET"
         }).then((response) => {
             return response.json()

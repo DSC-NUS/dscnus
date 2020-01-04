@@ -11,11 +11,11 @@ const Footer = () => (
                 <div className="footer__left">
                     <div className="footer__navigation">
                         <ul className="footer__list">
-                            <li className="footer__item"><a href="/dscnus/about" className="footer__link">About Us</a></li>
-                            <li className="footer__item"><a href="/dscnus/team" className="footer__link">Our Core Team</a></li>
-                            <li className="footer__item"><a href="/dscnus/projects" className="footer__link">Our Projects</a></li>
-                            <li className="footer__item"><a href="/dscnus/blog" className="footer__link">Blog</a></li>
-                            <li className="footer__item"><a href="/dscnus/contact" className="footer__link">Contact Us</a></li>
+                            <li className="footer__item"><a href="/about" className="footer__link">About Us</a></li>
+                            <li className="footer__item"><a href="/team" className="footer__link">Our Core Team</a></li>
+                            <li className="footer__item"><a href="/projects" className="footer__link">Our Projects</a></li>
+                            <li className="footer__item"><a href="/blog" className="footer__link">Blog</a></li>
+                            <li className="footer__item"><a href="/contact" className="footer__link">Contact Us</a></li>
                         </ul>
                     </div>
                     <p className="footer__disclaimer">

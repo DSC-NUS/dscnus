@@ -15,7 +15,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 
 const App = ({ base }) => (
-    <BrowserRouter basename={base}>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
         <div className="outer_div">
             <Switch>
                 <Route path="/" component={HomePage} exact={true}/>
@@ -31,11 +31,7 @@ const App = ({ base }) => (
     </BrowserRouter>
 );
 
-App.propTypes = {
-    base: PropTypes.string,
-};
-
-ReactDOM.render(<App base={process.env.PUBLIC_URL}/>, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

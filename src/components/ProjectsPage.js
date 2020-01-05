@@ -3,6 +3,10 @@ import { Icon } from 'semantic-ui-react';
 import PageHeader from './PageHeader';
 import Footer from './Footer';
 import project1 from '../assets/ProjectsPage/project1.png';
+import workshop from '../assets/ProjectsPage/workshop.png'
+import hackathon from '../assets/ProjectsPage/hackathon.svg'
+import teamb from '../assets/ProjectsPage/teamb.png'
+import teamc from '../assets/ProjectsPage/teamc.png'
 
 class ProjectsPage extends Component {
     componentDidMount() {
@@ -31,7 +35,7 @@ class ProjectsPage extends Component {
                     <div className="projects">
                         <div className="card-horizontal projects__project">
                             <div className="card-horizontal__image-box">
-                                <img src={project1} alt="event"/>
+                                <img src={workshop} alt="event"/>
                             </div>
                             <div className="card-horizontal__content">
                                 <h2 class="heading-secondary">
@@ -44,7 +48,7 @@ class ProjectsPage extends Component {
                         </div>
                         <div className="card-horizontal projects__project">
                             <div className="card-horizontal__image-box">
-                                <img src={project1} alt="event"/>
+                                <img src={hackathon} alt="event"/>
                             </div>
                             <div className="card-horizontal__content">
                                 <h2 class="heading-secondary">
@@ -73,7 +77,7 @@ class ProjectsPage extends Component {
                             <h2 class="heading-secondary">
                                 Team A
                             </h2>
-                            <p>DSC NUS is an inclusive community, nurturing learners of technology to engage and impact communities</p>
+                            <h3>Potential Projects</h3>
                             <ul className="projects__list">
                                 <span className="flex">
                                     <Icon name='angle right' link size='small' className="projects__list-icon"/> 
@@ -92,64 +96,58 @@ class ProjectsPage extends Component {
                                     <li className="projects__list-item">Sign language to speech/text conversion</li>
                                 </span>
                             </ul>
+                            <br></br>
+                            <p>More details coming soon!</p>
                         </div>
                     </div>
                     <div className="card-horizontal projects__project">
                         <div className="card-horizontal__image-box">
-                            <img src={project1} alt="event"/>
+                            <img src={teamb} alt="event"/>
                         </div>
                         <div className="card-horizontal__content">
                             <h2 class="heading-secondary">
                                 Team B
                             </h2>
-                            <p>DSC NUS is an inclusive community, nurturing learners of technology to engage and impact communities</p>
+                            <h3>Potential Projects</h3>
                             <ul className="projects__list">
                                 <span className="flex">
                                     <Icon name='angle right' link size='small' className="projects__list-icon"/> 
-                                    <li className="projects__list-item">Enhance learning for kids with autism</li>
+                                    <li className="projects__list-item">Helping low-income families get better access to basic necessities.</li>
                                 </span>
                                 <span className="flex">
                                     <Icon name='angle right' link size='small' className="projects__list-icon"/> 
-                                    <li className="projects__list-item">Tackle food wastage in NUS Residential Colleges/Halls </li>
-                                </span>
-                                <span className="flex">
-                                    <Icon name='angle right' link size='small' className="projects__list-icon"/> 
-                                    <li className="projects__list-item">Enhance eye-test procedures</li>
-                                </span>
-                                <span className="flex">
-                                    <Icon name='angle right' link size='small' className="projects__list-icon"/> 
-                                    <li className="projects__list-item">Sign language to speech/text conversion</li>
+                                    <li className="projects__list-item">Helping companies reframe corporate giving and inspiring more strategic forms of giving. </li>
                                 </span>
                             </ul>
+                            <br></br>
+                            <p>More details coming soon!</p>
                         </div>
                     </div>
                     <div className="card-horizontal projects__project">
                         <div className="card-horizontal__image-box">
-                            <img src={project1} alt="event"/>
+                            <img src={teamc} alt="event"/>
                         </div>
                         <div className="card-horizontal__content">
                             <h2 class="heading-secondary">
                                 Team C
                             </h2>
-                            <p>DSC NUS is an inclusive community, nurturing learners of technology to engage and impact communities</p>
+                            <h3>Potential Projects</h3>
                             <ul className="projects__list">
                                 <span className="flex">
                                     <Icon name='angle right' link size='small' className="projects__list-icon"/> 
-                                    <li className="projects__list-item">Enhance learning for kids with autism</li>
+                                    <li className="projects__list-item">To connect disadvantaged youth across Singapore to attain equal access to opportunities</li>
                                 </span>
                                 <span className="flex">
                                     <Icon name='angle right' link size='small' className="projects__list-icon"/> 
-                                    <li className="projects__list-item">Tackle food wastage in NUS Residential Colleges/Halls </li>
+                                    <li className="projects__list-item">To prevent fraud for NPOs and SMEs by implementing a financially secure system  </li>
                                 </span>
                                 <span className="flex">
                                     <Icon name='angle right' link size='small' className="projects__list-icon"/> 
-                                    <li className="projects__list-item">Enhance eye-test procedures</li>
-                                </span>
-                                <span className="flex">
-                                    <Icon name='angle right' link size='small' className="projects__list-icon"/> 
-                                    <li className="projects__list-item">Sign language to speech/text conversion</li>
+                                    <li className="projects__list-item">To financially empower disadvantaged youths by creating a platform that allows them to demonstrate their talents and build their portfolio</li>
                                 </span>
                             </ul>
+                            <br></br>
+                            <p>More details coming soon!</p>
                         </div>
                     </div>
                 </div>

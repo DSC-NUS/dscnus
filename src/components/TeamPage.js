@@ -33,8 +33,8 @@ class TeamPage extends Component {
                     <Card
                     style={{margin: "0 auto", width: "70vh"}}
                     image={imagePath(`./ANN_3566.jpg`)}
-                    header="Header"
-                    description="Description"
+                    header="Leads and General Secretaries"
+                  
                     />
                 </section>    
 
@@ -45,7 +45,7 @@ class TeamPage extends Component {
                     <p>The Internal Division focuses on running the club and managing activities and events related to the school and students. Find out more here.</p>
                 </div>
                 <section className="section">
-                    {/* #TODO: Change the size of the card to fit the entire column */}
+
                 {<CarouselInternalTeam/>}
                 </section>
 

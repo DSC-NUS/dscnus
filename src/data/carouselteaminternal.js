@@ -26,21 +26,21 @@ const carouselhomedata = {
         "index": 3,
         "picture": "./Finance.jpg",
         "header": "Finance Team",
-        "description": "Headed by Esther"
+        "description": "Headed by Esther Soong"
     },
     {
         "_id": "Partnerships",
         "index": 4,
         "picture": "./Partnership.jpg",
         "header": "Partnerships Team",
-        "description": "Headed by Tong Yu Shan"
+        "description": "Headed by Tiong Yu Shan"
     },
     {
         "_id": "People",
         "index": 5,
         "picture": "./People.jpg",
         "header": "People Team",
-        "description": "Headed by Siska"
+        "description": "Headed by Siska Roselina"
     },
     ]
 }

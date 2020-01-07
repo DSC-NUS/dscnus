@@ -3,6 +3,7 @@ import { Icon, Message } from 'semantic-ui-react';
 import PageHeader from './PageHeader';
 import Footer from './Footer';
 import axios from 'axios';
+import constants from '../data/constants';
 
 class ContactPage extends Component {
     state = {
@@ -28,7 +29,7 @@ class ContactPage extends Component {
 
         axios({
             method: 'post',
-            url: 'http://localhost:3001/send',
+            url: constants["backend-url"] + '/send',
             timeout: 3000, 
             data: {
               ...this.state

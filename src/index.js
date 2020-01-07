@@ -15,7 +15,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 
 const App = ({ base }) => (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename={base}>
         <div className="outer_div">
             <Switch>
                 <Route path="/" component={HomePage} exact={true}/>

@@ -28,7 +28,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts build",
+    "start": "node server.js",
     "build": "react-scripts build",
     "dev": "node server.js",
     "test": "react-scripts test",
@@ -53,5 +53,5 @@
     "gh-pages": "^2.1.1",
     "react-alice-carousel": "^1.17.0"
   },
-  "homepage": "https://dsc-nus.github.io/dscnus/"
+  "homepage": "."
 }

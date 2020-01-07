@@ -53,5 +53,5 @@
     "gh-pages": "^2.1.1",
     "react-alice-carousel": "^1.17.0"
   },
-  "homepage": "."
+  "homepage": "https://dscnus-frontend.herokuapp.com"
 }

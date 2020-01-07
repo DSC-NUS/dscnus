@@ -1,31 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "769d62b3b42c689237d0344909b269a2",
+    "revision": "d9c12d0b5e96ee341bb8efcedc65daee",
     "url": "/dscnus/index.html"
   },
   {
-    "revision": "ce7d2e13ff370345a498",
-    "url": "/dscnus/static/css/2.9bdee86c.chunk.css"
+    "revision": "1acb31f50268a43fe2e0",
+    "url": "/dscnus/static/css/2.d0091563.chunk.css"
   },
   {
-    "revision": "122f437af8960b87e7d3",
-    "url": "/dscnus/static/css/main.2dd859fe.chunk.css"
+    "revision": "6d74c0e378b2a767103a",
+    "url": "/dscnus/static/css/main.869868d9.chunk.css"
   },
   {
-    "revision": "ce7d2e13ff370345a498",
-    "url": "/dscnus/static/js/2.31e767d0.chunk.js"
+    "revision": "1acb31f50268a43fe2e0",
+    "url": "/dscnus/static/js/2.fc66100c.chunk.js"
   },
   {
-    "revision": "21d42a4bf3460b0ba68550daf47cbd29",
-    "url": "/dscnus/static/js/2.31e767d0.chunk.js.LICENSE"
+    "revision": "6d74c0e378b2a767103a",
+    "url": "/dscnus/static/js/main.4bce897b.chunk.js"
   },
   {
-    "revision": "122f437af8960b87e7d3",
-    "url": "/dscnus/static/js/main.43ee7618.chunk.js"
-  },
-  {
-    "revision": "a94bbc857130c74e3cf9",
-    "url": "/dscnus/static/js/runtime-main.a4b68275.js"
+    "revision": "27efaefc071312ab4d50",
+    "url": "/dscnus/static/js/runtime-main.d530f5cc.js"
   },
   {
     "revision": "e702191f00e2cfa8a9b5ce1e1210162c",
@@ -120,6 +116,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dscnus/static/media/flags.9c74e172.png"
   },
   {
+    "revision": "891dfb436fb3af83663371ec0adf6ba0",
+    "url": "/dscnus/static/media/hackathon.891dfb43.svg"
+  },
+  {
     "revision": "bae8c21a2b9443a1e8767cce2558c89a",
     "url": "/dscnus/static/media/header.bae8c21a.jpg"
   },
@@ -172,11 +172,23 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dscnus/static/media/project1.33fd72c6.png"
   },
   {
+    "revision": "8afe40d6ee3032957d4f806d715525f2",
+    "url": "/dscnus/static/media/teamb.8afe40d6.png"
+  },
+  {
+    "revision": "68cd910d0a2e536373f79c474ffcca15",
+    "url": "/dscnus/static/media/teamc.68cd910d.png"
+  },
+  {
     "revision": "19ca977ab0086941a2aaf1c994cd2c21",
     "url": "/dscnus/static/media/whatwedo.19ca977a.jpg"
   },
   {
     "revision": "6a5230ee566f9c88931a7a9a8666a09f",
     "url": "/dscnus/static/media/whoarewe.6a5230ee.jpg"
+  },
+  {
+    "revision": "c23b4aba8daeb166b830ab5d8043744b",
+    "url": "/dscnus/static/media/workshop.c23b4aba.png"
   }
 ]);

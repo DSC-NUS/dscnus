@@ -10,7 +10,7 @@ import ProjectsPage from './components/ProjectsPage';
 import ContactPage from './components/ContactPage';
 import BlogPage from './components/BlogPage';
 import NotFoundPage from './components/NotFoundPage';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 

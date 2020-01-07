@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import moment from 'moment';
-import path from 'path';
 import {  } from 'semantic-ui-react';
 import PageHeader from './PageHeader';
 import Footer from './Footer';

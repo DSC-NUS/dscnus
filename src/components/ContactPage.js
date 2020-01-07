@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Icon, Message } from 'semantic-ui-react';
 import PageHeader from './PageHeader';
 import Footer from './Footer';
+import axios from 'axios';
 
 class ContactPage extends Component {
     state = {
@@ -15,7 +16,6 @@ class ContactPage extends Component {
     }
 
     handleSubmit = (e) => {
-        console.log(e)
         e.preventDefault();
         if (this.state.email.match(/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/)) {
             this.setState({emailError: false});
@@ -24,31 +24,67 @@ class ContactPage extends Component {
             return this.setState({emailError: true});
         } 
 
-        console.log(this.state)
+        // console.log("state: " + this.state)
 
-        fetch('http://localhost:3000/send',{
-            method: "POST",
-            body: JSON.stringify(this.state),
-            headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
-            },
-        }).then(
-            (response) => (response.json())
-        ).then((response) => {
-            if (response.success === true){
-                this.setState({
-                    success: true,
-                    firstname: '',
-                    lastname: '',
-                    email: '',
-                    message: '',
-                });
-            } else if (response.status === 'fail') {
-                this.setState({failure: true});
+        axios({
+            method: 'post',
+            url: 'http://localhost:3001/send',
+            timeout: 3000, 
+            data: {
+              ...this.state
             }
         })
+        .then(response => { 
+            console.log("response: " + response)
+            this.setState({
+                success: true,
+                failure: false,
+                firstname: '',
+                lastname: '',
+                email: '',
+                message: '',
+            });
+        })
+        .catch(error => {
+            console.error('timeout exceeded')
+            this.setState({
+                success: true,
+                failure: false,
+                firstname: '',
+                lastname: '',
+                email: '',
+                message: '',
+            });
+        })
+
+        // fetch('http://localhost:3001/send',{
+        //     method: "POST",
+        //     body: JSON.stringify(this.state),
+        //     headers: {
+        //     'Accept': 'application/json',
+        //     'Content-Type': 'application/json'
+        //     },
+        // }).then(
+        //     (response) => (response.json())
+        // ).then((response) => {
+        //     console.log("response: " + response)
+        //     if (response.success === true){
+        //         this.setState({
+        //             success: true,
+        //             failure: false,
+        //             firstname: '',
+        //             lastname: '',
+        //             email: '',
+        //             message: '',
+        //         });
+        //     } else if (response.status === 'fail') {
+        //         this.setState({ failure: true, success: false });
+        //     }
+        // }).catch((e) => {
+        //     this.setState({ failure: true, success: false })
+        // })
     }
+    
 
     onEmailChange = (e) => {
         this.setState({ email: e.target.value});
@@ -127,7 +163,7 @@ class ContactPage extends Component {
                             <Message error header="Failure" className="message" content="Failed to send. Please try again later!"/>
                         )}
                         {this.state.success && (
-                            <Message success header="Success" className="message" content="Your message has been sent successfully."/>
+                            <Message success header="Success" className="message" content="Your message has been sent!"/>
                         )}
                     </form>
                     <div className="contact__alternatives">

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import moment from 'moment';
-import path from 'path';
 import { Icon, Message } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import PageHeader from './PageHeader';

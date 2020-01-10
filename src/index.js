@@ -1,18 +1,19 @@
-import 'semantic-ui-css/semantic.min.css';
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './styles/styles.scss';
-import ArticlePage from './components/ArticlePage';
-import HomePage from './components/HomePage';
-import TeamPage from './components/TeamPage';
-import AboutUsPage from './components/AboutUsPage';
-import ProjectsPage from './components/ProjectsPage';
-import ContactPage from './components/ContactPage';
-import BlogPage from './components/BlogPage';
-import NotFoundPage from './components/NotFoundPage';
+import 'semantic-ui-css/semantic.min.css'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import './styles/styles.scss'
+import ArticlePage from './components/ArticlePage'
+import HomePage from './components/HomePage'
+import TeamPage from './components/TeamPage'
+import AboutUsPage from './components/AboutUsPage'
+import ProjectsPage from './components/ProjectsPage'
+import PostPage from './components/PostPage'
+import ContactPage from './components/ContactPage'
+import BlogPage from './components/BlogPage'
+import NotFoundPage from './components/NotFoundPage'
 // import PropTypes from 'prop-types';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import * as serviceWorker from './serviceWorker';
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import * as serviceWorker from './serviceWorker'
 
 const App = ({ base }) => (
     <BrowserRouter basename={base}>
@@ -21,6 +22,7 @@ const App = ({ base }) => (
                 <Route path="/" component={HomePage} exact={true}/>
                 <Route path="/about" component={AboutUsPage} />
                 <Route path="/team" component={TeamPage} />
+                <Route path="/post" component={PostPage} />
                 <Route path="/contact" component={ContactPage} />
                 <Route path="/projects" component={ProjectsPage} />
                 <Route path="/blog/:id" component={ArticlePage} />

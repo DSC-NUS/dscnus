@@ -4,7 +4,7 @@ import { Icon, Message } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import PageHeader from './PageHeader';
 import Footer from './Footer';
-import logo from '../assets/HomePage/event1.jpg';
+// import logo from '../assets/HomePage/event1.jpg';
 import constants from '../data/constants';
 
 class BlogPage extends Component {

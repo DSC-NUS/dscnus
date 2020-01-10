@@ -3,7 +3,7 @@ import moment from 'moment';
 import {  } from 'semantic-ui-react';
 import PageHeader from './PageHeader';
 import Footer from './Footer';
-import event from '../assets/HomePage/event1.jpg';
+// import event from '../assets/HomePage/event1.jpg';
 import ReactHtmlParser from 'react-html-parser';
 import constants from '../data/constants';
 

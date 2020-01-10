@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { slide as Burger } from 'react-burger-menu'
-import { Menu, Icon, Sidebar, Dropdown, Segment, Responsive, Header, Image } from 'semantic-ui-react'
+import { Menu, Dropdown, Segment, Responsive } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 import logo from '../assets/PageHeader/dscnuslogo.png'
 

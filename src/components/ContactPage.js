@@ -36,7 +36,7 @@ class ContactPage extends Component {
             }
         })
         .then(response => { 
-            console.log("response: " + response)
+            // console.log("response: " + response)
             this.setState({
                 success: true,
                 failure: false,
@@ -138,7 +138,7 @@ class ContactPage extends Component {
                         />
                         <label for="email">Email</label>
                         <input 
-                            type="textarea" 
+                            type="email" 
                             className="contact__form-input" 
                             placeholder="example@mail.com"
                             name="email"

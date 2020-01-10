@@ -82,7 +82,7 @@ class BlogPage extends Component {
                     <div className="blog__articles">
                     
                         {/* This is a template */}
-                        <Link className="card card--clickable blog__article" to="/blog/123">
+                        {/* <Link className="card card--clickable blog__article" to="/blog/123">
                             <div className="card__image-box">
                                 <img src={logo} alt="event"/>
                             </div>
@@ -99,14 +99,14 @@ class BlogPage extends Component {
                                 <h2>Title</h2>
                                 <p>Description</p>
                             </div>
-                        </Link>
+                        </Link> */}
                         {/* End of template */}
 
                         {!!this.state.filtered && this.state.filtered.constructor === Array && this.state.filtered.map((article) => (
                             <Link className="card card--clickable blog__article" to={`/blog/${article._id}`} key={article._id}>
-                                <div className="card__image-box">
+                                {/* <div className="card__image-box">
                                     <img src={logo} alt="event"/>
-                                </div>
+                                </div> */}
                                 <div className="card__content">
                                     <h2>{article.title}</h2>
                                     <p className="subheading">{moment(new Date(article.createdAt)).fromNow()}</p>

@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
-import { Menu, Icon, Sidebar, Dropdown, Segment, Responsive } from 'semantic-ui-react';
-import { Link } from 'react-router-dom';
+import React, { Component } from 'react'
+import { slide as Burger } from 'react-burger-menu'
+import { Menu, Icon, Sidebar, Dropdown, Segment, Responsive, Header, Image } from 'semantic-ui-react'
+import { Link } from 'react-router-dom'
 import logo from '../assets/PageHeader/dscnuslogo.png'
 
 class PageHeader extends Component {
@@ -100,7 +101,65 @@ class PageHeader extends Component {
                     </Menu>
                 </Responsive>
                 <Responsive maxWidth={600}>
-                    <Menu inverted>
+                    <Burger>
+                        <Menu.Item
+                            name='home'
+                            active={this.state.activeItem === 'home'}
+                            as={Link}
+                            to="/"
+                            onClick={this.handleItemClick}
+                        >
+                        Home
+                        </Menu.Item>
+
+                        <Menu.Item
+                            name="about"
+                            onClick={this.handleItemClick}
+                            as={Link}
+                            active={this.state.activeItem === 'about'}
+                            to='/about'
+                        >
+                                About Us
+                        </Menu.Item>
+                        
+                        <Menu.Item
+                            name="team"
+                            onClick={this.handleItemClick}
+                            as={Link}
+                            active={this.state.activeItem === 'team'}
+                            to='/team'
+                        >
+                            Our Core Team
+                        </Menu.Item>
+
+                        <Menu.Item
+                            name='projects'
+                            active={this.state.activeItem === 'projects'}
+                            onClick={this.handleItemClick}
+                            as={Link}
+                            to='/projects'>
+                        Our Projects
+                        </Menu.Item>
+
+                        <Menu.Item
+                            name='blog'
+                            active={this.state.activeItem === 'blog'}
+                            onClick={this.handleItemClick}
+                            as={Link}
+                            to='/blog'>
+                        Blog
+                        </Menu.Item>
+
+                        <Menu.Item
+                            name='contact'
+                            active={this.state.activeItem === 'contact'}
+                            onClick={this.handleItemClick}
+                            as={Link}
+                            to='/contact'>
+                        Contact Us
+                        </Menu.Item>
+                    </Burger>
+                    {/* <Menu inverted>
                         <Menu.Item header onClick={()=>this.setState({showMenu: true})}><Icon name="bars" size="large"/></Menu.Item>
                     </Menu>
                     <Sidebar.Pushable as={Segment} style={{margin: 0, border: "none"}}>
@@ -168,9 +227,9 @@ class PageHeader extends Component {
                                 as={Link}
                                 to='/contact'>
                             Contact Us
-                            </Menu.Item>
-                        </Sidebar>
-                    </Sidebar.Pushable>
+                            </Menu.Item> */}
+                        {/* </Sidebar> */}
+                    {/* </Sidebar.Pushable> */}
                 </Responsive>
             </div>
     )

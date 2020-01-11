@@ -17,6 +17,7 @@ class BlogPage extends Component {
 
     fetchArticles = () => {
         fetch(constants["backend-url"] + '/articles', {
+        // fetch('http://localhost:3001/articles', {
             method: "GET"
         }).then(response => response.json()
         ).then((response) => {
@@ -53,7 +54,6 @@ class BlogPage extends Component {
     }
 
     handleChange(e) {
-        // console.log("state " + this.state)
         let currentList = this.state.articles;
         let newList = [];
         if (e.target.value !== "") {
@@ -104,9 +104,9 @@ class BlogPage extends Component {
 
                         {!!this.state.filtered && this.state.filtered.constructor === Array && this.state.filtered.map((article) => (
                             <Link className="card card--clickable blog__article" to={`/blog/${article._id}`} key={article._id}>
-                                {/* <div className="card__image-box">
-                                    <img src={logo} alt="event"/>
-                                </div> */}
+                                <div className="card__image-box">
+                                    <img src={constants["backend-url"] + `/articles/${article._id}/picture`} alt="event"/>
+                                </div>
                                 <div className="card__content">
                                     <h2>{article.title}</h2>
                                     <p className="subheading">{moment(new Date(article.createdAt)).fromNow()}</p>
@@ -131,8 +131,10 @@ class BlogPage extends Component {
                             <div className="card__content">
                                 <h2 className="heading-tertiary">Recent Posts</h2>
                                 <ul className="blog__list">
-                                    <li className="blog__list-item"><a href='/blog/123'>Title</a></li>
-                                    <li className="blog__list-item"><a href='/blog/123'>Title</a></li>
+                                    {/* This is a template */}
+                                    {/* <li className="blog__list-item"><a href='/blog/123'>Title</a></li>
+                                    <li className="blog__list-item"><a href='/blog/123'>Title</a></li> */}
+                                    {/* End of template */}
                                     {this.state.recents && this.state.recents.constructor === Array && this.state.recents.map((recent) => (
                                         <li className="blog__list-item" key={recent._id}><a href={`/blog/${recent._id}`}>{recent.title}</a></li>
                                     ))}

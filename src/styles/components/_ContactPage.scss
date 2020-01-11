@@ -3,13 +3,17 @@
 
     &__header {
         text-align: center;
-        padding: 10rem;
+        // padding: 10rem;
+        height: 95vh;
         background-image: linear-gradient(to right bottom, rgba($color-blue, 0.65), rgba($color-teal, 0.65)), url(../../assets/ContactPage/contactbg.jpg);
         background-size: cover;
         background-position: center;
         // background-blend-mode: color;
         color: $color-white;
         text-shadow: .5rem .5rem .5rem rgba($color-dark-grey, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     &__content {
@@ -57,6 +61,11 @@
             font-weight: 100;
             color: $color-medium-grey;
         }
+    }
+
+    &__form-file {
+        padding: .7rem 2rem;
+        margin: 0.2rem 0;
     }
 
     &__form-textarea {

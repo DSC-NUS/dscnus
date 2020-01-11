@@ -40,9 +40,9 @@ class ArticlePage extends Component {
                         <p>{moment(new Date(this.state.createdAt)).format("DD MMM YYYY")}</p>
                     </div>
                     <div className="article__content">
-                        {/* <div className="article__image-box">
-                            <img src={event} alt="event"/>
-                        </div> */}
+                        <div className="article__image-box">
+                            <img src={constants["backend-url"] + `/articles/${this.state._id}/picture`} alt="event"/>
+                        </div>
                         {/* <h3 className="heading-tertiary">{this.state.title}</h3> */}
                         {/* <div dangerouslySetInnerHTML={{__html: this.htmlDecode(this.state.body)}} /> */}
                             {/* Kickstarting the DSC NUS journey with our first Core Team meeting held at the Google Developer Space on 26th September 2019.

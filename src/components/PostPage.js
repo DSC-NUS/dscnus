@@ -15,6 +15,13 @@ class PostPage extends Component {
         success: false
     }
 
+    constructor(props) {
+        super(props)
+        this.state = {
+            picture: null
+        }
+    }
+
     componentDidMount() {
         window.scrollTo(0, 0);
     }
@@ -22,17 +29,17 @@ class PostPage extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
 
-        // console.log("state: " + this.state)
+        console.log("e: " + e)
 
         axios({
             method: 'post',
             url: constants["backend-url"] + '/articles',
+            // url: 'http://localhost:3001/articles',
             data: {
               ...this.state
             }
         })
         .then(response => { 
-            console.log("response: " + response.status)
             if (response.status === 201) {
                 this.setState({
                     error: false,
@@ -42,9 +49,26 @@ class PostPage extends Component {
                     description: '',
                     password: ''
                 });
+                const data = new FormData()
+                data.append('picture', this.state.picture)
+                return axios.post(constants["backend-url"] + `/articles/${response.data.id}/picture`, data, {
+                // return axios.post(`http://localhost:3001/articles/${response.data.id}/picture`, data, { 
+                    // receive two    parameter endpoint url ,form data
+                })
             } else {
                 this.setState({
-                    error: false
+                    error: true
+                })
+            }
+        })
+        .then(response => { // then print response status
+            if (response.status === 201) {
+                this.setState({
+                    picture: null
+                })
+            } else {
+                this.setState({
+                    error: true
                 })
             }
         })
@@ -58,6 +82,13 @@ class PostPage extends Component {
 
     onTitleChange = (e) => {
         this.setState({ title: e.target.value});
+    }
+
+    onFileChange = (e) => {
+        this.setState({
+            picture: e.target.files[0],
+            loaded: 0,
+          })
     }
 
     onDescriptionChange = (e) => {
@@ -109,8 +140,18 @@ class PostPage extends Component {
                             placeholder="The main content of your article, in html code e.g. <p>This is an example...</p>"
                             name="body"
                             required
-                            value={this.state.message} 
+                            value={this.state.body} 
                             onChange={this.onBodyChange}
+                        />
+                        <label className="custom-file-label" htmlFor="fileupload">
+                            Choose Image
+                        </label>
+                        <input
+                            type="file"
+                            className="contact__form-file"
+                            id="fileupload"
+                            aria-describedby="inputGroupFileAddon01"
+                            onChange={this.onFileChange}
                         />
                         <label for="Message">Password</label>
                         <input 

@@ -118,7 +118,7 @@ class ContactPage extends Component {
                     <form className="contact__form" onSubmit={(event) => this.handleSubmit(event)}>
                         <h2 className="heading-tertiary">Contact Us</h2>
                         <p className="subheading contact__form-header">Please fill out the quick form and we'll get in touch with you shortly!</p>
-                        <label for="firstname">First Name</label>
+                        <label htmlFor="firstname">First Name</label>
                         <input 
                             type="text" 
                             className="contact__form-input" 
@@ -127,7 +127,7 @@ class ContactPage extends Component {
                             value={this.state.firstname} 
                             onChange={this.onFirstNameChange}
                         />
-                        <label for="lastname">Last Name</label>
+                        <label htmlFor="lastname">Last Name</label>
                         <input 
                             type="text" 
                             className="contact__form-input" 
@@ -136,7 +136,7 @@ class ContactPage extends Component {
                             value={this.state.lastname} 
                             onChange={this.onLastNameChange}
                         />
-                        <label for="email">Email</label>
+                        <label htmlFor="email">Email</label>
                         <input 
                             type="email" 
                             className="contact__form-input" 
@@ -145,7 +145,7 @@ class ContactPage extends Component {
                             value={this.state.email} 
                             onChange={this.onEmailChange}
                         />
-                        <label for="Message">Your Message</label>
+                        <label htmlFor="Message">Your Message</label>
                         <textarea 
                             type="text" 
                             cols="40" rows="5"

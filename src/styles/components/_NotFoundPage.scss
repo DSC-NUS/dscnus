@@ -2,7 +2,11 @@
     margin: 0 auto;
     padding: 6rem;
     text-align: center;
-    min-height: calc(100vh - 29.4rem);
+    min-height: calc(100vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
     &__span {
         display: block;

@@ -10,6 +10,7 @@ import ProjectsPage from './components/ProjectsPage'
 import PostPage from './components/PostPage'
 import ContactPage from './components/ContactPage'
 import BlogPage from './components/BlogPage'
+import ComingSoonPage from './components/ComingSoonPage'
 import NotFoundPage from './components/NotFoundPage'
 // import PropTypes from 'prop-types';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
@@ -26,7 +27,7 @@ const App = ({ base }) => (
                 <Route path="/contact" component={ContactPage} />
                 <Route path="/projects" component={ProjectsPage} />
                 <Route path="/blog/:id" component={ArticlePage} />
-                <Route path="/blog" component={BlogPage}/>
+                <Route path="/blog" component={ComingSoonPage}/>
                 <Route component={NotFoundPage} />
             </Switch>
         </div>

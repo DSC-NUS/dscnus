@@ -5,6 +5,7 @@ import Footer from './Footer';
 import project1 from '../assets/ProjectsPage/project1.png';
 import workshop from '../assets/ProjectsPage/workshop.png'
 import hackathon from '../assets/ProjectsPage/hackathon.svg'
+import seminar from '../assets/ProjectsPage/seminar.png'
 import teamb from '../assets/ProjectsPage/teamb.png'
 import teamc from '../assets/ProjectsPage/teamc.png'
 
@@ -43,7 +44,7 @@ class ProjectsPage extends Component {
                                 </h2>
                                 <p>In this academic year, DSC NUS will be running 2 main workshops: Web Development and Data Analytics. These workshops are targeted at beginners who have little coding background and they would be guided by experienced individuals throughout the process</p>
                                 <br></br>
-                                <p>More details coming soon!</p>
+                                <p>More Information Here: <a href="https://dscnustech.github.io/">https://dscnustech.github.io/</a></p>
                             </div>
                         </div>
                         <div className="card-horizontal projects__project">
@@ -55,6 +56,20 @@ class ProjectsPage extends Component {
                                     Hack For Good
                                 </h2>
                                 <p>Hack For Good is a hackathon organised by the Internal Team to bring teams around Singapore together to brainstorm and implement ideas for the greater social good.</p>
+                                <br></br>
+                                <p>More details coming soon!</p>
+                            </div>
+                        </div>
+
+                        <div className="card-horizontal projects__project">
+                            <div className="card-horizontal__image-box">
+                                <img src={seminar} alt="event"/>
+                            </div>
+                            <div className="card-horizontal__content">
+                                <h2 class="heading-secondary">
+                                    Thematic Seminars
+                                </h2>
+                                <p>We will be hosting several seminars throughout the semester on how we can use technology to help improve social issues in Singapore.</p>
                                 <br></br>
                                 <p>More details coming soon!</p>
                             </div>
@@ -75,27 +90,11 @@ class ProjectsPage extends Component {
                         </div>
                         <div className="card-horizontal__content">
                             <h2 class="heading-secondary">
-                                Team A
+                                Team A : Auturec
                             </h2>
-                            <h3>Potential Projects</h3>
-                            <ul className="projects__list">
-                                <span className="flex">
-                                    <Icon name='angle right' link size='small' className="projects__list-icon"/> 
-                                    <li className="projects__list-item">Enhance learning for kids with autism</li>
-                                </span>
-                                <span className="flex">
-                                    <Icon name='angle right' link size='small' className="projects__list-icon"/> 
-                                    <li className="projects__list-item">Tackle food wastage in NUS Residential Colleges/Halls </li>
-                                </span>
-                                <span className="flex">
-                                    <Icon name='angle right' link size='small' className="projects__list-icon"/> 
-                                    <li className="projects__list-item">Enhance eye-test procedures</li>
-                                </span>
-                                <span className="flex">
-                                    <Icon name='angle right' link size='small' className="projects__list-icon"/> 
-                                    <li className="projects__list-item">Sign language to speech/text conversion</li>
-                                </span>
-                            </ul>
+                            <p>1 in 150 children is diagnosed with autism in Singapore, with the number increasing as more undergo professional assessments. Parents who are untrained find it extremely difficult to teach children with autism and therefore seek professional therapy, which comes at a very high cost.</p>
+                            <br></br>
+                            <p>Auturec aims to help parents cope with this transition through a platform that integrates information, engagement activities as well as individualised progress tracking for the child. Our goal is to ensure every child with autism has the required aid to integrate with society and that every parent can easily find the support and information they require.</p>
                             <br></br>
                             <p>More details coming soon!</p>
                         </div>
@@ -106,19 +105,9 @@ class ProjectsPage extends Component {
                         </div>
                         <div className="card-horizontal__content">
                             <h2 class="heading-secondary">
-                                Team B
+                                Team B : Gift For Good
                             </h2>
-                            <h3>Potential Projects</h3>
-                            <ul className="projects__list">
-                                <span className="flex">
-                                    <Icon name='angle right' link size='small' className="projects__list-icon"/> 
-                                    <li className="projects__list-item">Helping low-income families get better access to basic necessities.</li>
-                                </span>
-                                <span className="flex">
-                                    <Icon name='angle right' link size='small' className="projects__list-icon"/> 
-                                    <li className="projects__list-item">Helping companies reframe corporate giving and inspiring more strategic forms of giving. </li>
-                                </span>
-                            </ul>
+                            <p>Our vision is for a more generous Singapore where every low-income family has access to basic necessities. Towards this aim, we are developing an online platform that facilitates in-kind donation from individual and corporate donors to non-profit organisations.</p>
                             <br></br>
                             <p>More details coming soon!</p>
                         </div>
@@ -129,23 +118,11 @@ class ProjectsPage extends Component {
                         </div>
                         <div className="card-horizontal__content">
                             <h2 class="heading-secondary">
-                                Team C
+                                Team C : Vantage Singapore
                             </h2>
-                            <h3>Potential Projects</h3>
-                            <ul className="projects__list">
-                                <span className="flex">
-                                    <Icon name='angle right' link size='small' className="projects__list-icon"/> 
-                                    <li className="projects__list-item">To connect disadvantaged youth across Singapore to attain equal access to opportunities</li>
-                                </span>
-                                <span className="flex">
-                                    <Icon name='angle right' link size='small' className="projects__list-icon"/> 
-                                    <li className="projects__list-item">To prevent fraud for NPOs and SMEs by implementing a financially secure system  </li>
-                                </span>
-                                <span className="flex">
-                                    <Icon name='angle right' link size='small' className="projects__list-icon"/> 
-                                    <li className="projects__list-item">To financially empower disadvantaged youths by creating a platform that allows them to demonstrate their talents and build their portfolio</li>
-                                </span>
-                            </ul>
+                            <p>Vantage Singapore aims to elevate the disadvantaged to gain access to opportunities for a more inclusive society. Currently, we are working on a career readiness platform NPOs and relevant organizations can use to better prepare disadvantaged youths aiming to create a change in their lives for future work. </p>
+                            <br></br>
+                            <p>Our career readiness platform consists of a guided resume builder aimed at enabling individuals to create a resume that fits industry standards and display personal information and relevant portfolio. sAdditionally, we aim to include pre-career employment test to provide recommended opportunities and a consolidated industry information to aid in career exploration by properly disseminating relevant industry information for youths with little no experience.</p>
                             <br></br>
                             <p>More details coming soon!</p>
                         </div>

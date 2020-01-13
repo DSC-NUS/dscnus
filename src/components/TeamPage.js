@@ -27,7 +27,7 @@ class TeamPage extends Component {
                     <h2 class="heading-secondary">
                         Leads
                     </h2>
-                    <p>The Leads...</p>
+                    <p>The Leads oversees DSC operations and groom members throughout their time in the team.</p>
                 </div>
                 <section className="section team__carousel">
                     <Card
@@ -42,7 +42,7 @@ class TeamPage extends Component {
                     <h2 class="heading-secondary">
                         Internal Team
                     </h2>
-                    <p>The Internal Division focuses on running the club and managing activities and events related to the school and students. Find out more here.</p>
+                    <p>The Internal Division focuses on running the club and managing activities and events related to the school and students. Find out more <a href="/projects"> here.</a></p>
                 </div>
                 <section className="section">
 
@@ -53,7 +53,7 @@ class TeamPage extends Component {
                     <h2 class="heading-secondary">
                         External Team
                     </h2>
-                    <p>The External Division focuses on all activities related to the local organizations, communities and businesses outside of the school. Find out more here.</p>
+                    <p>The External Division focuses on all activities related to the local organizations, communities and businesses outside of the school. Find out more <a href="/projects"> here.</a></p>
                 </div>
                 <section className="section">
                     {<CarouselExternalTeam/>}

@@ -76,7 +76,7 @@ class AboutUsPage extends Component {
                         <h1 className="heading-secondary">
                             How did we start?
                         </h1>
-                        <p>Our Lead (Jason Yip) signed up to represent Developer Student Club NUS and was fortunate enough attend the DSC Southeast Asia Summit in Kuala Lumpur this year. The 7 Leads from Singapore had the opportunity to meet other Leads from SEA and Googlers from all over the world! Check out the life-changing event.</p>
+                        <p>Our Lead (Jason Yip) signed up to represent Developer Student Club NUS and was fortunate enough attend the DSC Southeast Asia Summit in Kuala Lumpur in 2019. The 7 Leads from Singapore had the opportunity to meet other Leads from SEA and Googlers from all over the world! Check out the life-changing event.</p>
                     </div>
                     <div className="section-vertical__image-box">
                         <iframe title="Developer Student Clubs Leaders Summit - Goa 2018" 

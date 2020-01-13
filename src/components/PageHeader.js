@@ -66,7 +66,7 @@ class PageHeader extends Component {
                                         as={Link}
                                         active={this.state.activeItem === 'team'}
                                         to='/team'>
-                                        Our Core Team
+                                        Our Team
                                     </Dropdown.Item>
                                 </Dropdown.Menu>
                             </Dropdown>

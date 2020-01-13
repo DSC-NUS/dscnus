@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Icon } from 'semantic-ui-react';
+import {  } from 'semantic-ui-react';
 import PageHeader from './PageHeader';
 import Footer from './Footer';
 import project1 from '../assets/ProjectsPage/project1.png';
@@ -122,7 +122,7 @@ class ProjectsPage extends Component {
                             </h2>
                             <p>Vantage Singapore aims to elevate the disadvantaged to gain access to opportunities for a more inclusive society. Currently, we are working on a career readiness platform NPOs and relevant organizations can use to better prepare disadvantaged youths aiming to create a change in their lives for future work. </p>
                             <br></br>
-                            <p>Our career readiness platform consists of a guided resume builder aimed at enabling individuals to create a resume that fits industry standards and display personal information and relevant portfolio. sAdditionally, we aim to include pre-career employment test to provide recommended opportunities and a consolidated industry information to aid in career exploration by properly disseminating relevant industry information for youths with little no experience.</p>
+                            <p>Our career readiness platform consists of a guided resume builder aimed at enabling individuals to create a resume that fits industry standards and display personal information and relevant portfolios. Additionally, we aim to include pre-career employment test to provide recommended opportunities and a consolidated industry information to aid in career exploration by properly disseminating relevant industry information for youths with little no experience.</p>
                             <br></br>
                             <p>More details coming soon!</p>
                         </div>

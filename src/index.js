@@ -12,6 +12,7 @@ import ContactPage from './components/ContactPage'
 import BlogPage from './components/BlogPage'
 import ComingSoonPage from './components/ComingSoonPage'
 import NotFoundPage from './components/NotFoundPage'
+import HackForGoodPage from './components/HackForGoodPage'
 // import PropTypes from 'prop-types';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import * as serviceWorker from './serviceWorker'
@@ -28,6 +29,7 @@ const App = ({ base }) => (
                 <Route path="/projects" component={ProjectsPage} />
                 <Route path="/blog/:id" component={ArticlePage} />
                 <Route path="/blog" component={ComingSoonPage}/>
+                <Route path="/hackforgood" component={HackForGoodPage}/>
                 <Route component={NotFoundPage} />
             </Switch>
         </div>

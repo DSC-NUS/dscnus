@@ -57,7 +57,7 @@ class ProjectsPage extends Component {
                                 </h2>
                                 <p>Hack For Good is a hackathon organised by the Internal Team to bring teams around Singapore together to brainstorm and implement ideas for the greater social good.</p>
                                 <br></br>
-                                <p>More details coming soon!</p>
+                                <p>Click <a href="/hackforgood2020">here</a> for more details</p>
                             </div>
                         </div>
 

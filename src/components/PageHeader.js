@@ -97,6 +97,16 @@ class PageHeader extends Component {
                                 to='/contact'>
                             Contact Us
                             </Menu.Item>
+
+                            <Menu.Item
+                                name='contact'
+                                active={this.state.activeItem === 'contact'}
+                                onClick={this.handleItemClick}
+                                as={Link}
+                                style={{backgroundColor: "teal", color: "white"}}
+                                to='/hackforgood2020'>
+                            HACKFORGOOD
+                            </Menu.Item>
                         </Menu.Menu>
                     </Menu>
                 </Responsive>

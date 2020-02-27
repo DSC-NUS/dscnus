@@ -29,7 +29,7 @@ const App = ({ base }) => (
                 <Route path="/projects" component={ProjectsPage} />
                 <Route path="/blog/:id" component={ArticlePage} />
                 <Route path="/blog" component={ComingSoonPage}/>
-                <Route path="/hackforgood" component={HackForGoodPage}/>
+                <Route path="/hackforgood2020" component={HackForGoodPage}/>
                 <Route component={NotFoundPage} />
             </Switch>
         </div>

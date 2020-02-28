@@ -14,11 +14,20 @@ import ComingSoonPage from './components/ComingSoonPage'
 import NotFoundPage from './components/NotFoundPage'
 import HackForGoodPage from './components/HackForGoodPage'
 // import PropTypes from 'prop-types';
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { Router, Route, Switch } from 'react-router-dom'
 import * as serviceWorker from './serviceWorker'
+import { createBrowserHistory } from 'history';
+import ReactGA from 'react-ga';
+
+const history = createBrowserHistory();
+
+history.listen(location => {
+    ReactGA.set({ page: location.pathname }); // Update the user's current page
+    ReactGA.pageview(location.pathname); // Record a pageview for the given page
+});
 
 const App = ({ base }) => (
-    <BrowserRouter basename={base}>
+    <Router basename={base} history={history}>
         <div className="outer_div">
             <Switch>
                 <Route path="/" component={HomePage} exact={true}/>
@@ -28,12 +37,12 @@ const App = ({ base }) => (
                 <Route path="/contact" component={ContactPage} />
                 <Route path="/projects" component={ProjectsPage} />
                 <Route path="/blog/:id" component={ArticlePage} />
-                <Route path="/blog" component={ComingSoonPage}/>
+                <Route path="/blog" component={ComingSoonPage} exact={true}/>
                 <Route path="/hackforgood2020" component={HackForGoodPage}/>
                 <Route component={NotFoundPage} />
             </Switch>
         </div>
-    </BrowserRouter>
+    </Router>
 );
 
 ReactDOM.render(<App />, document.getElementById('root'));

@@ -19,6 +19,8 @@ import * as serviceWorker from './serviceWorker'
 import { createBrowserHistory } from 'history';
 import ReactGA from 'react-ga';
 
+ReactGA.initialize("UA-147601557-4");
+
 const history = createBrowserHistory();
 
 history.listen(location => {

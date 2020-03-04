@@ -1,5 +1,5 @@
 import 'semantic-ui-css/semantic.min.css'
-import React from 'react'
+import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import './styles/styles.scss'
 import ArticlePage from './components/ArticlePage'
@@ -28,24 +28,32 @@ history.listen(location => {
     ReactGA.pageview(location.pathname); // Record a pageview for the given page
 });
 
-const App = ({ base }) => (
-    <Router basename={base} history={history}>
-        <div className="outer_div">
-            <Switch>
-                <Route path="/" component={HomePage} exact={true}/>
-                <Route path="/about" component={AboutUsPage} />
-                <Route path="/team" component={TeamPage} />
-                <Route path="/post" component={PostPage} />
-                <Route path="/contact" component={ContactPage} />
-                <Route path="/projects" component={ProjectsPage} />
-                <Route path="/blog/:id" component={ArticlePage} />
-                <Route path="/blog" component={ComingSoonPage} exact={true}/>
-                <Route path="/hackforgood2020" component={HackForGoodPage}/>
-                <Route component={NotFoundPage} />
-            </Switch>
-        </div>
-    </Router>
-);
+class App extends Component {
+    componentDidMount() {
+        ReactGA.pageview(window.location.pathname);
+    }
+
+    render() {
+        return (
+            <Router history={history}>
+                <div className="outer_div">
+                    <Switch>
+                        <Route path="/" component={HomePage} exact={true}/>
+                        <Route path="/about" component={AboutUsPage} />
+                        <Route path="/team" component={TeamPage} />
+                        <Route path="/post" component={PostPage} />
+                        <Route path="/contact" component={ContactPage} />
+                        <Route path="/projects" component={ProjectsPage} />
+                        <Route path="/blog/:id" component={ArticlePage} />
+                        <Route path="/blog" component={ComingSoonPage} exact={true}/>
+                        <Route path="/hackforgood2020" component={HackForGoodPage}/>
+                        <Route component={NotFoundPage} />
+                    </Switch>
+                </div>
+            </Router>
+        );
+    }
+}
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

@@ -22,6 +22,7 @@ class RecruitmentPage extends Component {
                             <span className="heading-primary--main">Join DSC NUS</span>    
                         </h1>
                             <p className="subtitle">We are looking for passionate leaders to help us push the mission of #TECHFORGOOD</p>
+                            <p className="subtitle">Deadline: 19th april!</p>
                     </div>
                 </header>
                 <section className="section">
@@ -69,8 +70,9 @@ class RecruitmentPage extends Component {
                             <ul className="list">
                                 <li>Lead the External Tech team</li>
                                 <li>Scope out possible tech stack for the project</li>
-                                <li>Help plan and design the architecture with group mates</li>
-                                <li>Help execute the project</li>
+                                <li>Plan and design the architecture with group mates</li>
+                                <li>Think of potential pitfalls of project</li>
+                                <li>Execute the project with the team</li>
                             </ul>
                         </div>
                         <div className="section__image-box">

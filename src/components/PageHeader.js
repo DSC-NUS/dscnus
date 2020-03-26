@@ -81,6 +81,16 @@ class PageHeader extends Component {
                             </Menu.Item>
 
                             <Menu.Item
+                                name='contact'
+                                active={this.state.activeItem === 'recruitment'}
+                                onClick={this.handleItemClick}
+                                as={Link}
+                                // style={{backgroundColor: "teal", color: "white"}}
+                                to='/recruitment'>
+                            Recruitment
+                            </Menu.Item>
+
+                            <Menu.Item
                                 name='blog'
                                 active={this.state.activeItem === 'blog'}
                                 onClick={this.handleItemClick}
@@ -96,16 +106,6 @@ class PageHeader extends Component {
                                 as={Link}
                                 to='/contact'>
                             Contact Us
-                            </Menu.Item>
-
-                            <Menu.Item
-                                name='contact'
-                                active={this.state.activeItem === 'contact'}
-                                onClick={this.handleItemClick}
-                                as={Link}
-                                style={{backgroundColor: "teal", color: "white"}}
-                                to='/hackforgood2020'>
-                            HACKFORGOOD
                             </Menu.Item>
                         </Menu.Menu>
                     </Menu>
@@ -149,6 +149,15 @@ class PageHeader extends Component {
                             as={Link}
                             to='/projects'>
                         Our Projects
+                        </Menu.Item>
+
+                        <Menu.Item
+                            name='recruitment'
+                            active={this.state.activeItem === 'recruitment'}
+                            onClick={this.handleItemClick}
+                            as={Link}
+                            to='/recruitment'>
+                        Recruitment
                         </Menu.Item>
 
                         <Menu.Item

@@ -7,6 +7,7 @@ import whatwedo from '../assets/HomePage/whatwedo.jpg'
 import event1 from '../assets/HomePage/event1.jpg'
 import event2 from '../assets/HomePage/event2.jpg'
 import event3 from '../assets/HomePage/event3.jpg'
+import event4 from '../assets/HomePage/hackforgood.jpeg'
 
 class Home extends Component {
     componentDidMount() {
@@ -63,6 +64,12 @@ class Home extends Component {
                         Recent Events
                     </h2>
                     <div className="recents">
+                        <div className="recents__card">
+                            <div className="recents__image-box">
+                                <img alt="Hack for good 2020" src={event4} />
+                            </div>
+                            <h2>Hack for good 2020!</h2>
+                        </div>
                         <div className="recents__card">
                             <div className="recents__image-box">
                                 <img alt="SEA Google Developers Submit" src={event1} />

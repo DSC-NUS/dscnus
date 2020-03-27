@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.68693040.chunk.css",
-    "main.js": "/static/js/main.be3cbca7.chunk.js",
-    "main.js.map": "/static/js/main.be3cbca7.chunk.js.map",
+    "main.css": "/static/css/main.6f251633.chunk.css",
+    "main.js": "/static/js/main.8b50ce36.chunk.js",
+    "main.js.map": "/static/js/main.8b50ce36.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.1d109bfb.js",
     "runtime-main.js.map": "/static/js/runtime-main.1d109bfb.js.map",
     "static/css/2.5f2f5f0e.chunk.css": "/static/css/2.5f2f5f0e.chunk.css",
-    "static/js/2.374b1922.chunk.js": "/static/js/2.374b1922.chunk.js",
-    "static/js/2.374b1922.chunk.js.map": "/static/js/2.374b1922.chunk.js.map",
+    "static/js/2.22af3484.chunk.js": "/static/js/2.22af3484.chunk.js",
+    "static/js/2.22af3484.chunk.js.map": "/static/js/2.22af3484.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.2a69f21607d133452b44db9b815e28be.js": "/precache-manifest.2a69f21607d133452b44db9b815e28be.js",
+    "precache-manifest.fc60043e04bc7065031a58a20d8fe485.js": "/precache-manifest.fc60043e04bc7065031a58a20d8fe485.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.5f2f5f0e.chunk.css.map": "/static/css/2.5f2f5f0e.chunk.css.map",
-    "static/css/main.68693040.chunk.css.map": "/static/css/main.68693040.chunk.css.map",
+    "static/css/main.6f251633.chunk.css.map": "/static/css/main.6f251633.chunk.css.map",
     "static/media/A.jpg": "/static/media/A.757b8854.jpg",
     "static/media/ANN_3566.jpg": "/static/media/ANN_3566.f743eaa3.jpg",
     "static/media/B.jpg": "/static/media/B.3cbacd3d.jpg",
@@ -30,6 +30,7 @@
     "static/media/event2.jpg": "/static/media/event2.64bfa6e5.jpg",
     "static/media/event3.jpg": "/static/media/event3.94345bfd.jpg",
     "static/media/hackathon.svg": "/static/media/hackathon.891dfb43.svg",
+    "static/media/hackforgood.jpeg": "/static/media/hackforgood.cbaf5ad5.jpeg",
     "static/media/project1.png": "/static/media/project1.f1c7bc71.png",
     "static/media/teamb.png": "/static/media/teamb.8afe40d6.png",
     "static/media/teamc.png": "/static/media/teamc.68cd910d.png",
@@ -40,8 +41,8 @@
   "entrypoints": [
     "static/js/runtime-main.1d109bfb.js",
     "static/css/2.5f2f5f0e.chunk.css",
-    "static/js/2.374b1922.chunk.js",
-    "static/css/main.68693040.chunk.css",
-    "static/js/main.be3cbca7.chunk.js"
+    "static/js/2.22af3484.chunk.js",
+    "static/css/main.6f251633.chunk.css",
+    "static/js/main.8b50ce36.chunk.js"
   ]
 }

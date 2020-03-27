@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
-import { Divider } from 'semantic-ui-react';
 import PageHeader from './PageHeader.js';
 import Footer from './Footer.js'
-import whoarewe from '../assets/HomePage/whoarewe.jpg'
-import whatwedo from '../assets/HomePage/whatwedo.jpg'
-import event1 from '../assets/HomePage/event1.jpg'
-import event2 from '../assets/HomePage/event2.jpg'
-import event3 from '../assets/HomePage/event3.jpg'
+import biz from '../assets/HomePage/biz.jpg'
+import tech from '../assets/HomePage/tech.jpg'
+import deputy from '../assets/HomePage/deputy.jpg'
 
 class RecruitmentPage extends Component {
     componentDidMount() {
@@ -22,7 +19,7 @@ class RecruitmentPage extends Component {
                             <span className="heading-primary--main">Join DSC NUS</span>    
                         </h1>
                             <p className="subtitle">We are looking for passionate leaders to help us push the mission of #TECHFORGOOD</p>
-                            <p className="subtitle">Deadline: 19th april!</p>
+                            <p className="subtitle">Deadline: 19th April</p>
                     </div>
                 </header>
                 <section className="section">
@@ -33,20 +30,20 @@ class RecruitmentPage extends Component {
                             </h2>
                             <ul className="list">
                                 <li>Lead a one-year value-adding project</li>
-                                <li>Conduct market validation and scope out project</li>
+                                <li>Scope out project</li>
                                 <li>Establish partnersips with relevant stakeholders</li>
                                 <li>Acquire project sponsorships as necessary</li>
                             </ul>
                         </div>
                         <div className="section__image-box">
-                            <img src={whoarewe} alt="Who Are We" className="section__image"/>
+                            <img src={biz} alt="Who Are We" className="section__image"/>
                         </div>
                     </div>
                 </section>
                 <section className="section section-blue">
                     <div className="section__content">
                         <div class="section__image-box">     
-                            <img className="section__image" alt="What We Do" src={whatwedo} />  
+                            <img className="section__image" alt="What We Do" src={deputy} />  
                         </div>
                         <div class="section__text-box">                             
                             <h2 class="heading-secondary">
@@ -76,7 +73,7 @@ class RecruitmentPage extends Component {
                             </ul>
                         </div>
                         <div className="section__image-box">
-                            <img src={whoarewe} alt="Who Are We" className="section__image"/>
+                            <img src={tech} alt="Who Are We" className="section__image"/>
                         </div>
                     </div>
                 </section>

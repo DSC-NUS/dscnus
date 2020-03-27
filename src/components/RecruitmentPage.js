@@ -14,12 +14,13 @@ class RecruitmentPage extends Component {
             <div>
                 {<PageHeader />}
                 <header class="home-header">
-                    <div class="home-header__text-box">
+                    <div class="home-header__text-box align-center">
                         <h1 className="heading-primary">
                             <span className="heading-primary--main">Join DSC NUS</span>    
                         </h1>
-                            <p className="subtitle">We are looking for passionate leaders to help us push the mission of #TECHFORGOOD</p>
-                            <p className="subtitle">Deadline: 19th April</p>
+                        <p className="subtitle">We are looking for passionate leaders to help us push the mission of #TECHFORGOOD</p>
+                        <p className="subtitle">Deadline: 19th April</p>
+                        <a href="https://tinyurl.com/dscnusRecruitment" target="_blank" className="btn btn-yellow">Join us</a>
                     </div>
                 </header>
                 <section className="section">

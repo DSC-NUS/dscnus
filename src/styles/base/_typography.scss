@@ -76,4 +76,8 @@
 
 .list {
     list-style: none;
+    text-align: left;
+    li::before {
+        content: "• "; color: $color-teal;
+    }
 }

@@ -1,0 +1,86 @@
+.recruitment {
+    display: flex;
+    margin: 2rem;
+    background-color: $color-dark-grey;
+    border: 3px solid $color-grey;
+    padding: $s-size;
+    border-radius: 10px;
+
+    &__roles {
+        color: white;
+    }
+
+    &__content-box {
+        margin: 2rem;
+        background-color: $color-dark-grey;
+        border: 3px solid $color-grey;
+        padding: $s-size;
+        border-radius: 10px;
+        transition: all 0.2s;
+
+        &:hover {
+            color: $color-teal;
+            border: 3px solid $color-teal;
+            cursor: pointer;
+            transform: translateY(-2px);
+        }
+
+        &:hover > * {
+            color: $color-teal
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            margin: 1.5rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            margin: 1rem;
+        }
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        flex-direction: column;
+        margin: 1.5rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        margin: 1rem;
+    }
+}
+
+.recruitment-header {
+    height: 95vh;
+    background-image: linear-gradient(to right bottom, rgba($color-dark-yellow-grey, 0.6), rgba($color-dark-yellow-grey, 0.6)), url("../../assets/HomePage/homepage.jpg");
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__text-box {
+        width: 50%;
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 75%;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            width: 90%;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            width: 100%;
+        }
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        height: 100%;
+        padding: 1.5rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        height: 100%;
+        padding: 1rem;
+    }
+}

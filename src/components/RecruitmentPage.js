@@ -13,8 +13,8 @@ class RecruitmentPage extends Component {
         return (
             <div>
                 {<PageHeader />}
-                <header class="home-header">
-                    <div class="home-header__text-box align-center">
+                <header class="recruitment-header">
+                    <div class="recruitment-header__text-box align-center">
                         <h1 className="heading-primary">
                             <span className="heading-primary--main">Join DSC NUS</span>    
                         </h1>
@@ -22,10 +22,29 @@ class RecruitmentPage extends Component {
                         <p className="subtitle">Deadline: 19th April</p>
                         <a href="https://tinyurl.com/dscnusRecruitment" target="_blank" className="btn btn-yellow">Join us</a>
                     </div>
+                    <section>
+                        <div className="recruitment">
+                            <div className="recruitment__content-box">
+                                <a href="#biz" className="recruitment__roles">
+                                Head of Business (External)
+                                </a>
+                            </div>
+                            <div className="recruitment__content-box">
+                                <a href="#internal" className="recruitment__roles">
+                                Deputy Internal Lead
+                                </a>
+                            </div>
+                            <div className="recruitment__content-box">
+                                <a href="#tech" className="recruitment__roles">
+                                Head of Tech (External)
+                                </a>
+                            </div>
+                        </div>
+                    </section>
                 </header>
                 <section className="section">
                     <div className="section__content">
-                        <div class="section__text-box">                             
+                        <div class="section__text-box" id="biz">                             
                             <h2 class="heading-secondary">
                                 Head of Business (External)
                             </h2>
@@ -46,7 +65,7 @@ class RecruitmentPage extends Component {
                         <div class="section__image-box">     
                             <img className="section__image" alt="What We Do" src={deputy} />  
                         </div>
-                        <div class="section__text-box">                             
+                        <div class="section__text-box" id="internal">                             
                             <h2 class="heading-secondary">
                                 Deputy Internal Lead
                             </h2>
@@ -61,7 +80,7 @@ class RecruitmentPage extends Component {
                 </section>
                 <section className="section">
                     <div className="section__content">
-                        <div class="section__text-box">                             
+                        <div class="section__text-box" id="tech">                             
                             <h2 class="heading-secondary">
                                 Head of Tech (External)
                             </h2>

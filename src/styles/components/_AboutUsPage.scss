@@ -41,7 +41,7 @@
     }
 }
 
-.section {
+.section-home {
     &__video{
         width: 90%;
         max-width: 50rem;
@@ -63,4 +63,9 @@
 .section-green {
     background-color: $color-green !important;
     color: $color-light-grey !important;
+}
+
+.section-white {
+    background-color: white !important;
+    color: black !important;
 }

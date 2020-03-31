@@ -31,26 +31,26 @@ class Home extends Component {
                         </h1>
                     </div>
                 </header>
-                <section className="section">
-                    <div className="section__content">
-                        <div class="section__text-box">                             
+                <section className="section-home">
+                    <div className="section-home__content">
+                        <div class="section-home__text-box">                             
                             <h2 class="heading-secondary">
                                 Who Are We?
                             </h2>
                             <p>DSC NUS is made up of people from diverse backgrounds, majors, years of study, genders and races.<br/>We come together to push our mission of #TechforGood.</p>
                             <a href="/team" className="btn btn-yellow">Our Team</a>
                         </div>
-                        <div className="section__image-box">
-                            <img src={whoarewe} alt="Who Are We" className="section__image"/>
+                        <div className="section-home__image-box">
+                            <img src={whoarewe} alt="Who Are We" className="section-home__image"/>
                         </div>
                     </div>
                 </section>
-                <section className="section section-blue">
-                    <div className="section__content">
-                        <div class="section__image-box">     
-                            <img className="section__image" alt="What We Do" src={whatwedo} />  
+                <section className="section-home section-blue">
+                    <div className="section-home__content">
+                        <div class="section-home__image-box">     
+                            <img className="section-home__image" alt="What We Do" src={whatwedo} />  
                         </div>
-                        <div class="section__text-box">                             
+                        <div class="section-home__text-box">                             
                             <h2 class="heading-secondary">
                                 What we do?
                             </h2>

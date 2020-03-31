@@ -1,9 +1,9 @@
 .recruitment {
     display: flex;
     margin: 2rem;
-    background-color: $color-dark-grey;
-    border: 3px solid $color-grey;
-    padding: $s-size;
+    // background-color: $color-dark-grey;
+    // border: 3spx solid $color-grey;
+    padding: 1.5rem;
     border-radius: 10px;
 
     &__roles {
@@ -11,12 +11,12 @@
     }
 
     &__content-box {
-        margin: 2rem;
         background-color: $color-dark-grey;
         border: 3px solid $color-grey;
         padding: $s-size;
         border-radius: 10px;
         transition: all 0.2s;
+        margin: 0 1rem;
 
         &:hover {
             color: $color-teal;
@@ -27,14 +27,6 @@
 
         &:hover > * {
             color: $color-teal
-        }
-
-        @media only screen and (max-width: $bp-medium) {
-            margin: 1.5rem;
-        }
-
-        @media only screen and (max-width: $bp-small) {
-            margin: 1rem;
         }
     }
 
@@ -82,5 +74,44 @@
     @media only screen and (max-width: $bp-small) {
         height: 100%;
         padding: 1rem;
+    }
+}
+
+.section-recruitment {
+    background-color: $color-white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media only screen and (max-width: $bp-smallest) {
+            flex-direction: column;
+        }
+    }
+
+    &__image-box {
+        flex: 0 0 50%;
+        margin-top: .5rem;
+        text-align: center;
+        padding: $s-size;
+    }
+
+    &__image {
+        width: 100%;
+        height: auto;
+        display: block;
+        box-shadow: 0 .2rem .8rem rgba(0,0,0,.2);
+    }
+
+    &__text-box {
+        padding: $l-size;
+        text-align: center;
+
+        @media only screen and (max-width: $bp-smallest) {
+            padding: $m-size;
+        }
     }
 }

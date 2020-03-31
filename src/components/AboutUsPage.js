@@ -36,9 +36,9 @@ class AboutUsPage extends Component {
                         </section>
                     </div>
                 </header>
-                <section className="section">
-                    <div className="section__content">
-                        <div className="section__image-box">
+                <section className="section-home">
+                    <div className="section-home__content">
+                        <div className="section-home__image-box">
                             <div> 
                                 <iframe title="Developer Student Clubs Leaders Summit - Goa 2018" 
                                 frameborder="0" 
@@ -46,10 +46,10 @@ class AboutUsPage extends Component {
                                 allowfullscreen
                                 aria-label="YouTube Video, Developer Student Clubs Leaders Summit - Goa 2018" 
                                 src="https://www.youtube.com/embed/DcN_hcHXR_0" 
-                                className="section__video"></iframe>
+                                className="section-home__video"></iframe>
                             </div>
                         </div>
-                        <div className="section__text-box">        
+                        <div className="section-home__text-box">        
                             <h2 className="heading-secondary">
                                 What is DSC?
                             </h2>
@@ -57,17 +57,17 @@ class AboutUsPage extends Component {
                         </div>
                     </div>
                 </section>
-                <section className="section">
-                    <div className="section__content">
-                        <div className="section__text-box">     
+                <section className="section-home">
+                    <div className="section-home__content">
+                        <div className="section-home__text-box">     
                             <h2 className="heading-secondary">
                                 How is DSC NUS different?
                             </h2>
                             <p>We set ourselves apart from the other DSC chapters by focusing on developing diverse solutions (not restricted to mobile and apps) for Non-Profit Organizations. Areas we are interested in include but are not limited to: the environment, education, elderly, children, healthcare, special needs and anything related to benefiting communities.</p>
                         </div> 
-                        <div className="section__image-box">
+                        <div className="section-home__image-box">
                             <img 
-                                className="section__image" 
+                                className="section-home__image" 
                                 alt="What We Do" 
                                 src={different}
                             />
@@ -87,7 +87,7 @@ class AboutUsPage extends Component {
                             src="https://www.youtube.com/embed/lBMvXIsTVDQ"
                             allowfullscreen
                             border="0"
-                            class="section__video">
+                            class="section-home__video">
                         </iframe>
                     </div>
                 </section>

@@ -41,6 +41,7 @@ class CarouselHome extends Component {
                 <Grid centered>
                     <Grid.Column width={3}  style={{textAlign: "center"}}>
                     <Button 
+                            size='massive'
                             circular 
                             icon='left chevron' 
                             basic 
@@ -58,6 +59,7 @@ class CarouselHome extends Component {
                     </Grid.Column>
                     <Grid.Column width = {3} style={{textAlign: "center"}}>
                     <Button 
+                            size='massive'
                             circular 
                             icon='right chevron' 
                             basic 

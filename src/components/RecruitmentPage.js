@@ -66,7 +66,7 @@ class RecruitmentPage extends Component {
                     </div>
                 </section>
                 
-                <section className="section-home">
+                {/* <section className="section-home">
                     <div className="section-home__content">
                         <div class="section-home__image-box">     
                             <img className="section-home__image" alt="What We Do" src={deputy} />  
@@ -83,7 +83,7 @@ class RecruitmentPage extends Component {
                             </ul>
                         </div>
                     </div>
-                </section>
+                </section> */}
 
                 <div className="section-header section-red">
                     <h2 class="heading-secondary">

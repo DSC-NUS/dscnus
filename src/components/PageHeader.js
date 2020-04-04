@@ -86,7 +86,7 @@ class PageHeader extends Component {
                                 onClick={this.handleItemClick}
                                 as={Link}
                                 to='/workshops'>
-                            Workshops
+                            Our Workshops
                             </Menu.Item>
 
                             <Menu.Item
@@ -158,6 +158,15 @@ class PageHeader extends Component {
                             as={Link}
                             to='/projects'>
                         Our Projects
+                        </Menu.Item>
+
+                        <Menu.Item
+                                name='workshops'
+                                active={this.state.activeItem === 'workshops'}
+                                onClick={this.handleItemClick}
+                                as={Link}
+                                to='/workshops'>
+                        Our Workshops
                         </Menu.Item>
 
                         <Menu.Item

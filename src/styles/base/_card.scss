@@ -48,6 +48,10 @@
     box-shadow: 0 .2rem .8rem rgba(0,0,0,.2);
     color: inherit;
 
+    @media only screen and (max-width: $bp-medium) {
+        flex-direction: column;
+    }
+
     &--clickable {
         transition: all .2s;
 
@@ -59,6 +63,10 @@
 
     &__content {
         padding: $l-size;
+
+        @media only screen and (max-width: $bp-medium) {
+            padding: $m-size;
+        }
     }
 
     &__image-box {

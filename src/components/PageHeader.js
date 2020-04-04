@@ -81,6 +81,15 @@ class PageHeader extends Component {
                             </Menu.Item>
 
                             <Menu.Item
+                                name='workshops'
+                                active={this.state.activeItem === 'workshops'}
+                                onClick={this.handleItemClick}
+                                as={Link}
+                                to='/workshops'>
+                            Workshops
+                            </Menu.Item>
+
+                            <Menu.Item
                                 name='contact'
                                 active={this.state.activeItem === 'recruitment'}
                                 onClick={this.handleItemClick}

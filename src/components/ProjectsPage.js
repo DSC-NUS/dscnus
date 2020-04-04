@@ -40,11 +40,11 @@ class ProjectsPage extends Component {
                             </div>
                             <div className="card-horizontal__content">
                                 <h2 class="heading-secondary">
-                                    Educational Workshops
+                                    Technology Workshops
                                 </h2>
                                 <p>In this academic year, DSC NUS will be running 2 main workshops: Web Development and Data Analytics. These workshops are targeted at beginners who have little coding background and they would be guided by experienced individuals throughout the process</p>
                                 <br></br>
-                                <p>More Information Here: <a href="https://dscnustech.github.io/">https://dscnustech.github.io/</a></p>
+                                <p>More information and workshop materials can be found <a href="/workshops"> here</a></p>
                             </div>
                         </div>
                         <div className="card-horizontal projects__project">

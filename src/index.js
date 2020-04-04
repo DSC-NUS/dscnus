@@ -7,6 +7,7 @@ import HomePage from './components/HomePage'
 import TeamPage from './components/TeamPage'
 import AboutUsPage from './components/AboutUsPage'
 import ProjectsPage from './components/ProjectsPage'
+import WorkshopsPage from './components/WorkshopsPage'
 import PostPage from './components/PostPage'
 import ContactPage from './components/ContactPage'
 import BlogPage from './components/BlogPage'
@@ -44,6 +45,7 @@ class App extends Component {
                         <Route path="/post" component={PostPage} />
                         <Route path="/contact" component={ContactPage} />
                         <Route path="/projects" component={ProjectsPage} />
+                        <Route path="/workshops" component={WorkshopsPage} />
                         <Route path="/blog/:id" component={ArticlePage} />
                         <Route path="/blog" component={ComingSoonPage} exact={true}/>
                         <Route path="/recruitment" component={RecruitmentPage}/>

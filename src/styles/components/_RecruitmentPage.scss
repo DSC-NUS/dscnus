@@ -33,6 +33,10 @@
     @media only screen and (max-width: $bp-medium) {
         flex-direction: column;
         margin: 1.5rem;
+
+        &__content-box {
+            margin: 1rem 0;
+        }
     }
 
     @media only screen and (max-width: $bp-small) {
@@ -41,7 +45,6 @@
 }
 
 .recruitment-header {
-    height: 95vh;
     background-image: linear-gradient(to right bottom, rgba($color-dark-yellow-grey, 0.6), rgba($color-dark-yellow-grey, 0.6)), url("../../assets/HomePage/homepage.jpg");
     background-size: cover;
     background-position: top;
@@ -49,6 +52,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 95vh;
 
     &__text-box {
         width: 50%;
@@ -89,6 +93,12 @@
         align-items: center;
         @media only screen and (max-width: $bp-smallest) {
             flex-direction: column;
+        }
+    }
+
+    &__content-reverse {
+        @media only screen and (max-width: $bp-smallest) {
+            flex-direction: column-reverse;
         }
     }
 

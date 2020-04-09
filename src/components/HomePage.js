@@ -46,7 +46,7 @@ class Home extends Component {
                     </div>
                 </section>
                 <section className="section-home section-blue">
-                    <div className="section-home__content">
+                    <div className="section-home__content section-home__content-reverse">
                         <div class="section-home__image-box">     
                             <img className="section-home__image" alt="What We Do" src={whatwedo} />  
                         </div>

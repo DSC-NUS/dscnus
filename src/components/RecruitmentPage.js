@@ -111,12 +111,12 @@ class RecruitmentPage extends Component {
                     </div>
                 </section>
 
-                <section className="section-home">
-                    <div className="section-home__content">
-                        <div className="section-home__image-box">
-                            <img src={tech} alt="Who Are We" className="section-home__image"/>
+                <section className="section-recruitment">
+                    <div className="section-recruitment__content section-recruitment__content-reverse">
+                        <div className="section-recruitment__image-box">
+                            <img src={tech} alt="Who Are We" className="section-recruitment__image"/>
                         </div>
-                        <div class="section-home__text-box">                             
+                        <div class="section-recruitment__text-box">                             
                             <h2 class="heading-secondary">
                                 Head of Tech
                             </h2>

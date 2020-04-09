@@ -45,6 +45,12 @@
         }
     }
 
+    &__content-reverse {
+        @media only screen and (max-width: $bp-smallest) {
+            flex-direction: column-reverse;
+        }
+    }
+
     &__image-box {
         flex: 0 0 50%;
         margin-top: .5rem;

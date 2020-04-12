@@ -81,3 +81,13 @@
         content: "• "; color: $color-teal;
     }
 }
+
+.link {
+    text-decoration: none;
+    color: $color-blue;
+
+    &:hover,
+    &:active {
+        color: $color-teal;
+    }
+}

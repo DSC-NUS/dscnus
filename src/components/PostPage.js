@@ -124,9 +124,10 @@ class PostPage extends Component {
                             onChange={this.onTitleChange}
                         />
                         <label for="description">Description</label>
-                        <input 
+                        <textarea 
                             type="text" 
-                            className="contact__form-input" 
+                            cols="40" rows="3"
+                            className="contact__form-input contact__form-textarea" 
                             placeholder="A brief description of your article"
                             name="description"
                             value={this.state.description} 

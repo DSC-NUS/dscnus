@@ -13,6 +13,7 @@ import ContactPage from './components/ContactPage'
 import BlogPage from './components/BlogPage'
 import ComingSoonPage from './components/ComingSoonPage'
 import NotFoundPage from './components/NotFoundPage'
+import HackathonTeamsPage from './components/HackathonTeamsPage'
 import RecruitmentPage from './components/RecruitmentPage'
 // import PropTypes from 'prop-types';
 import { Router, Route, Switch } from 'react-router-dom'
@@ -47,7 +48,8 @@ class App extends Component {
                         <Route path="/projects" component={ProjectsPage} />
                         <Route path="/workshops" component={WorkshopsPage} />
                         <Route path="/blog/:id" component={ArticlePage} />
-                        <Route path="/blog" component={ComingSoonPage} exact={true}/>
+                        <Route path="/blog" component={BlogPage} exact={true}/>
+                        <Route path="/hackathon-teams" component={HackathonTeamsPage}/>
                         <Route path="/recruitment" component={RecruitmentPage}/>
                         <Route component={NotFoundPage} />
                     </Switch>

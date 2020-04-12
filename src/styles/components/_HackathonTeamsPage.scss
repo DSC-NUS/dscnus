@@ -1,0 +1,29 @@
+.hackathon-teams {
+    &__image-box {
+        width: 50rem;
+        max-height: 50rem;
+        text-align: center;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: $s-size;
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 40rem;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            width: 90vw;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        box-shadow: 0 .2rem .8rem rgba(0,0,0,.2);
+    }
+
+    &__content {
+        padding: $s-size;
+    }
+}

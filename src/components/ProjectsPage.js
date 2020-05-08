@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import {  } from 'semantic-ui-react';
+import { } from 'semantic-ui-react';
 import PageHeader from './PageHeader';
 import Footer from './Footer';
 import project1 from '../assets/ProjectsPage/project1.png';
 import workshop from '../assets/ProjectsPage/workshop.png'
 import hackathon from '../assets/ProjectsPage/hackathon.svg'
+import hglogo from '../assets/ProjectsPage/hglogo.png'
 import seminar from '../assets/ProjectsPage/seminar.png'
 import teamb from '../assets/ProjectsPage/teamb.png'
 import teamc from '../assets/ProjectsPage/teamc.png'
@@ -13,11 +14,11 @@ class ProjectsPage extends Component {
     componentDidMount() {
         window.scrollTo(0, 0)
     }
-    
+
     render() {
         return (
             <div>
-                {<PageHeader/>}
+                {<PageHeader />}
                 <header class="home-header projects-header">
                     <div class="home-header__text-box">
                         <h1 class="heading-primary">
@@ -26,17 +27,17 @@ class ProjectsPage extends Component {
                     </div>
                 </header>
                 <div className="section-header section-green">
-                        <h2 class="heading-secondary">
-                            Internal Team Projects
+                    <h2 class="heading-secondary">
+                        Internal Team Projects
                         </h2>
-                        <p>The Internal Team leads education driven initiatives within the NUS community in hopes of making technology accessible to all.</p>
-                    </div>
+                    <p>The Internal Team leads education driven initiatives within the NUS community in hopes of making technology accessible to all.</p>
+                </div>
                 <section className="section">
 
                     <div className="projects">
                         <div className="card-horizontal projects__project">
                             <div className="card-horizontal__image-box">
-                                <img src={workshop} alt="event"/>
+                                <img src={workshop} alt="event" />
                             </div>
                             <div className="card-horizontal__content">
                                 <h2 class="heading-secondary">
@@ -44,12 +45,12 @@ class ProjectsPage extends Component {
                                 </h2>
                                 <p>In this academic year, DSC NUS will be running 2 main workshops: Web Development and Data Analytics. These workshops are targeted at beginners who have little coding background and they would be guided by experienced individuals throughout the process</p>
                                 <br></br>
-                                <p>More information and workshop materials can be found <a href="/workshops"> here</a></p>
+                                <p>For more information on each workshop and its materials, click <a href="/workshops">here.</a></p>
                             </div>
                         </div>
                         <div className="card-horizontal projects__project">
                             <div className="card-horizontal__image-box">
-                                <img src={hackathon} alt="event"/>
+                                <img src={hglogo} alt="event" />
                             </div>
                             <div className="card-horizontal__content">
                                 <h2 class="heading-secondary">
@@ -57,13 +58,13 @@ class ProjectsPage extends Component {
                                 </h2>
                                 <p>Hack For Good is a hackathon organised by the Internal Team to bring teams around Singapore together to brainstorm and implement ideas for the greater social good.</p>
                                 <br></br>
-                                <p>Click <a href="/hackforgood2020">here</a> for more details</p>
+                                <p>For event coverage, click <a href="/blog/5e9279e1aa658600173b93dc">here</a></p>
                             </div>
                         </div>
 
                         <div className="card-horizontal projects__project">
                             <div className="card-horizontal__image-box">
-                                <img src={seminar} alt="event"/>
+                                <img src={seminar} alt="event" />
                             </div>
                             <div className="card-horizontal__content">
                                 <h2 class="heading-secondary">
@@ -76,17 +77,17 @@ class ProjectsPage extends Component {
                         </div>
                     </div>
                 </section>
-                    
+
                 <div className="section-header section-red">
-                        <h2 class="heading-secondary">
-                            External Team Projects
+                    <h2 class="heading-secondary">
+                        External Team Projects
                         </h2>
-                        <p>The External Team leads community based projects in different sectors in hopes to benefit them in the long run.</p>
+                    <p>The External Team leads community based projects in different sectors in hopes to benefit them in the long run.</p>
                 </div>
                 <div className="projects">
                     <div className="card-horizontal projects__project">
                         <div className="card-horizontal__image-box">
-                            <img src={project1} alt="event"/>
+                            <img src={project1} alt="event" />
                         </div>
                         <div className="card-horizontal__content">
                             <h2 class="heading-secondary">
@@ -101,7 +102,7 @@ class ProjectsPage extends Component {
                     </div>
                     <div className="card-horizontal projects__project">
                         <div className="card-horizontal__image-box">
-                            <img src={teamb} alt="event"/>
+                            <img src={teamb} alt="event" />
                         </div>
                         <div className="card-horizontal__content">
                             <h2 class="heading-secondary">
@@ -114,7 +115,7 @@ class ProjectsPage extends Component {
                     </div>
                     <div className="card-horizontal projects__project">
                         <div className="card-horizontal__image-box">
-                            <img src={teamc} alt="event"/>
+                            <img src={teamc} alt="event" />
                         </div>
                         <div className="card-horizontal__content">
                             <h2 class="heading-secondary">
@@ -128,7 +129,7 @@ class ProjectsPage extends Component {
                         </div>
                     </div>
                 </div>
-            
+
                 {<Footer />}
             </div>
         );

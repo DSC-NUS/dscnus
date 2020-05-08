@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import moment from 'moment';
 import { Icon, Message } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
+import ReactLoading from 'react-loading';
 import PageHeader from './PageHeader';
 import Footer from './Footer';
 // import logo from '../assets/HomePage/event1.jpg';
@@ -12,22 +13,26 @@ class BlogPage extends Component {
         error: undefined,
         articles: undefined,
         recents: undefined,
-        filtered: undefined
+        filtered: undefined,
+        loading: true
     }
 
     fetchArticles = () => {
-        fetch(constants["backend-url"] + '/articles', {
-        // fetch('http://localhost:3001/articles', {
-            method: "GET"
-        }).then(response => response.json()
-        ).then((response) => {
-            if (response.constructor === Array) {
-                this.setState({ articles: response, filtered: response })
-            }
-        }).catch((error) => {
-            this.setState({ error: true })
-            // console.log('error1: ' + this.state.error)
+        this.setState({ loading: true }, () => {
+            fetch(constants["backend-url"] + '/articles', {
+                // fetch('http://localhost:3001/articles', {
+                method: "GET"
+            }).then(response => response.json()
+            ).then((response) => {
+                if (response.constructor === Array) {
+                    this.setState({ articles: response, filtered: response, loading: false })
+                }
+            }).catch((error) => {
+                this.setState({ error: true, loading: false })
+                // console.log('error1: ' + this.state.error)
+            })
         })
+
     }
 
     fetchRecents = () => {
@@ -48,7 +53,8 @@ class BlogPage extends Component {
 
     componentDidMount() {
         this.fetchArticles()
-        this.fetchRecents()
+        this.fetchRecents();
+
         this.handleChange = this.handleChange.bind(this);
         window.scrollTo(0, 0)
     }
@@ -80,7 +86,7 @@ class BlogPage extends Component {
 
                 <div className="blog__content">
                     <div className="blog__articles">
-                    
+
                         {/* This is a template */}
                         {/* <Link className="card card--clickable blog__article" to="/blog/123">
                             <div className="card__image-box">
@@ -102,10 +108,10 @@ class BlogPage extends Component {
                         </Link> */}
                         {/* End of template */}
 
-                        {!!this.state.filtered && this.state.filtered.constructor === Array && this.state.filtered.map((article) => (
+                        {!!this.state.filtered && !this.state.loading && this.state.filtered.constructor === Array && this.state.filtered.map((article) => (
                             <Link className="card card--clickable blog__article" to={`/blog/${article._id}`} key={article._id}>
                                 <div className="card__image-box">
-                                    <img src={constants["backend-url"] + `/articles/${article._id}/picture`} alt="event"/>
+                                    <img src={constants["backend-url"] + `/articles/${article._id}/picture`} alt="event" />
                                 </div>
                                 <div className="card__content">
                                     <h2>{article.title}</h2>
@@ -114,14 +120,17 @@ class BlogPage extends Component {
                                 </div>
                             </Link>
                         ))}
-                        {!!!this.state.articles && !this.state.error && (
+                        {this.state.loading && (
+                            <ReactLoading type={"bars"} color={"#06c1d0"} style={{ margin: 'auto', width: '30%' }} />
+                        )}
+                        {!!!this.state.articles && !this.state.error && !this.state.loading && (
                             <Message info>
-                            There are no articles at the moment!
+                                There are no articles at the moment!
                             </Message>
                         )}
-                        {this.state.error && (
+                        {this.state.error && !this.state.loading && (
                             <Message error>
-                            There was an error. Please try again later!
+                                There was an error. Please try again later!
                             </Message>
                         )}
                     </div>
@@ -156,7 +165,7 @@ class BlogPage extends Component {
                         </div>
                     </div>
                 </div>
-                {<Footer/>}
+                {<Footer />}
             </div>
         )
     }

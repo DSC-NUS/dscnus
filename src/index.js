@@ -11,11 +11,10 @@ import WorkshopsPage from './components/WorkshopsPage'
 import PostPage from './components/PostPage'
 import ContactPage from './components/ContactPage'
 import BlogPage from './components/BlogPage'
-import ComingSoonPage from './components/ComingSoonPage'
 import NotFoundPage from './components/NotFoundPage'
+import TeamArticlePage from './components/TeamArticlePage'
 import HackathonTeamsPage from './components/HackathonTeamsPage'
 import RecruitmentPage from './components/RecruitmentPage'
-// import PropTypes from 'prop-types';
 import { Router, Route, Switch } from 'react-router-dom'
 import * as serviceWorker from './serviceWorker'
 import { createBrowserHistory } from 'history';
@@ -40,7 +39,7 @@ class App extends Component {
             <Router history={history}>
                 <div className="outer_div">
                     <Switch>
-                        <Route path="/" component={HomePage} exact={true}/>
+                        <Route path="/" component={HomePage} exact={true} />
                         <Route path="/about" component={AboutUsPage} />
                         <Route path="/team" component={TeamPage} />
                         <Route path="/post" component={PostPage} />
@@ -48,9 +47,12 @@ class App extends Component {
                         <Route path="/projects" component={ProjectsPage} />
                         <Route path="/workshops" component={WorkshopsPage} />
                         <Route path="/blog/:id" component={ArticlePage} />
-                        <Route path="/blog" component={BlogPage} exact={true}/>
-                        <Route path="/hackathon-teams" component={HackathonTeamsPage}/>
-                        <Route path="/recruitment" component={RecruitmentPage}/>
+                        <Route path="/blog" component={BlogPage} exact={true} />
+                        <Route path="/externalteamA" render={() => <TeamArticlePage team={0} key={1} />} />
+                        <Route path="/externalteamB" render={() => <TeamArticlePage team={1} key={2} />} />
+                        <Route path="/externalteamC" render={() => <TeamArticlePage team={2} key={3} />} />
+                        <Route path="/hackathon-teams" component={HackathonTeamsPage} />
+                        <Route path="/recruitment" component={RecruitmentPage} />
                         <Route component={NotFoundPage} />
                     </Switch>
                 </div>

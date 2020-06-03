@@ -3,7 +3,6 @@ import PageHeader from './PageHeader.js';
 import Footer from './Footer.js'
 import biz from '../assets/HomePage/biz.jpg'
 import tech from '../assets/HomePage/tech.jpg'
-import deputy from '../assets/HomePage/deputy.jpg'
 
 class RecruitmentPage extends Component {
     componentDidMount() {
@@ -16,23 +15,23 @@ class RecruitmentPage extends Component {
                 <header class="recruitment-header">
                     <div class="recruitment-header__text-box align-center">
                         <h1 className="heading-primary">
-                            <span className="heading-primary--main">Join DSC NUS</span>    
+                            <span className="heading-primary--main">Join DSC NUS</span>
                         </h1>
                         <p className="subtitle">We are looking for passionate leaders to help us push the mission of #TECHFORGOOD</p>
                         <p className="subtitle">Deadline: 19th April</p>
-                        <a href="https://tinyurl.com/dscnusRecruitment" target="_blank" className="btn btn-yellow">Join us</a>
+                        <a href="https://tinyurl.com/dscnusRecruitment" target="_blank" rel="noopener noreferrer" className="btn btn-yellow">Join us</a>
                     </div>
-                
+
                     <section>
                         <div className="recruitment">
                             <a href="#internal" className="recruitment__content-box">
                                 <p className="recruitment__roles">
-                                Internal
+                                    Internal
                                 </p>
                             </a>
                             <a className="recruitment__content-box" href="#external">
                                 <p className="recruitment__roles">
-                                External
+                                    External
                                 </p>
                             </a>
                         </div>
@@ -48,7 +47,7 @@ class RecruitmentPage extends Component {
 
                 <section className="section-home">
                     <div className="section-home__content">
-                        <div class="section-home__text-box" id="internal">                             
+                        <div class="section-home__text-box" id="internal">
                             <h2 class="heading-secondary">
                                 Internal Lead
                             </h2>
@@ -61,11 +60,11 @@ class RecruitmentPage extends Component {
                             </ul>
                         </div>
                         <div className="section-home__image-box">
-                            <img src={biz} alt="Who Are We" className="section-home__image"/>
+                            <img src={biz} alt="Who Are We" className="section-home__image" />
                         </div>
                     </div>
                 </section>
-                
+
                 {/* <section className="section-home">
                     <div className="section-home__content">
                         <div class="section-home__image-box">     
@@ -94,7 +93,7 @@ class RecruitmentPage extends Component {
 
                 <section className="section-home">
                     <div className="section-home__content">
-                        <div class="section-home__text-box" id="external">                             
+                        <div class="section-home__text-box" id="external">
                             <h2 class="heading-secondary">
                                 Head of Business
                             </h2>
@@ -106,7 +105,7 @@ class RecruitmentPage extends Component {
                             </ul>
                         </div>
                         <div className="section-home__image-box">
-                            <img src={biz} alt="Who Are We" className="section-home__image"/>
+                            <img src={biz} alt="Who Are We" className="section-home__image" />
                         </div>
                     </div>
                 </section>
@@ -114,9 +113,9 @@ class RecruitmentPage extends Component {
                 <section className="section-recruitment">
                     <div className="section-recruitment__content section-recruitment__content-reverse">
                         <div className="section-recruitment__image-box">
-                            <img src={tech} alt="Who Are We" className="section-recruitment__image"/>
+                            <img src={tech} alt="Who Are We" className="section-recruitment__image" />
                         </div>
-                        <div class="section-recruitment__text-box">                             
+                        <div class="section-recruitment__text-box">
                             <h2 class="heading-secondary">
                                 Head of Tech
                             </h2>

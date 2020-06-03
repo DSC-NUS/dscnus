@@ -15,6 +15,8 @@
     &__image-box {
         align-self: center;
         text-align: center;
+        // max-height: 55rem;
+        overflow: hidden;
 
         img {
             width: 100%;
@@ -33,5 +35,40 @@
 
     &__text {
         margin-top: $l-size;
+    }
+}
+
+.team-article {
+    &__image-box {
+        align-self: center;
+        text-align: center;
+        width: 50vw;
+        margin: 0 auto;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            width: 100%;
+        }
+    }
+
+    &__content {
+        padding: $l-size;
+        width: 80%;
+        margin: 0 auto;
+
+        @media only screen and (max-width: $bp-small) {
+            width: 100%;
+        }
+    }
+
+    &__list {
+        margin-left: 2.5rem;
+        font-size: 1.4rem;
     }
 }

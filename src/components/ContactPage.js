@@ -18,45 +18,45 @@ class ContactPage extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-        if (this.state.email.match(/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/)) {
-            this.setState({emailError: false});
+        if (this.state.email.match(/^([a-zA-Z0-9_\-.]+)@([a-zA-Z0-9_\-.]+)\.([a-zA-Z]{2,5})$/)) {
+            this.setState({ emailError: false });
 
         } else {
-            return this.setState({emailError: true});
-        } 
+            return this.setState({ emailError: true });
+        }
 
         // console.log("state: " + this.state)
 
         axios({
             method: 'post',
             url: constants["backend-url"] + '/send',
-            timeout: 3000, 
+            timeout: 3000,
             data: {
-              ...this.state
+                ...this.state
             }
         })
-        .then(response => { 
-            // console.log("response: " + response)
-            this.setState({
-                success: true,
-                failure: false,
-                firstname: '',
-                lastname: '',
-                email: '',
-                message: '',
-            });
-        })
-        .catch(error => {
-            console.error('timeout exceeded')
-            this.setState({
-                success: true,
-                failure: false,
-                firstname: '',
-                lastname: '',
-                email: '',
-                message: '',
-            });
-        })
+            .then(response => {
+                // console.log("response: " + response)
+                this.setState({
+                    success: true,
+                    failure: false,
+                    firstname: '',
+                    lastname: '',
+                    email: '',
+                    message: '',
+                });
+            })
+            .catch(error => {
+                console.error('timeout exceeded')
+                this.setState({
+                    success: true,
+                    failure: false,
+                    firstname: '',
+                    lastname: '',
+                    email: '',
+                    message: '',
+                });
+            })
 
         // fetch('http://localhost:3001/send',{
         //     method: "POST",
@@ -85,22 +85,22 @@ class ContactPage extends Component {
         //     this.setState({ failure: true, success: false })
         // })
     }
-    
+
 
     onEmailChange = (e) => {
-        this.setState({ email: e.target.value});
+        this.setState({ email: e.target.value });
     }
 
     onFirstNameChange = (e) => {
-        this.setState({ firstname: e.target.value});
+        this.setState({ firstname: e.target.value });
     }
 
     onLastNameChange = (e) => {
-        this.setState({ lastname: e.target.value});
+        this.setState({ lastname: e.target.value });
     }
 
     onMessageChange = (e) => {
-        this.setState({ message: e.target.value});
+        this.setState({ message: e.target.value });
     }
 
     componentDidMount() {
@@ -119,52 +119,52 @@ class ContactPage extends Component {
                         <h2 className="heading-tertiary">Contact Us</h2>
                         <p className="subheading contact__form-header">Please fill out the quick form and we'll get in touch with you shortly!</p>
                         <label htmlFor="firstname">First Name</label>
-                        <input 
-                            type="text" 
-                            className="contact__form-input" 
+                        <input
+                            type="text"
+                            className="contact__form-input"
                             placeholder="First name"
                             name="firstname"
-                            value={this.state.firstname} 
+                            value={this.state.firstname}
                             onChange={this.onFirstNameChange}
                         />
                         <label htmlFor="lastname">Last Name</label>
-                        <input 
-                            type="text" 
-                            className="contact__form-input" 
+                        <input
+                            type="text"
+                            className="contact__form-input"
                             placeholder="Last name"
                             name="lastname"
-                            value={this.state.lastname} 
+                            value={this.state.lastname}
                             onChange={this.onLastNameChange}
                         />
                         <label htmlFor="email">Email</label>
-                        <input 
-                            type="email" 
-                            className="contact__form-input" 
+                        <input
+                            type="email"
+                            className="contact__form-input"
                             placeholder="example@mail.com"
                             name="email"
-                            value={this.state.email} 
+                            value={this.state.email}
                             onChange={this.onEmailChange}
                         />
                         <label htmlFor="Message">Your Message</label>
-                        <textarea 
-                            type="text" 
+                        <textarea
+                            type="text"
                             cols="40" rows="5"
-                            className="contact__form-input contact__form-textarea" 
+                            className="contact__form-input contact__form-textarea"
                             placeholder="Type here..."
                             name="message"
                             required
-                            value={this.state.message} 
+                            value={this.state.message}
                             onChange={this.onMessageChange}
                         />
                         <button className="btn btn-inline" type="submit">Submit</button>
                         {this.state.emailError && (
-                            <Message error header="Invalid Email" className="message" content="Please input a valid email."/>
+                            <Message error header="Invalid Email" className="message" content="Please input a valid email." />
                         )}
                         {this.state.failure && (
-                            <Message error header="Failure" className="message" content="Failed to send. Please try again later!"/>
+                            <Message error header="Failure" className="message" content="Failed to send. Please try again later!" />
                         )}
                         {this.state.success && (
-                            <Message success header="Success" className="message" content="Your message has been sent!"/>
+                            <Message success header="Success" className="message" content="Your message has been sent!" />
                         )}
                     </form>
                     <div className="contact__alternatives">

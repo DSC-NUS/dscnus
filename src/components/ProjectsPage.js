@@ -4,7 +4,6 @@ import PageHeader from './PageHeader';
 import Footer from './Footer';
 import project1 from '../assets/ProjectsPage/project1.png';
 import workshop from '../assets/ProjectsPage/workshop.png'
-import hackathon from '../assets/ProjectsPage/hackathon.svg'
 import hglogo from '../assets/ProjectsPage/hglogo.png'
 import seminar from '../assets/ProjectsPage/seminar.png'
 import teamb from '../assets/ProjectsPage/teamb.png'

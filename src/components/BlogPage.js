@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import moment from 'moment';
 import { Icon, Message } from 'semantic-ui-react';
-import { Link } from 'react-router-dom';
 import ReactLoading from 'react-loading';
+import ArticleCard from './ArticleCard';
 import PageHeader from './PageHeader';
 import Footer from './Footer';
+import teamarticledata from '../data/teamarticledata';
 // import logo from '../assets/HomePage/event1.jpg';
 import constants from '../data/constants';
 
@@ -108,17 +109,26 @@ class BlogPage extends Component {
                         </Link> */}
                         {/* End of template */}
 
+                        {!this.state.loading && teamarticledata.teams.map((team, index) => (
+                            <ArticleCard
+                                cardLink={team.cardLink}
+                                key={index}
+                                imageLink={team.imageLink}
+                                title={team.title}
+                                date={moment(new Date(team.createdAt)).fromNow()}
+                                content={team.content}
+                            />
+                        ))}
+
                         {!!this.state.filtered && !this.state.loading && this.state.filtered.constructor === Array && this.state.filtered.map((article) => (
-                            <Link className="card card--clickable blog__article" to={`/blog/${article._id}`} key={article._id}>
-                                <div className="card__image-box">
-                                    <img src={constants["backend-url"] + `/articles/${article._id}/picture`} alt="event" />
-                                </div>
-                                <div className="card__content">
-                                    <h2>{article.title}</h2>
-                                    <p className="subheading">{moment(new Date(article.createdAt)).fromNow()}</p>
-                                    <p className="paragraph">{article.description}</p>
-                                </div>
-                            </Link>
+                            <ArticleCard
+                                cardLink={`/blog/${article._id}`}
+                                key={article._id}
+                                imageLink={constants["backend-url"] + `/articles/${article._id}/picture`}
+                                title={article.title}
+                                date={moment(new Date(article.createdAt)).fromNow()}
+                                content={article.description}
+                            />
                         ))}
                         {this.state.loading && (
                             <ReactLoading type={"bars"} color={"#06c1d0"} style={{ margin: 'auto', width: '30%' }} />
@@ -144,6 +154,15 @@ class BlogPage extends Component {
                                     {/* <li className="blog__list-item"><a href='/blog/123'>Title</a></li>
                                     <li className="blog__list-item"><a href='/blog/123'>Title</a></li> */}
                                     {/* End of template */}
+                                    {!this.state.loading &&
+                                        (
+                                            <div>
+                                                <li className="blog__list-item"><a href='/externalteamA'>External Team A</a></li>
+                                                <li className="blog__list-item"><a href='/externalteamB'>External Team B</a></li>
+                                                <li className="blog__list-item"><a href='/externalteamC'>External Team C</a></li>
+                                            </div>
+                                        )
+                                    }
                                     {this.state.recents && this.state.recents.constructor === Array && this.state.recents.map((recent) => (
                                         <li className="blog__list-item" key={recent._id}><a href={`/blog/${recent._id}`}>{recent.title}</a></li>
                                     ))}

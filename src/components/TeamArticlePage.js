@@ -5,6 +5,7 @@ import teamarticledata from '../data/teamarticledata';
 import TeamAArticleContent from './TeamAArticleContent';
 import TeamBArticleContent from './TeamBArticleContent';
 import TeamCArticleContent from './TeamCArticleContent';
+import HackForGoodArticleContent from './HackForGoodArticleContent';
 
 // const imagePath = require.context('../assets/TeamArticlePage/', true);
 
@@ -48,8 +49,13 @@ class TeamArticlePage extends Component {
                                     <TeamCArticleContent />
                                 )
                             }
+                            {
+                                this.props.team === 3 && (
+                                    <HackForGoodArticleContent />
+                                )
+                            }
                         </div>
-                        <div className="">
+                        <div className="" className={this.state.deckLink ? '' : 'display-none'}>
                             <a href={this.state.deckLink} className="btn btn-yellow" target="_blank" rel="noopener noreferrer">Our Pitch Deck</a>
                         </div>
                     </div>

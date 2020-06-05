@@ -51,6 +51,7 @@ class App extends Component {
                         <Route path="/externalteamA" render={() => <TeamArticlePage team={0} key={1} />} />
                         <Route path="/externalteamB" render={() => <TeamArticlePage team={1} key={2} />} />
                         <Route path="/externalteamC" render={() => <TeamArticlePage team={2} key={3} />} />
+                        <Route path="/hackforgood2020" render={() => <TeamArticlePage team={3} key={4} />} />
                         <Route path="/hackathon-teams" component={HackathonTeamsPage} />
                         <Route path="/recruitment" component={RecruitmentPage} />
                         <Route component={NotFoundPage} />

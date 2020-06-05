@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.e0926d68.chunk.css",
-    "main.js": "/static/js/main.3c81129f.chunk.js",
-    "main.js.map": "/static/js/main.3c81129f.chunk.js.map",
+    "main.css": "/static/css/main.5dc12ebb.chunk.css",
+    "main.js": "/static/js/main.ad47ee68.chunk.js",
+    "main.js.map": "/static/js/main.ad47ee68.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.7d2ab4be.js",
     "runtime-main.js.map": "/static/js/runtime-main.7d2ab4be.js.map",
     "static/css/2.7df41cd5.chunk.css": "/static/css/2.7df41cd5.chunk.css",
-    "static/js/2.89f0f4e6.chunk.js": "/static/js/2.89f0f4e6.chunk.js",
-    "static/js/2.89f0f4e6.chunk.js.map": "/static/js/2.89f0f4e6.chunk.js.map",
+    "static/js/2.58333f89.chunk.js": "/static/js/2.58333f89.chunk.js",
+    "static/js/2.58333f89.chunk.js.map": "/static/js/2.58333f89.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.f63a8ec29116b01ec678ad3dec62b4bd.js": "/precache-manifest.f63a8ec29116b01ec678ad3dec62b4bd.js",
+    "precache-manifest.cd6c74c44c6ce8f8e994ab8ec3b248f9.js": "/precache-manifest.cd6c74c44c6ce8f8e994ab8ec3b248f9.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.7df41cd5.chunk.css.map": "/static/css/2.7df41cd5.chunk.css.map",
-    "static/css/main.e0926d68.chunk.css.map": "/static/css/main.e0926d68.chunk.css.map",
-    "static/js/2.89f0f4e6.chunk.js.LICENSE.txt": "/static/js/2.89f0f4e6.chunk.js.LICENSE.txt",
+    "static/css/main.5dc12ebb.chunk.css.map": "/static/css/main.5dc12ebb.chunk.css.map",
+    "static/js/2.58333f89.chunk.js.LICENSE.txt": "/static/js/2.58333f89.chunk.js.LICENSE.txt",
     "static/media/A.jpg": "/static/media/A.757b8854.jpg",
     "static/media/ANN_3566.jpg": "/static/media/ANN_3566.f743eaa3.jpg",
     "static/media/B.jpg": "/static/media/B.3cbacd3d.jpg",
@@ -61,6 +61,7 @@
     "static/media/g8p2.jpg": "/static/media/g8p2.977bae37.jpg",
     "static/media/g9p1.jpg": "/static/media/g9p1.590e362b.jpg",
     "static/media/hackforgood.jpeg": "/static/media/hackforgood.cbaf5ad5.jpeg",
+    "static/media/hackforgood2020.png": "/static/media/hackforgood2020.cbaf5ad5.png",
     "static/media/hglogo.png": "/static/media/hglogo.8688d5bc.png",
     "static/media/project1.png": "/static/media/project1.f1c7bc71.png",
     "static/media/teamA.jpg": "/static/media/teamA.e326e62c.jpg",
@@ -84,8 +85,8 @@
   "entrypoints": [
     "static/js/runtime-main.7d2ab4be.js",
     "static/css/2.7df41cd5.chunk.css",
-    "static/js/2.89f0f4e6.chunk.js",
-    "static/css/main.e0926d68.chunk.css",
-    "static/js/main.3c81129f.chunk.js"
+    "static/js/2.58333f89.chunk.js",
+    "static/css/main.5dc12ebb.chunk.css",
+    "static/js/main.ad47ee68.chunk.js"
   ]
 }

@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4eb98488c035a29028ed28df4d64f487",
+    "revision": "99009cf12d3f83e757e61a098dd777ca",
     "url": "/index.html"
   },
   {
-    "revision": "442f8c37cd9bfc6ac8c2",
+    "revision": "12e5be0cc0c0a7f9cb47",
     "url": "/static/css/2.7df41cd5.chunk.css"
   },
   {
-    "revision": "0050f09a0b65fdd0b386",
-    "url": "/static/css/main.e0926d68.chunk.css"
+    "revision": "da801365a02606dd06ff",
+    "url": "/static/css/main.5dc12ebb.chunk.css"
   },
   {
-    "revision": "442f8c37cd9bfc6ac8c2",
-    "url": "/static/js/2.89f0f4e6.chunk.js"
+    "revision": "12e5be0cc0c0a7f9cb47",
+    "url": "/static/js/2.58333f89.chunk.js"
   },
   {
     "revision": "5879b018a6c7656e08dbc41278ed9b23",
-    "url": "/static/js/2.89f0f4e6.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.58333f89.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0050f09a0b65fdd0b386",
-    "url": "/static/js/main.3c81129f.chunk.js"
+    "revision": "da801365a02606dd06ff",
+    "url": "/static/js/main.ad47ee68.chunk.js"
   },
   {
     "revision": "0d3b8522413ea50bd7ca",
@@ -242,6 +242,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "cbaf5ad5f814f14b769872b2c6f858a9",
     "url": "/static/media/hackforgood.cbaf5ad5.jpeg"
+  },
+  {
+    "revision": "cbaf5ad5f814f14b769872b2c6f858a9",
+    "url": "/static/media/hackforgood2020.cbaf5ad5.png"
   },
   {
     "revision": "bae8c21a2b9443a1e8767cce2558c89a",

@@ -26,6 +26,15 @@ const teamarticledata = {
             cardLink: '/externalteamC',
             createdAt: '06-03-2020',
             deckLink: require('../assets/TeamArticlePage/teamCdeck.pdf')
+        },
+        {
+            title: 'Hack For Good 2020',
+            content: 'On Saturday, 21 March 2020, DSC NUS hosted the finale for our virtual hackathon - Hack for Good. Participants had the opportunity to explore the various pillars backed by various organisations and and come up with creative technological solutions for existing social issues.',
+            imageLink: require('../assets/BlogPage/hackforgood2020.png'),
+            horiImageLink: require('../assets/BlogPage/hackforgood2020.png'),
+            cardLink: '/hackforgood2020',
+            createdAt: '04-12-2020',
+            deckLink: undefined
         }
     ]
 }

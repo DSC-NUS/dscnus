@@ -5,6 +5,9 @@
 .section-header {
     padding: 6rem;
     text-align: center;
+    p {
+        font-size: $font-size-medium;
+    }
 }
 
 .section-teampage {

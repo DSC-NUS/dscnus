@@ -30,7 +30,7 @@ class RecruitmentPage extends Component {
                             If you are passionate about using technology to make a positive impact,
                             apply to join us in this #TechForGood journey.                            
                         </p>
-                        <p className="subtitle">Application period:<br/>10 August &nbsp;--&nbsp; 23 August</p>
+                        <p className="subtitle">Application period:<br/>4 August &nbsp;-&nbsp; 23 August</p>
                         <a href="https://tinyurl.com/dscnusRecruitment" target="_blank" rel="noopener noreferrer" className="btn btn-yellow">Apply Now</a>
                     </div>
                 </header>
@@ -155,9 +155,10 @@ class RecruitmentPage extends Component {
                         Project Quest
                     </h3>
                     <p className="section-recruitment__description">
-                        Quest is a progressive web app that aims to empower youths in their journaling and enable non-profit 
-                        organisations (NPOs) to conduct customisable program evaluation. We will be collaborating with CampusImpact, 
-                        a non-profit organisation whose mission is to guide youths through the transitional phase of their lives.
+                        Quest is a progressive web app that enables non-profit organisations (NPOs) to conduct effective and
+                        customisable program evaluation, and empowers youths through interactive "quests" and engaging journaling
+                        features. We will be collaborating with CampusImpact, an NPO that aims to guide youths through
+                        the transitional phase of their lives.
                     </p>
                     <h3 className="section-recruitment__roles-title">Our Roles Available:</h3>
                     <div className="section-recruitment__roles-group">
@@ -189,7 +190,8 @@ class RecruitmentPage extends Component {
                             We are looking to make our app as fun and entertaining as possible, and we will need your help with that.
                             As a Graphic Designer, you will:
                             <ul>
-                                <li>Design static assets to be used in various parts of the application, as well as explore possibilities such as Lottie animations.</li>
+                                <li>Design static assets to be used in various parts of the application</li>
+                                <li>Develop animations for web applications using technologies such as After Effects and Lottie</li>
                             </ul>
                         </div>                        
                         <div className="section-recruitment__role">

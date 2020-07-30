@@ -31,7 +31,9 @@ class RecruitmentPage extends Component {
                             apply to join us in this #TechForGood journey.                            
                         </p>
                         <p className="subtitle">Application period:<br/>4 August &nbsp;-&nbsp; 23 August</p>
-                        <a href="https://tinyurl.com/dscnusRecruitment" target="_blank" rel="noopener noreferrer" className="btn btn-yellow">Apply Now</a>
+                        <a href="" target="_blank" rel="noopener noreferrer" className="btn btn-yellow disabled">
+                            Applications Opening Soon
+                        </a>
                     </div>
                 </header>
 
@@ -130,10 +132,10 @@ class RecruitmentPage extends Component {
                         <div className="section-recruitment__role">
                             <img alt="design" src={designIcon} />
                             <h4>Product Designer</h4>
-                            We are looking for Designers who understand the principles of user experience. As a Product Designer, you will:
+                            We are looking for Designers who have an understanding of good user experience. As a Product Designer, you will:
                             <ul>
-                                <li>Produce high quality UI/UX wireframes using Adobe/Figma/other softwares</li>
-                                <li>Applying the principles of user experience and conduct relevant experiments for prototypes</li>
+                                <li>Produce high quality UI/UX wireframes using Adobe/Figma/other software</li>
+                                <li>Seek to understand the end users and apply understanding in UI/UX design</li>
                                 <li>Collaborate with developers and stakeholders on an agile methodology to iterate and improve product</li>
                             </ul>
                         </div>

@@ -1,51 +1,23 @@
-.recruitment {
-    display: flex;
-    margin: 2rem;
-    // background-color: $color-dark-grey;
-    // border: 3spx solid $color-grey;
-    padding: 1.5rem;
-    border-radius: 10px;
-
-    &__roles {
-        color: white;
+// textbox that changes width based on screen size
+@mixin center-text-box {
+    width: 60%;
+    margin: 0 auto;
+    @media only screen and (max-width: $bp-largest) {
+        width: 70%;
     }
-
-    &__content-box {
-        background-color: $color-dark-grey;
-        border: 3px solid $color-grey;
-        padding: $s-size;
-        border-radius: 10px;
-        transition: all 0.2s;
-        margin: 0 1rem;
-
-        &:hover {
-            color: $color-teal;
-            border: 3px solid $color-teal;
-            cursor: pointer;
-            transform: translateY(-2px);
-        }
-
-        &:hover > * {
-            color: $color-teal
-        }
-    }
-
     @media only screen and (max-width: $bp-medium) {
-        flex-direction: column;
-        margin: 1.5rem;
-
-        &__content-box {
-            margin: 1rem 0;
-        }
+        width: 75%;
     }
-
     @media only screen and (max-width: $bp-small) {
-        margin: 1rem;
+        width: 90%;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+        width: 100%;
     }
 }
 
 .recruitment-header {
-    background-image: linear-gradient(to right bottom, rgba($color-dark-yellow-grey, 0.6), rgba($color-dark-yellow-grey, 0.6)), url("../../assets/HomePage/homepage.jpg");
+    background-image: linear-gradient(to right bottom, rgba($color-dark-grey, 0.8), rgba($color-dark-grey, 0.8)), url("../../assets/AboutUsPage/aboutuspagebg.jpg");
     background-size: cover;
     background-position: top;
     display: flex;
@@ -54,74 +26,70 @@
     align-items: center;
     height: 95vh;
 
-    &__text-box {
-        width: 50%;
-
-        @media only screen and (max-width: $bp-medium) {
-            width: 75%;
-        }
-
-        @media only screen and (max-width: $bp-small) {
-            width: 90%;
-        }
-
-        @media only screen and (max-width: $bp-smallest) {
-            width: 100%;
-        }
+    &__text-box {        
+        @include center-text-box();
     }
 
     @media only screen and (max-width: $bp-medium) {
-        height: 100%;
         padding: 1.5rem;
     }
 
     @media only screen and (max-width: $bp-small) {
-        height: 100%;
         padding: 1rem;
     }
 }
 
 .section-recruitment {
     background-color: $color-white;
-    color: black;
-    display: flex;
-    flex-direction: column;
-
-    &__content {
+    color: $color-black;
+    padding: 5vh 0;
+    font-size: $font-size-medium;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    @media only screen and (max-width: $bp-small) {
+        width: 90%;
+    }
+    &__title {
+        font-size: $font-size-header-secondary;
+    }
+    &__description {
+        font-size: inherit;
+        @include center-text-box();
+    }
+    &__roles-title {
+        margin-top: 4vh;
+        font-size: $font-size-header-tertiary;
+    }
+    &__roles-group {
+        margin-top: 3vh;
         display: flex;
-        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }    
+    &__role {
+        width: 28%;
+        margin-bottom: 3vh;
+        display: flex;        
+        flex-direction: column;
         align-items: center;
-        @media only screen and (max-width: $bp-smallest) {
-            flex-direction: column;
+        text-align: left;
+        h4 {
+            width: 100%;            
+            font-size: $font-size-header-tertiary;
         }
-    }
-
-    &__content-reverse {
-        @media only screen and (max-width: $bp-smallest) {
-            flex-direction: column-reverse;
+        img {
+            height: 12vh;
         }
-    }
-
-    &__image-box {
-        flex: 0 0 50%;
-        margin-top: .5rem;
-        text-align: center;
-        padding: $s-size;
-    }
-
-    &__image {
-        width: 100%;
-        height: auto;
-        display: block;
-        box-shadow: 0 .2rem .8rem rgba(0,0,0,.2);
-    }
-
-    &__text-box {
-        padding: $l-size;
-        text-align: center;
-
-        @media only screen and (max-width: $bp-smallest) {
-            padding: $m-size;
+        p {
+            font-size: inherit;
+        }
+        @media only screen and (max-width: $bp-largest) {
+            width: 45%;
+        }
+        @media only screen and (max-width: $bp-small) {
+            width: 90%;
         }
     }
 }

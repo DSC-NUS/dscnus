@@ -1,6 +1,9 @@
 import React from 'react';
 
 const HackForGoodArticleContent = () => {
+    React.useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
     return (
         <React.Fragment>
             <p>On Saturday, 21 March 2020, DSC NUS hosted the finale for our virtual hackathon - Hack for Good. Participants had the opportunity to explore the various pillars backed by WWF, Conservation International, Singapore Council Of Women's Organisations, Aphasia SG and SACAC Counselling Pte. Ltd. - Environment, Health, and equality, and come up with creative technological solutions for existing social issues. We had the honour of having judges Corrine Ong, Esther Goh, Marcus Wong, Chuan-Hoo Tan and Michelle Quek with us to judge the amazing presentations from our finalists!</p>

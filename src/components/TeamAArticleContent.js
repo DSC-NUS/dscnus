@@ -1,6 +1,9 @@
 import React from 'react';
 
 const TeamAArticleContent = () => {
+    React.useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
     return (
         <React.Fragment>
             <p>First up, we will be introducing <b>External Team A</b>! <b>External Team A</b> consists of the following members - Brandon, Jia Ming, Rohan, Rachel, Vanessa, Nelson, Hanming, Iman and Zijian.</p>

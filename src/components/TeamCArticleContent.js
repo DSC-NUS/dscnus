@@ -1,6 +1,9 @@
 import React from 'react';
 
 const TeamCArticleContent = () => {
+    React.useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])    
     return (
         <React.Fragment>
             <p>Last but not least we have <b>External Team C</b> directed by two team heads Johanna and Klement and their team members Amelia, Eugene, Rachel, Colin, Sherman, Peirong and Anisha!</p>

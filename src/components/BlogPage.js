@@ -94,7 +94,7 @@ class BlogPage extends Component {
                                 </ul>
                             </div>
                         </div>
-                        <div className="card">
+                        {/* <div className="card">
                             <div className="card__content">
                                 <div className="search">
                                     <h2 className="heading-tertiary">Search</h2>
@@ -106,7 +106,7 @@ class BlogPage extends Component {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 {<Footer />}

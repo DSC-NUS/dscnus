@@ -1,6 +1,9 @@
 import React from 'react';
 
 const TeamBArticleContent = () => {
+    React.useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
     return (
         <React.Fragment>
             <p>Mahatma Gandhi once said, “The best way to find yourself is to lose yourself in the service of others.”</p>

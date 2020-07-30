@@ -103,7 +103,7 @@ class RecruitmentPage extends Component {
                     </h2>
                     <p>
                         Join the External Team to actualise the #TechForGood mission through implementing real-world projects in partnership with non-profit organisations.<br/>
-                        Check out our upcoming projects and the roles available below.
+                        Check out our upcoming projects for AY 2020/2021 and the roles available below.
                     </p>
                 </div>
 

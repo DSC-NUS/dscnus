@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "99009cf12d3f83e757e61a098dd777ca",
+    "revision": "f5161c779f5f195791383ca59aa0522e",
     "url": "/index.html"
   },
   {
-    "revision": "12e5be0cc0c0a7f9cb47",
+    "revision": "a802dcbb09c12c7901e1",
     "url": "/static/css/2.7df41cd5.chunk.css"
   },
   {
-    "revision": "da801365a02606dd06ff",
-    "url": "/static/css/main.5dc12ebb.chunk.css"
+    "revision": "842a009eed96fd95931d",
+    "url": "/static/css/main.d70a2eb7.chunk.css"
   },
   {
-    "revision": "12e5be0cc0c0a7f9cb47",
-    "url": "/static/js/2.58333f89.chunk.js"
+    "revision": "a802dcbb09c12c7901e1",
+    "url": "/static/js/2.a5b63fda.chunk.js"
   },
   {
     "revision": "5879b018a6c7656e08dbc41278ed9b23",
-    "url": "/static/js/2.58333f89.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.a5b63fda.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "da801365a02606dd06ff",
-    "url": "/static/js/main.ad47ee68.chunk.js"
+    "revision": "842a009eed96fd95931d",
+    "url": "/static/js/main.0fbdaa94.chunk.js"
   },
   {
     "revision": "0d3b8522413ea50bd7ca",
@@ -72,8 +72,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/aboutuspagebg.8247bdfe.jpg"
   },
   {
-    "revision": "f5c945c1f3142d827bccc3d9f43aa490",
-    "url": "/static/media/biz.f5c945c1.jpg"
+    "revision": "95b9b8f9f9e8fc1f52f6a9d750e4411f",
+    "url": "/static/media/bizIcon.95b9b8f9.svg"
   },
   {
     "revision": "9b7c42052c73e7a756d9e3209c750d93",
@@ -120,6 +120,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/data3.a7aad259.png"
   },
   {
+    "revision": "16158c8c04a00bf827df215d6c32e0e7",
+    "url": "/static/media/designIcon.16158c8c.svg"
+  },
+  {
     "revision": "94345bfdb61a78cbf7b95caef07cc4cb",
     "url": "/static/media/different.94345bfd.jpg"
   },
@@ -134,6 +138,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "94345bfdb61a78cbf7b95caef07cc4cb",
     "url": "/static/media/event3.94345bfd.jpg"
+  },
+  {
+    "revision": "5949add3fb37de5b50314ac8f21919f6",
+    "url": "/static/media/financeIcon.5949add3.svg"
   },
   {
     "revision": "9c74e172f87984c48ddf5c8108cabe67",
@@ -256,10 +264,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/hglogo.8688d5bc.png"
   },
   {
-    "revision": "0ab12442ce84f04a605533fef80d3ea3",
-    "url": "/static/media/homepage.0ab12442.jpg"
-  },
-  {
     "revision": "0ab54153eeeca0ce03978cc463b257f7",
     "url": "/static/media/icons.0ab54153.woff2"
   },
@@ -278,6 +282,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "faff92145777a3cbaf8e7367b4807987",
     "url": "/static/media/icons.faff9214.woff"
+  },
+  {
+    "revision": "50982119727170d9a663cc7393320e60",
+    "url": "/static/media/operationsIcon.50982119.svg"
   },
   {
     "revision": "701ae6abd4719e9c2ada3535a497b341",
@@ -300,8 +308,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/outline-icons.ef60a4f6.woff"
   },
   {
+    "revision": "545459fa1df0f822a85ddab2dbfc9df9",
+    "url": "/static/media/partnershipsIcon.545459fa.svg"
+  },
+  {
     "revision": "f1c7bc7117e10d72a6491c3c87fe7f07",
     "url": "/static/media/project1.f1c7bc71.png"
+  },
+  {
+    "revision": "ef5719d7e3949bf800ead52bec959311",
+    "url": "/static/media/publicityIcon.ef5719d7.svg"
+  },
+  {
+    "revision": "9f428d28e54580cf05d1d625c6b89f8e",
+    "url": "/static/media/sweIcon.9f428d28.svg"
   },
   {
     "revision": "e326e62c346c1125848d238b78f1e5de",
@@ -348,8 +368,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/teamc.68cd910d.png"
   },
   {
-    "revision": "96e074cf69a0dad129b70d77d278034e",
-    "url": "/static/media/tech.96e074cf.jpg"
+    "revision": "7253761dc49200e2beb476e0bca2d970",
+    "url": "/static/media/techIcon.7253761d.svg"
   },
   {
     "revision": "bc94238559be25ed78df517515088a59",

@@ -17,6 +17,10 @@ class RecruitmentPage extends Component {
         window.scrollTo(0, 0)
     }
     render() {
+        const currDateTime = new Date();        
+        const appOpenDateTime = new Date(2020, 7, 4, 0, 0, 0, 0);
+        const appCloseDateTime = new Date(2020, 7, 24, 0, 0, 0, 0);
+        const appOpen = currDateTime > appOpenDateTime && currDateTime < appCloseDateTime;
         return (
             <div>
                 {<PageHeader />}
@@ -31,8 +35,8 @@ class RecruitmentPage extends Component {
                             apply to join us in this #TechForGood journey.                            
                         </p>
                         <p className="subtitle">Application period:<br/>4 August &nbsp;-&nbsp; 23 August</p>
-                        <a href="" target="_blank" rel="noopener noreferrer" className="btn btn-yellow disabled">
-                            Applications Opening Soon
+                        <a href="https://bit.ly/DSCNUS" target="_blank" rel="noopener noreferrer" className={`btn btn-yellow ${!appOpen ? "disabled" : ""}`}>
+                            {appOpen ? "Apply Now" : "Applications are closed"}
                         </a>
                     </div>
                 </header>
@@ -126,7 +130,7 @@ class RecruitmentPage extends Component {
                             <ul>
                                 <li>Create website layout/interface using React/HTML/CSS/Redux</li>
                                 <li>Create backend services with knowledge of REST APIs and databases (NodeJS, MongoDB)</li>
-                                <li>Deploy and manage application on popular cloud services such as GCP/AWS</li>
+                                <li>Deploy and manage application on cloud services such as GCP/AWS</li>
                             </ul>
                         </div>
                         <div className="section-recruitment__role">
@@ -135,7 +139,7 @@ class RecruitmentPage extends Component {
                             We are looking for Designers who have an understanding of good user experience. As a Product Designer, you will:
                             <ul>
                                 <li>Produce high quality UI/UX wireframes using Adobe/Figma/other software</li>
-                                <li>Seek to understand the end users and apply understanding in UI/UX design</li>
+                                <li>Apply the principles of user experience and conduct relevant experiments for prototypes</li>
                                 <li>Collaborate with developers and stakeholders on an agile methodology to iterate and improve product</li>
                             </ul>
                         </div>
@@ -145,7 +149,7 @@ class RecruitmentPage extends Component {
                             We are looking for passionate Business Associates who can engage with others effectively. As a Business Associate,
                             you will:
                             <ul>
-                                <li>Lead an end-to-end workstream under Digital Kampung (i.e. Platform feature).</li>
+                                <li>Lead an end-to-end workstream under Digital Kampong (i.e. Platform feature).</li>
                                 <li>Coordinate between our partner non-profit, platform users and the technology team </li>
                             </ul>
                         </div>

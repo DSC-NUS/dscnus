@@ -232,7 +232,7 @@ class RecruitmentPage extends Component {
                             <ul>
                                 <li>Create website layout/user interfaces with HTML, CSS, ReactJS, React-Redux</li>
                                 <li>Integrate back-end services and databases with SQL, NodeJS</li>
-                                <li>Build application on top of GCP tools such App Engine, CloudSQL, GCS</li>
+                                <li>Build application on top of GCP tools such as App Engine, CloudSQL, GCS</li>
                             </ul>
                         </div>
                         <div className="section-recruitment__role">

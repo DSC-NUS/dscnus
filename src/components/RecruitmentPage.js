@@ -181,7 +181,7 @@ class RecruitmentPage extends Component {
                         </div>
                         <div className="section-recruitment__role">
                             <img alt="design" src={designIcon} />
-                            <h4>UI/UX Designer</h4>
+                            <h4>Product Designer (UI/UX)</h4>
                             We are looking for a UI/UX designer passionate about delivering a smooth and enjoyable experience to the youths using our app.
                             As a UI/UX designer, you will:
                             <ul>
@@ -191,7 +191,7 @@ class RecruitmentPage extends Component {
                         </div>
                         <div className="section-recruitment__role">
                             <img alt="design" src={designIcon} />
-                            <h4>Graphic Designer</h4>
+                            <h4>Product Designer (Graphic)</h4>
                             We are looking for a Graphic Designer with experience in creating digital art that captivates youths.
                             We are looking to make our app as fun and entertaining as possible, and we will need your help with that.
                             As a Graphic Designer, you will:

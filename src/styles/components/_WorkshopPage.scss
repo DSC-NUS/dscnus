@@ -1,0 +1,30 @@
+.speaker-card {
+  flex: 1;
+  width: 100% !important;
+}
+
+.speaker-inner-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.speaker-img {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.speaker-imges {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.speaker-details {
+  margin-top: 1em;
+}
+
+.full-width {
+  width: 100%;
+}

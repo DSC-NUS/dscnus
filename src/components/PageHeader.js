@@ -1,202 +1,192 @@
-import React, { Component } from 'react'
-import { slide as Burger } from 'react-burger-menu'
-import { Menu, Dropdown, Segment, Responsive } from 'semantic-ui-react'
-import { Link } from 'react-router-dom'
-import logo from '../assets/PageHeader/dscnuslogo.png'
+import React, { Component } from "react";
+import { slide as Burger } from "react-burger-menu";
+import { Menu, Dropdown, Segment, Responsive } from "semantic-ui-react";
+import { Link } from "react-router-dom";
+import logo from "../assets/PageHeader/dscnuslogo.png";
 
 class PageHeader extends Component {
-    state = {
+  state = {
+    inverted: true,
+    activeItem: "",
+    showMenu: false,
+  };
+
+  handleItemClick = (e, { name }) => {
+    this.setState({ activeItem: name });
+  };
+
+  listenScrollEvent = (e) => {
+    if (window.scrollY > 400) {
+      this.setState({
+        inverted: false,
+      });
+    } else {
+      this.setState({
         inverted: true,
-        activeItem: '',
-        showMenu: false
+      });
     }
+  };
 
-    handleItemClick = (e, { name }) => {
-        this.setState({ activeItem: name })
-    }
+  componentDidMount() {
+    window.addEventListener("scroll", this.listenScrollEvent);
+  }
 
-    listenScrollEvent = e => {
-        if (window.scrollY > 400) {
-            this.setState({
-                inverted: false
-            })
-        } else {
-            this.setState({
-                inverted: true
-            })
-        }
-    }
-    
-    componentDidMount() {
-        window.addEventListener('scroll', this.listenScrollEvent)
-    }
+  render() {
+    return (
+      <div className="menu">
+        <Responsive as={Segment} minWidth={600} className="responsive">
+          <Menu stackable inverted={this.state.inverted} className="menu">
+            <Menu.Item as={Link} to="/">
+              <img src={logo} alt="DSC NUS Logo" className="logo" />
+            </Menu.Item>
+            <Menu.Menu position="right">
+              <Menu.Item
+                name="home"
+                active={this.state.activeItem === "home"}
+                as={Link}
+                to="/"
+                onClick={this.handleItemClick}
+              >
+                Home
+              </Menu.Item>
 
-    render() {
-        return (
-            <div className="menu">
-                <Responsive as={Segment} minWidth={600} className="responsive">
-                    <Menu stackable inverted={this.state.inverted} className="menu">
-                        <Menu.Item
-                            as={Link}
-                            to='/'>
-                        <img src={logo} alt="DSC NUS Logo" className="logo"/>
-                        </Menu.Item>
-                        <Menu.Menu position="right">
-                            <Menu.Item
-                                name='home'
-                                active={this.state.activeItem === 'home'}
-                                as={Link}
-                                to="/"
-                                onClick={this.handleItemClick}
-                            >
-                            Home
-                            </Menu.Item>
+              <Dropdown item text="About">
+                <Dropdown.Menu>
+                  <Dropdown.Item
+                    onClick={this.handleItemClick}
+                    as={Link}
+                    active={this.state.activeItem === "about"}
+                    to="/about"
+                  >
+                    About Us
+                  </Dropdown.Item>
+                  <Dropdown.Item
+                    onClick={this.handleItemClick}
+                    as={Link}
+                    active={this.state.activeItem === "team"}
+                    to="/team"
+                  >
+                    Our Team
+                  </Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
 
-                            <Dropdown item text='About'>
-                                <Dropdown.Menu>
-                                    <Dropdown.Item
-                                        onClick={this.handleItemClick}
-                                        as={Link}
-                                        active={this.state.activeItem === 'about'}
-                                        to='/about'>
-                                            About Us
-                                    </Dropdown.Item>
-                                    <Dropdown.Item
-                                        onClick={this.handleItemClick}
-                                        as={Link}
-                                        active={this.state.activeItem === 'team'}
-                                        to='/team'>
-                                        Our Team
-                                    </Dropdown.Item>
-                                </Dropdown.Menu>
-                            </Dropdown>
+              <Menu.Item
+                name="projects"
+                active={this.state.activeItem === "projects"}
+                onClick={this.handleItemClick}
+                as={Link}
+                to="/projects"
+              >
+                Our Projects
+              </Menu.Item>
 
-                            <Menu.Item
-                                name='projects'
-                                active={this.state.activeItem === 'projects'}
-                                onClick={this.handleItemClick}
-                                as={Link}
-                                to='/projects'>
-                            Our Projects
-                            </Menu.Item>
+              <Menu.Item
+                name="workshops"
+                active={this.state.activeItem === "workshops"}
+                onClick={this.handleItemClick}
+                as={Link}
+                to="/events"
+              >
+                Our Upcoming Events
+              </Menu.Item>
 
-                            <Menu.Item
-                                name='workshops'
-                                active={this.state.activeItem === 'workshops'}
-                                onClick={this.handleItemClick}
-                                as={Link}
-                                to='/workshops'>
-                            Our Workshops
-                            </Menu.Item>
+              <Menu.Item
+                name="contact"
+                active={this.state.activeItem === "recruitment"}
+                onClick={this.handleItemClick}
+                as={Link}
+                // style={{backgroundColor: "teal", color: "white"}}
+                to="/recruitment"
+              >
+                Recruitment
+              </Menu.Item>
 
-                            <Menu.Item
-                                name='contact'
-                                active={this.state.activeItem === 'recruitment'}
-                                onClick={this.handleItemClick}
-                                as={Link}
-                                // style={{backgroundColor: "teal", color: "white"}}
-                                to='/recruitment'>
-                            Recruitment
-                            </Menu.Item>
+              <Menu.Item
+                name="blog"
+                active={this.state.activeItem === "blog"}
+                onClick={this.handleItemClick}
+                as={Link}
+                to="/blog"
+              >
+                Blog
+              </Menu.Item>
+            </Menu.Menu>
+          </Menu>
+        </Responsive>
+        <Responsive maxWidth={600}>
+          <Burger>
+            <Menu.Item
+              name="home"
+              active={this.state.activeItem === "home"}
+              as={Link}
+              to="/"
+              onClick={this.handleItemClick}
+            >
+              Home
+            </Menu.Item>
 
-                            <Menu.Item
-                                name='blog'
-                                active={this.state.activeItem === 'blog'}
-                                onClick={this.handleItemClick}
-                                as={Link}
-                                to='/blog'>
-                            Blog
-                            </Menu.Item>
+            <Menu.Item
+              name="about"
+              onClick={this.handleItemClick}
+              as={Link}
+              active={this.state.activeItem === "about"}
+              to="/about"
+            >
+              About Us
+            </Menu.Item>
 
-                            <Menu.Item
-                                name='contact'
-                                active={this.state.activeItem === 'contact'}
-                                onClick={this.handleItemClick}
-                                as={Link}
-                                to='/contact'>
-                            Contact Us
-                            </Menu.Item>
-                        </Menu.Menu>
-                    </Menu>
-                </Responsive>
-                <Responsive maxWidth={600}>
-                    <Burger>
-                        <Menu.Item
-                            name='home'
-                            active={this.state.activeItem === 'home'}
-                            as={Link}
-                            to="/"
-                            onClick={this.handleItemClick}
-                        >
-                        Home
-                        </Menu.Item>
+            <Menu.Item
+              name="team"
+              onClick={this.handleItemClick}
+              as={Link}
+              active={this.state.activeItem === "team"}
+              to="/team"
+            >
+              Our Core Team
+            </Menu.Item>
 
-                        <Menu.Item
-                            name="about"
-                            onClick={this.handleItemClick}
-                            as={Link}
-                            active={this.state.activeItem === 'about'}
-                            to='/about'
-                        >
-                                About Us
-                        </Menu.Item>
-                        
-                        <Menu.Item
-                            name="team"
-                            onClick={this.handleItemClick}
-                            as={Link}
-                            active={this.state.activeItem === 'team'}
-                            to='/team'
-                        >
-                            Our Core Team
-                        </Menu.Item>
+            <Menu.Item
+              name="projects"
+              active={this.state.activeItem === "projects"}
+              onClick={this.handleItemClick}
+              as={Link}
+              to="/projects"
+            >
+              Our Projects
+            </Menu.Item>
 
-                        <Menu.Item
-                            name='projects'
-                            active={this.state.activeItem === 'projects'}
-                            onClick={this.handleItemClick}
-                            as={Link}
-                            to='/projects'>
-                        Our Projects
-                        </Menu.Item>
+            <Menu.Item
+              name="workshops"
+              active={this.state.activeItem === "workshops"}
+              onClick={this.handleItemClick}
+              as={Link}
+              to="/events"
+            >
+              Our Upcoming Events
+            </Menu.Item>
 
-                        <Menu.Item
-                                name='workshops'
-                                active={this.state.activeItem === 'workshops'}
-                                onClick={this.handleItemClick}
-                                as={Link}
-                                to='/workshops'>
-                        Our Workshops
-                        </Menu.Item>
+            <Menu.Item
+              name="recruitment"
+              active={this.state.activeItem === "recruitment"}
+              onClick={this.handleItemClick}
+              as={Link}
+              to="/recruitment"
+            >
+              Recruitment
+            </Menu.Item>
 
-                        <Menu.Item
-                            name='recruitment'
-                            active={this.state.activeItem === 'recruitment'}
-                            onClick={this.handleItemClick}
-                            as={Link}
-                            to='/recruitment'>
-                        Recruitment
-                        </Menu.Item>
-
-                        <Menu.Item
-                            name='blog'
-                            active={this.state.activeItem === 'blog'}
-                            onClick={this.handleItemClick}
-                            as={Link}
-                            to='/blog'>
-                        Blog
-                        </Menu.Item>
-
-                        <Menu.Item
-                            name='contact'
-                            active={this.state.activeItem === 'contact'}
-                            onClick={this.handleItemClick}
-                            as={Link}
-                            to='/contact'>
-                        Contact Us
-                        </Menu.Item>
-                    </Burger>
-                    {/* <Menu inverted>
+            <Menu.Item
+              name="blog"
+              active={this.state.activeItem === "blog"}
+              onClick={this.handleItemClick}
+              as={Link}
+              to="/blog"
+            >
+              Blog
+            </Menu.Item>
+          </Burger>
+          {/* <Menu inverted>
                         <Menu.Item header onClick={()=>this.setState({showMenu: true})}><Icon name="bars" size="large"/></Menu.Item>
                     </Menu>
                     <Sidebar.Pushable as={Segment} style={{margin: 0, border: "none"}}>
@@ -265,11 +255,11 @@ class PageHeader extends Component {
                                 to='/contact'>
                             Contact Us
                             </Menu.Item> */}
-                        {/* </Sidebar> */}
-                    {/* </Sidebar.Pushable> */}
-                </Responsive>
-            </div>
-    )
+          {/* </Sidebar> */}
+          {/* </Sidebar.Pushable> */}
+        </Responsive>
+      </div>
+    );
   }
 }
 

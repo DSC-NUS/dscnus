@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "48cb7d6bb6aedf7ef71db81eebfa7d3a",
+    "revision": "dd9f39d7b0540a166a5ffe98ad4ef1c3",
     "url": "/dscnus/index.html"
   },
   {
-    "revision": "2f22bb4462064a297c81",
+    "revision": "3cd18878967a3a5dcfc5",
     "url": "/dscnus/static/css/2.1032e03e.chunk.css"
   },
   {
-    "revision": "5241f8925dd00e6758b5",
-    "url": "/dscnus/static/css/main.efb8692f.chunk.css"
+    "revision": "f571f11df51f95062a98",
+    "url": "/dscnus/static/css/main.d24b5470.chunk.css"
   },
   {
-    "revision": "2f22bb4462064a297c81",
-    "url": "/dscnus/static/js/2.83c82498.chunk.js"
+    "revision": "3cd18878967a3a5dcfc5",
+    "url": "/dscnus/static/js/2.595a62a5.chunk.js"
   },
   {
     "revision": "5879b018a6c7656e08dbc41278ed9b23",
-    "url": "/dscnus/static/js/2.83c82498.chunk.js.LICENSE.txt"
+    "url": "/dscnus/static/js/2.595a62a5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5241f8925dd00e6758b5",
-    "url": "/dscnus/static/js/main.c5ac8302.chunk.js"
+    "revision": "f571f11df51f95062a98",
+    "url": "/dscnus/static/js/main.d6f04a74.chunk.js"
   },
   {
     "revision": "865f5365cab9dc56649e",
@@ -138,6 +138,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "94345bfdb61a78cbf7b95caef07cc4cb",
     "url": "/dscnus/static/media/event3.94345bfd.jpg"
+  },
+  {
+    "revision": "edbf20b3bdcbd6f556b78204b44e4420",
+    "url": "/dscnus/static/media/fengru.edbf20b3.png"
   },
   {
     "revision": "5949add3fb37de5b50314ac8f21919f6",
@@ -282,6 +286,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "faff92145777a3cbaf8e7367b4807987",
     "url": "/dscnus/static/media/icons.faff9214.woff"
+  },
+  {
+    "revision": "338d451ddfa21fd54e7c8d3dc7ccabcb",
+    "url": "/dscnus/static/media/joanna.338d451d.jpg"
+  },
+  {
+    "revision": "a876f6ce90b74ed2bc5c597812c58384",
+    "url": "/dscnus/static/media/kangliang.a876f6ce.jpg"
+  },
+  {
+    "revision": "0c293f85b3fd2c9c10655130dc101ae9",
+    "url": "/dscnus/static/media/max.0c293f85.png"
   },
   {
     "revision": "50982119727170d9a663cc7393320e60",

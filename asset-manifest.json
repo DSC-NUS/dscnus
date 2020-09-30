@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/dscnus/static/css/main.efb8692f.chunk.css",
-    "main.js": "/dscnus/static/js/main.c5ac8302.chunk.js",
-    "main.js.map": "/dscnus/static/js/main.c5ac8302.chunk.js.map",
+    "main.css": "/dscnus/static/css/main.d24b5470.chunk.css",
+    "main.js": "/dscnus/static/js/main.d6f04a74.chunk.js",
+    "main.js.map": "/dscnus/static/js/main.d6f04a74.chunk.js.map",
     "runtime-main.js": "/dscnus/static/js/runtime-main.20897400.js",
     "runtime-main.js.map": "/dscnus/static/js/runtime-main.20897400.js.map",
     "static/css/2.1032e03e.chunk.css": "/dscnus/static/css/2.1032e03e.chunk.css",
-    "static/js/2.83c82498.chunk.js": "/dscnus/static/js/2.83c82498.chunk.js",
-    "static/js/2.83c82498.chunk.js.map": "/dscnus/static/js/2.83c82498.chunk.js.map",
+    "static/js/2.595a62a5.chunk.js": "/dscnus/static/js/2.595a62a5.chunk.js",
+    "static/js/2.595a62a5.chunk.js.map": "/dscnus/static/js/2.595a62a5.chunk.js.map",
     "index.html": "/dscnus/index.html",
-    "precache-manifest.993a2bd001fb23a7101b2b1bec3256b8.js": "/dscnus/precache-manifest.993a2bd001fb23a7101b2b1bec3256b8.js",
+    "precache-manifest.bde482e0fd3fae774cdaa14e6bd85fc3.js": "/dscnus/precache-manifest.bde482e0fd3fae774cdaa14e6bd85fc3.js",
     "service-worker.js": "/dscnus/service-worker.js",
     "static/css/2.1032e03e.chunk.css.map": "/dscnus/static/css/2.1032e03e.chunk.css.map",
-    "static/css/main.efb8692f.chunk.css.map": "/dscnus/static/css/main.efb8692f.chunk.css.map",
-    "static/js/2.83c82498.chunk.js.LICENSE.txt": "/dscnus/static/js/2.83c82498.chunk.js.LICENSE.txt",
+    "static/css/main.d24b5470.chunk.css.map": "/dscnus/static/css/main.d24b5470.chunk.css.map",
+    "static/js/2.595a62a5.chunk.js.LICENSE.txt": "/dscnus/static/js/2.595a62a5.chunk.js.LICENSE.txt",
     "static/media/A.jpg": "/dscnus/static/media/A.757b8854.jpg",
     "static/media/ANN_3566.jpg": "/dscnus/static/media/ANN_3566.f743eaa3.jpg",
     "static/media/B.jpg": "/dscnus/static/media/B.3cbacd3d.jpg",
@@ -36,6 +36,7 @@
     "static/media/event1.jpg": "/dscnus/static/media/event1.745383fa.jpg",
     "static/media/event2.jpg": "/dscnus/static/media/event2.64bfa6e5.jpg",
     "static/media/event3.jpg": "/dscnus/static/media/event3.94345bfd.jpg",
+    "static/media/fengru.png": "/dscnus/static/media/fengru.edbf20b3.png",
     "static/media/financeIcon.svg": "/dscnus/static/media/financeIcon.5949add3.svg",
     "static/media/g10p1.jpg": "/dscnus/static/media/g10p1.6a37d43a.jpg",
     "static/media/g10p2.jpg": "/dscnus/static/media/g10p2.b16e1b44.jpg",
@@ -65,6 +66,9 @@
     "static/media/hackforgood.jpeg": "/dscnus/static/media/hackforgood.cbaf5ad5.jpeg",
     "static/media/hackforgood2020.png": "/dscnus/static/media/hackforgood2020.cbaf5ad5.png",
     "static/media/hglogo.png": "/dscnus/static/media/hglogo.8688d5bc.png",
+    "static/media/joanna.jpg": "/dscnus/static/media/joanna.338d451d.jpg",
+    "static/media/kangliang.jpg": "/dscnus/static/media/kangliang.a876f6ce.jpg",
+    "static/media/max.png": "/dscnus/static/media/max.0c293f85.png",
     "static/media/operationsIcon.svg": "/dscnus/static/media/operationsIcon.50982119.svg",
     "static/media/partnershipsIcon.svg": "/dscnus/static/media/partnershipsIcon.545459fa.svg",
     "static/media/project1.png": "/dscnus/static/media/project1.f1c7bc71.png",
@@ -91,8 +95,8 @@
   "entrypoints": [
     "static/js/runtime-main.20897400.js",
     "static/css/2.1032e03e.chunk.css",
-    "static/js/2.83c82498.chunk.js",
-    "static/css/main.efb8692f.chunk.css",
-    "static/js/main.c5ac8302.chunk.js"
+    "static/js/2.595a62a5.chunk.js",
+    "static/css/main.d24b5470.chunk.css",
+    "static/js/main.d6f04a74.chunk.js"
   ]
 }

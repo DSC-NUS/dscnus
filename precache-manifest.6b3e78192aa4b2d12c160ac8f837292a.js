@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c269731daf1c00ceba247c3b584391cc",
+    "revision": "23f058c752c70aa13bccaca1725b5b46",
     "url": "/dscnus/index.html"
   },
   {
-    "revision": "87367b3b0fb5d1244e3e",
+    "revision": "fb5d849bc91b3a4b49d9",
     "url": "/dscnus/static/css/2.1032e03e.chunk.css"
   },
   {
-    "revision": "1a91db3a4b355064f077",
+    "revision": "cd99245b5da77d778bf4",
     "url": "/dscnus/static/css/main.0d846779.chunk.css"
   },
   {
-    "revision": "87367b3b0fb5d1244e3e",
-    "url": "/dscnus/static/js/2.f5b587f0.chunk.js"
+    "revision": "fb5d849bc91b3a4b49d9",
+    "url": "/dscnus/static/js/2.369da4af.chunk.js"
   },
   {
     "revision": "5879b018a6c7656e08dbc41278ed9b23",
-    "url": "/dscnus/static/js/2.f5b587f0.chunk.js.LICENSE.txt"
+    "url": "/dscnus/static/js/2.369da4af.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1a91db3a4b355064f077",
-    "url": "/dscnus/static/js/main.020946f8.chunk.js"
+    "revision": "cd99245b5da77d778bf4",
+    "url": "/dscnus/static/js/main.90a137d3.chunk.js"
   },
   {
     "revision": "865f5365cab9dc56649e",
@@ -248,6 +248,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dscnus/static/media/g9p1.590e362b.jpg"
   },
   {
+    "revision": "d3489e3a216853dc3249dc29d5ad1509",
+    "url": "/dscnus/static/media/gracepark.d3489e3a.jpg"
+  },
+  {
     "revision": "cbaf5ad5f814f14b769872b2c6f858a9",
     "url": "/dscnus/static/media/hackforgood.cbaf5ad5.jpeg"
   },
@@ -380,8 +384,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dscnus/static/media/techIcon.7253761d.svg"
   },
   {
+    "revision": "901caf8974fb323be3a374bfbc452eb2",
+    "url": "/dscnus/static/media/theodoric.901caf89.jpg"
+  },
+  {
     "revision": "0d4ada2dd0622c2815337bfe91aa4a7f",
     "url": "/dscnus/static/media/turtletree.0d4ada2d.jpg"
+  },
+  {
+    "revision": "84fd346f0dd9d3e165acdea90949a18e",
+    "url": "/dscnus/static/media/vere360.84fd346f.png"
   },
   {
     "revision": "bc94238559be25ed78df517515088a59",

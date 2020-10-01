@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/dscnus/static/css/main.0d846779.chunk.css",
-    "main.js": "/dscnus/static/js/main.020946f8.chunk.js",
-    "main.js.map": "/dscnus/static/js/main.020946f8.chunk.js.map",
+    "main.js": "/dscnus/static/js/main.90a137d3.chunk.js",
+    "main.js.map": "/dscnus/static/js/main.90a137d3.chunk.js.map",
     "runtime-main.js": "/dscnus/static/js/runtime-main.20897400.js",
     "runtime-main.js.map": "/dscnus/static/js/runtime-main.20897400.js.map",
     "static/css/2.1032e03e.chunk.css": "/dscnus/static/css/2.1032e03e.chunk.css",
-    "static/js/2.f5b587f0.chunk.js": "/dscnus/static/js/2.f5b587f0.chunk.js",
-    "static/js/2.f5b587f0.chunk.js.map": "/dscnus/static/js/2.f5b587f0.chunk.js.map",
+    "static/js/2.369da4af.chunk.js": "/dscnus/static/js/2.369da4af.chunk.js",
+    "static/js/2.369da4af.chunk.js.map": "/dscnus/static/js/2.369da4af.chunk.js.map",
     "index.html": "/dscnus/index.html",
-    "precache-manifest.bb8d4aeb1d7d6073a9974dc0ed26c941.js": "/dscnus/precache-manifest.bb8d4aeb1d7d6073a9974dc0ed26c941.js",
+    "precache-manifest.6b3e78192aa4b2d12c160ac8f837292a.js": "/dscnus/precache-manifest.6b3e78192aa4b2d12c160ac8f837292a.js",
     "service-worker.js": "/dscnus/service-worker.js",
     "static/css/2.1032e03e.chunk.css.map": "/dscnus/static/css/2.1032e03e.chunk.css.map",
     "static/css/main.0d846779.chunk.css.map": "/dscnus/static/css/main.0d846779.chunk.css.map",
-    "static/js/2.f5b587f0.chunk.js.LICENSE.txt": "/dscnus/static/js/2.f5b587f0.chunk.js.LICENSE.txt",
+    "static/js/2.369da4af.chunk.js.LICENSE.txt": "/dscnus/static/js/2.369da4af.chunk.js.LICENSE.txt",
     "static/media/A.jpg": "/dscnus/static/media/A.757b8854.jpg",
     "static/media/ANN_3566.jpg": "/dscnus/static/media/ANN_3566.f743eaa3.jpg",
     "static/media/B.jpg": "/dscnus/static/media/B.3cbacd3d.jpg",
@@ -62,6 +62,7 @@
     "static/media/g8p1.jpg": "/dscnus/static/media/g8p1.7b4fe1c5.jpg",
     "static/media/g8p2.jpg": "/dscnus/static/media/g8p2.977bae37.jpg",
     "static/media/g9p1.jpg": "/dscnus/static/media/g9p1.590e362b.jpg",
+    "static/media/gracepark.jpg": "/dscnus/static/media/gracepark.d3489e3a.jpg",
     "static/media/hackforgood.jpeg": "/dscnus/static/media/hackforgood.cbaf5ad5.jpeg",
     "static/media/hackforgood2020.png": "/dscnus/static/media/hackforgood2020.cbaf5ad5.png",
     "static/media/hglogo.png": "/dscnus/static/media/hglogo.8688d5bc.png",
@@ -84,7 +85,9 @@
     "static/media/teamb.png": "/dscnus/static/media/teamb.8afe40d6.png",
     "static/media/teamc.png": "/dscnus/static/media/teamc.68cd910d.png",
     "static/media/techIcon.svg": "/dscnus/static/media/techIcon.7253761d.svg",
+    "static/media/theodoric.jpg": "/dscnus/static/media/theodoric.901caf89.jpg",
     "static/media/turtletree.jpg": "/dscnus/static/media/turtletree.0d4ada2d.jpg",
+    "static/media/vere360.png": "/dscnus/static/media/vere360.84fd346f.png",
     "static/media/webdev1.png": "/dscnus/static/media/webdev1.bc942385.png",
     "static/media/webdev2.png": "/dscnus/static/media/webdev2.f6906cee.png",
     "static/media/whatwedo.jpg": "/dscnus/static/media/whatwedo.19ca977a.jpg",
@@ -94,8 +97,8 @@
   "entrypoints": [
     "static/js/runtime-main.20897400.js",
     "static/css/2.1032e03e.chunk.css",
-    "static/js/2.f5b587f0.chunk.js",
+    "static/js/2.369da4af.chunk.js",
     "static/css/main.0d846779.chunk.css",
-    "static/js/main.020946f8.chunk.js"
+    "static/js/main.90a137d3.chunk.js"
   ]
 }

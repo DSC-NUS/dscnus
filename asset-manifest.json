@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/dscnus/static/css/main.0d846779.chunk.css",
-    "main.js": "/dscnus/static/js/main.90a137d3.chunk.js",
-    "main.js.map": "/dscnus/static/js/main.90a137d3.chunk.js.map",
+    "main.css": "/dscnus/static/css/main.73a6e33e.chunk.css",
+    "main.js": "/dscnus/static/js/main.dc8b1822.chunk.js",
+    "main.js.map": "/dscnus/static/js/main.dc8b1822.chunk.js.map",
     "runtime-main.js": "/dscnus/static/js/runtime-main.20897400.js",
     "runtime-main.js.map": "/dscnus/static/js/runtime-main.20897400.js.map",
     "static/css/2.1032e03e.chunk.css": "/dscnus/static/css/2.1032e03e.chunk.css",
-    "static/js/2.369da4af.chunk.js": "/dscnus/static/js/2.369da4af.chunk.js",
-    "static/js/2.369da4af.chunk.js.map": "/dscnus/static/js/2.369da4af.chunk.js.map",
+    "static/js/2.da867fc2.chunk.js": "/dscnus/static/js/2.da867fc2.chunk.js",
+    "static/js/2.da867fc2.chunk.js.map": "/dscnus/static/js/2.da867fc2.chunk.js.map",
     "index.html": "/dscnus/index.html",
-    "precache-manifest.6b3e78192aa4b2d12c160ac8f837292a.js": "/dscnus/precache-manifest.6b3e78192aa4b2d12c160ac8f837292a.js",
+    "precache-manifest.cb000b156d58ab3cae0333c2c26ef5f5.js": "/dscnus/precache-manifest.cb000b156d58ab3cae0333c2c26ef5f5.js",
     "service-worker.js": "/dscnus/service-worker.js",
     "static/css/2.1032e03e.chunk.css.map": "/dscnus/static/css/2.1032e03e.chunk.css.map",
-    "static/css/main.0d846779.chunk.css.map": "/dscnus/static/css/main.0d846779.chunk.css.map",
-    "static/js/2.369da4af.chunk.js.LICENSE.txt": "/dscnus/static/js/2.369da4af.chunk.js.LICENSE.txt",
+    "static/css/main.73a6e33e.chunk.css.map": "/dscnus/static/css/main.73a6e33e.chunk.css.map",
+    "static/js/2.da867fc2.chunk.js.LICENSE.txt": "/dscnus/static/js/2.da867fc2.chunk.js.LICENSE.txt",
     "static/media/A.jpg": "/dscnus/static/media/A.757b8854.jpg",
     "static/media/ANN_3566.jpg": "/dscnus/static/media/ANN_3566.f743eaa3.jpg",
     "static/media/B.jpg": "/dscnus/static/media/B.3cbacd3d.jpg",
@@ -25,6 +25,7 @@
     "static/media/Pubs.JPG": "/dscnus/static/media/Pubs.12bdb041.JPG",
     "static/media/Technology.jpg": "/dscnus/static/media/Technology.c7bcddfb.jpg",
     "static/media/styles.scss": "/dscnus/static/media/header.bae8c21a.jpg",
+    "static/media/adila.jpg": "/dscnus/static/media/adila.fbafdbfb.jpg",
     "static/media/bizIcon.svg": "/dscnus/static/media/bizIcon.95b9b8f9.svg",
     "static/media/semantic.min.css": "/dscnus/static/media/outline-icons.ef60a4f6.woff",
     "static/media/data0.png": "/dscnus/static/media/data0.bca5b000.png",
@@ -66,6 +67,7 @@
     "static/media/hackforgood.jpeg": "/dscnus/static/media/hackforgood.cbaf5ad5.jpeg",
     "static/media/hackforgood2020.png": "/dscnus/static/media/hackforgood2020.cbaf5ad5.png",
     "static/media/hglogo.png": "/dscnus/static/media/hglogo.8688d5bc.png",
+    "static/media/izzy.jpg": "/dscnus/static/media/izzy.ed9a0d03.jpg",
     "static/media/joanna.jpg": "/dscnus/static/media/joanna.338d451d.jpg",
     "static/media/kangliang.jpg": "/dscnus/static/media/kangliang.a876f6ce.jpg",
     "static/media/operationsIcon.svg": "/dscnus/static/media/operationsIcon.50982119.svg",
@@ -87,7 +89,6 @@
     "static/media/techIcon.svg": "/dscnus/static/media/techIcon.7253761d.svg",
     "static/media/theodoric.jpg": "/dscnus/static/media/theodoric.901caf89.jpg",
     "static/media/turtletree.jpg": "/dscnus/static/media/turtletree.0d4ada2d.jpg",
-    "static/media/vere360.png": "/dscnus/static/media/vere360.84fd346f.png",
     "static/media/webdev1.png": "/dscnus/static/media/webdev1.bc942385.png",
     "static/media/webdev2.png": "/dscnus/static/media/webdev2.f6906cee.png",
     "static/media/whatwedo.jpg": "/dscnus/static/media/whatwedo.19ca977a.jpg",
@@ -97,8 +98,8 @@
   "entrypoints": [
     "static/js/runtime-main.20897400.js",
     "static/css/2.1032e03e.chunk.css",
-    "static/js/2.369da4af.chunk.js",
-    "static/css/main.0d846779.chunk.css",
-    "static/js/main.90a137d3.chunk.js"
+    "static/js/2.da867fc2.chunk.js",
+    "static/css/main.73a6e33e.chunk.css",
+    "static/js/main.dc8b1822.chunk.js"
   ]
 }

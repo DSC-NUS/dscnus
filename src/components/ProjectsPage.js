@@ -1,13 +1,12 @@
 import React, { Component } from "react";
-import {} from "semantic-ui-react";
 import PageHeader from "./PageHeader";
 import Footer from "./Footer";
-import project1 from "../assets/ProjectsPage/project1.png";
 import workshop from "../assets/ProjectsPage/workshop.png";
 import hglogo from "../assets/ProjectsPage/hglogo.png";
 import seminar from "../assets/ProjectsPage/seminar.png";
-import teamb from "../assets/ProjectsPage/teamb.png";
-import teamc from "../assets/ProjectsPage/teamc.png";
+import digitalKampongWebsiteLogo from "../assets/ProjectsPage/digital-kampong-website-logo.svg";
+import questWebsiteLogo from "../assets/ProjectsPage/quest-website-logo.svg";
+import journeyWebsiteLogo from "../assets/ProjectsPage/journey-website-logo.svg";
 import { Link } from "react-router-dom";
 
 class ProjectsPage extends Component {
@@ -37,6 +36,7 @@ class ProjectsPage extends Component {
           <div className="projects">
             <div className="card-horizontal projects__project">
               <div className="card-horizontal__image-box">
+                <span />
                 <img src={workshop} alt="event" />
               </div>
               <div className="card-horizontal__content">
@@ -57,6 +57,7 @@ class ProjectsPage extends Component {
             </div>
             <div className="card-horizontal projects__project">
               <div className="card-horizontal__image-box">
+                <span />
                 <img src={hglogo} alt="event" />
               </div>
               <div className="card-horizontal__content">
@@ -76,6 +77,7 @@ class ProjectsPage extends Component {
 
             <div className="card-horizontal projects__project">
               <div className="card-horizontal__image-box">
+                <span />
                 <img src={seminar} alt="event" />
               </div>
               <div className="card-horizontal__content">
@@ -101,7 +103,8 @@ class ProjectsPage extends Component {
         <div className="projects">
           <div className="card-horizontal projects__project">
             <div className="card-horizontal__image-box">
-              <img src={project1} alt="event" />
+              <span />
+              <img src={digitalKampongWebsiteLogo} alt="event" />
             </div>
             <div className="card-horizontal__content">
               <h2 class="heading-secondary">Project Digital Kampong</h2>
@@ -118,7 +121,8 @@ class ProjectsPage extends Component {
           </div>
           <div className="card-horizontal projects__project">
             <div className="card-horizontal__image-box">
-              <img src={teamb} alt="event" />
+              <span />
+              <img src={questWebsiteLogo} alt="event" />
             </div>
             <div className="card-horizontal__content">
               <h2 class="heading-secondary">Project Quest</h2>
@@ -135,7 +139,8 @@ class ProjectsPage extends Component {
           </div>
           <div className="card-horizontal projects__project">
             <div className="card-horizontal__image-box">
-              <img src={teamc} alt="event" />
+              <span />
+              <img src={journeyWebsiteLogo} alt="event" />
             </div>
             <div className="card-horizontal__content">
               <h2 class="heading-secondary">Project Journey</h2>

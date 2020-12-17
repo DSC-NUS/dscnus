@@ -16,6 +16,7 @@ import gracepark from "../assets/WorkshopsPage/gracepark.jpg";
 import theodoric from "../assets/WorkshopsPage/theodoric.jpg";
 import adila from "../assets/WorkshopsPage/adila.jpg";
 import izzy from "../assets/WorkshopsPage/izzy.jpg";
+import comingsoon from "../assets/WorkshopsPage/comingsoon.png";
 
 const industryTalk1 = [
   {
@@ -131,7 +132,7 @@ class WorkshopsPage extends Component {
           </div>
         </header>
 
-        <div className="section-header section-green">
+        {/* <div className="section-header section-green">
           <h2 class="heading-secondary">Machine Learning</h2>
           <p>
             In this academic year, DSC Technology Team will conduct these Data
@@ -376,7 +377,18 @@ class WorkshopsPage extends Component {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
+        <img
+          src={comingsoon}
+          alt="Coming Soon"
+          style={{
+            display: "block",
+            margin: "auto",
+            marginTop: "50px",
+            marginBottom: "50px",
+            width: 400,
+          }}
+        />
 
         {<Footer />}
       </div>

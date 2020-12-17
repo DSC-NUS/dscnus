@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c9fc148f565085f1f633f10456fb16d8",
+    "revision": "ea25dc8ef82d197ba896648c120920ba",
     "url": "/index.html"
   },
   {
-    "revision": "13ba4e24de77d5aaf3b7",
+    "revision": "9cc565bce5c2d5ab529e",
     "url": "/static/css/2.7df41cd5.chunk.css"
   },
   {
-    "revision": "2a35adfb69fdbc907635",
-    "url": "/static/css/main.d9537111.chunk.css"
+    "revision": "4ca0ec3ed8477de0e57c",
+    "url": "/static/css/main.2be5d287.chunk.css"
   },
   {
-    "revision": "13ba4e24de77d5aaf3b7",
-    "url": "/static/js/2.da867fc2.chunk.js"
+    "revision": "9cc565bce5c2d5ab529e",
+    "url": "/static/js/2.691bb7d1.chunk.js"
   },
   {
     "revision": "5879b018a6c7656e08dbc41278ed9b23",
-    "url": "/static/js/2.da867fc2.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.691bb7d1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2a35adfb69fdbc907635",
-    "url": "/static/js/main.1df77443.chunk.js"
+    "revision": "4ca0ec3ed8477de0e57c",
+    "url": "/static/js/main.a2c28c14.chunk.js"
   },
   {
     "revision": "0d3b8522413ea50bd7ca",
@@ -104,6 +104,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/brand-icons.e8c322de.woff2"
   },
   {
+    "revision": "ca88e0152072b65d484d4e4f0c45e941",
+    "url": "/static/media/comingsoon.ca88e015.png"
+  },
+  {
     "revision": "85b7f6b11115f3f7fd3b4f2bcba2ef1a",
     "url": "/static/media/contactbg.85b7f6b1.jpg"
   },
@@ -130,6 +134,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "94345bfdb61a78cbf7b95caef07cc4cb",
     "url": "/static/media/different.94345bfd.jpg"
+  },
+  {
+    "revision": "34b35cb0f4b40228e93046ee8e777f10",
+    "url": "/static/media/digital-kampong-website-logo.34b35cb0.svg"
   },
   {
     "revision": "745383fa7391a3e992dc304b0aa8e877",
@@ -300,6 +308,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/joanna.338d451d.jpg"
   },
   {
+    "revision": "73b52dad06e7f38e3d0cf8b237985985",
+    "url": "/static/media/journey-website-logo.73b52dad.svg"
+  },
+  {
     "revision": "a876f6ce90b74ed2bc5c597812c58384",
     "url": "/static/media/kangliang.a876f6ce.jpg"
   },
@@ -332,12 +344,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/partnershipsIcon.545459fa.svg"
   },
   {
-    "revision": "f1c7bc7117e10d72a6491c3c87fe7f07",
-    "url": "/static/media/project1.f1c7bc71.png"
-  },
-  {
     "revision": "ef5719d7e3949bf800ead52bec959311",
     "url": "/static/media/publicityIcon.ef5719d7.svg"
+  },
+  {
+    "revision": "c1c0a876d5321d7b3a04fec409e1f5ac",
+    "url": "/static/media/quest-website-logo.c1c0a876.svg"
   },
   {
     "revision": "9f428d28e54580cf05d1d625c6b89f8e",
@@ -378,14 +390,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "64f021455b17fd33982a67dac03a4bd7",
     "url": "/static/media/teamChori.64f02145.jpg"
-  },
-  {
-    "revision": "8afe40d6ee3032957d4f806d715525f2",
-    "url": "/static/media/teamb.8afe40d6.png"
-  },
-  {
-    "revision": "68cd910d0a2e536373f79c474ffcca15",
-    "url": "/static/media/teamc.68cd910d.png"
   },
   {
     "revision": "7253761dc49200e2beb476e0bca2d970",

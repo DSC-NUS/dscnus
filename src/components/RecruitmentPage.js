@@ -27,7 +27,7 @@ class RecruitmentPage extends Component {
         <header class="recruitment-header">
           <div class="recruitment-header__text-box align-center">
             <h1 className="heading-primary">
-              <span className="heading-primary--main">Join DSC NUS</span>
+              <span className="heading-primary--main">Join DSC</span>
             </h1>
             <p className="subtitle">
               We are looking for passionate leaders to help us push the mission

@@ -37,7 +37,7 @@ class PageHeader extends Component {
         <Responsive as={Segment} minWidth={600} className="responsive">
           <Menu stackable inverted={this.state.inverted} className="menu">
             <Menu.Item as={Link} to="/">
-              <img src={logo} alt="DSC NUS Logo" className="logo" />
+              <img src={logo} alt="DSC Logo" className="logo" />
             </Menu.Item>
             <Menu.Menu position="right">
               <Menu.Item

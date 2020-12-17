@@ -20,9 +20,7 @@ class Home extends Component {
         <header class="home-header">
           <div class="home-header__text-box">
             <h1 class="heading-primary">
-              <span class="heading-primary--main">
-                NUS Developer Student Clubs
-              </span>
+              <span class="heading-primary--main">Developer Student Clubs</span>
               <Divider />
               <span class="heading-primary--sub">
                 #TECHFOR
@@ -39,7 +37,7 @@ class Home extends Component {
             <div class="section-home__text-box">
               <h2 class="heading-secondary">Who Are We?</h2>
               <p>
-                DSC NUS comprises of members who are passionate learners of
+                DSC comprises of members who are passionate learners of
                 technology and aims to make a difference in the society.
                 <br />
                 We come together to push our mission of #TechforGood.
@@ -98,13 +96,13 @@ class Home extends Component {
               <div className="recents__image-box">
                 <img alt="Core Team" src={event2} />
               </div>
-              <h2>Launch of DSC NUS Core Team</h2>
+              <h2>Launch of DSC Core Team</h2>
             </div>
             <div className="recents__card">
               <div className="recents__image-box">
                 <img alt="Grand Launch Party" src={event3} />
               </div>
-              <h2>DSC NUS Grand Launch Party!</h2>
+              <h2>DSC Grand Launch Party!</h2>
             </div>
           </div>
         </section>

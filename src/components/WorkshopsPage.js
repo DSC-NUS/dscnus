@@ -134,9 +134,9 @@ class WorkshopsPage extends Component {
         <div className="section-header section-green">
           <h2 class="heading-secondary">Machine Learning</h2>
           <p>
-            In this academic year, DSC NUS Technology Team will conduct these
-            Data Analytics workshops accessible to any NUS students from any
-            faculty or level.
+            In this academic year, DSC Technology Team will conduct these Data
+            Analytics workshops accessible to any NUS students from any faculty
+            or level.
           </p>
         </div>
         <section className="section">

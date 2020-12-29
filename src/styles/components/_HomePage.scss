@@ -1,160 +1,167 @@
 .home-header {
-    height: 95vh;
-    background-image: linear-gradient(to right bottom, rgba($color-dark-yellow-grey, 0.6), rgba($color-dark-yellow-grey, 0.6)), url("../../assets/HomePage/aboutuspagebg.jpg");
-    background-size: cover;
-    background-position: top;
-    // position: relative;
-    // min-height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-dark-yellow-grey, 0.6),
+      rgba($color-dark-yellow-grey, 0.6)
+    ),
+    url("../../assets/HomePage/aboutuspagebg.jpg");
+  background-size: cover;
+  background-position: top;
+  // position: relative;
+  // min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    &__text-box {
-        width: 50%;
-        // position: absolute;
-        // top: 50%;
-        // left: 50%;
-        // transform: translate(-50%, -50%);
-        // text-align: center;
+  &__text-box {
+    width: 50%;
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    // text-align: center;
 
-        @media only screen and (max-width: $bp-medium) {
-            width: 75%;
-        }
-
-        @media only screen and (max-width: $bp-small) {
-            width: 90%;
-        }
-
-        @media only screen and (max-width: $bp-smallest) {
-            width: 100%;
-        }
+    @media only screen and (max-width: $bp-medium) {
+      width: 75%;
     }
+
+    @media only screen and (max-width: $bp-small) {
+      width: 90%;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      width: 100%;
+    }
+  }
 }
 
 .section-home {
-    background-color: $color-white;
-    color: black;
+  background-color: $color-white;
+  color: black;
+  display: flex;
+
+  &__content {
     display: flex;
-
-    &__content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        @media only screen and (max-width: $bp-smallest) {
-            flex-direction: column;
-        }
+    justify-content: center;
+    align-items: center;
+    @media only screen and (max-width: $bp-smallest) {
+      flex-direction: column;
     }
+  }
 
-    &__content-reverse {
-        @media only screen and (max-width: $bp-smallest) {
-            flex-direction: column-reverse;
-        }
+  &__content-reverse {
+    @media only screen and (max-width: $bp-smallest) {
+      flex-direction: column-reverse;
     }
+  }
 
-    &__image-box {
-        flex: 0 0 50%;
-        margin-top: .5rem;
-        text-align: center;
-        padding: $s-size;
+  &__image-box {
+    flex: 0 0 50%;
+    margin-top: 0.5rem;
+    text-align: center;
+    padding: $s-size;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.2);
+  }
+
+  &__text-box {
+    padding: $l-size;
+    text-align: center;
+
+    @media only screen and (max-width: $bp-smallest) {
+      padding: $m-size;
     }
-
-    &__image {
-        width: 100%;
-        height: auto;
-        display: block;
-        box-shadow: 0 .2rem .8rem rgba(0,0,0,.2);
-    }
-
-    &__text-box {
-        padding: $l-size;
-        text-align: center;
-
-        @media only screen and (max-width: $bp-smallest) {
-            padding: $m-size;
-        }
-    }
+  }
 }
 
 .section-blue {
-    background-color: $color-blue !important;
-    color: $color-light-grey !important;
+  background-color: $color-blue !important;
+  color: $color-light-grey !important;
 }
 
 .section-vertical {
-    display: flex;
-    flex-direction: column;
-    overflow: auto;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  //   overflow: auto;
+  text-align: center;
+  padding: $l-size;
+
+  @media only screen and (max-width: $bp-smallest) {
+    padding: $m-size;
+  }
+
+  &__text-box {
     padding: $l-size;
+    text-align: center;
 
     @media only screen and (max-width: $bp-smallest) {
-        padding: $m-size
+      padding: $m-size;
     }
+  }
 
-    &__text-box {
-        padding: $l-size;
-        text-align: center;
-
-        @media only screen and (max-width: $bp-smallest) {
-            padding: $m-size
-        }
-    }
-
-    &__image-box {
-        text-align: center;
-    }
+  &__image-box {
+    text-align: center;
+  }
 }
 
 .recent-events__header {
-    padding-bottom: $m-size;
+  padding-bottom: $m-size;
 }
 
 .recents {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: auto;
+  padding: 5px 10px 30px;
+
+  @media only screen and (max-width: 62.5em) {
+    flex-direction: column;
+  }
+
+  &__image-box {
+    height: 20rem;
+    img {
+      height: 100%;
+      // height: auto;
+      display: block;
+      object-fit: cover;
+      margin: 0 auto;
+    }
 
     @media only screen and (max-width: 62.5em) {
-        flex-direction: column;
+      flex: 0 0 50%;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  &__card {
+    flex: 0 0 22%;
+    padding: $l-size $m-size;
+    box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-child) {
+      margin-right: $m-size;
+      @media only screen and (max-width: 62.5em) {
+        margin-bottom: $m-size;
+        margin-right: 0;
+      }
     }
 
-    &__image-box {
-        height: 20rem;
-        img {
-            height: 100%;
-            // height: auto;
-            display: block;
-            object-fit: cover;
-            margin: 0 auto;
-        }
-
-        @media only screen and (max-width: 62.5em) {
-            flex: 0 0 50%;
-            img {
-                width: 100%;
-                height: auto;
-            }
-        }
+    @media only screen and (max-width: $bp-smallest) {
+      padding: $m-size $s-size;
     }
-
-    &__card {
-        flex: 0 0 30%;
-        padding: $l-size $m-size;
-        box-shadow: 0 .2rem .8rem rgba(0,0,0,.2);
-
-        display: flex;
-        flex-direction: column;
-
-        &:not(:last-child) {
-            margin-right: $m-size;
-            @media only screen and (max-width: 62.5em) {
-                margin-bottom: $m-size;
-                margin-right: 0;
-            }
-        }
-        
-        @media only screen and (max-width: $bp-smallest) {
-            padding: $m-size $s-size;
-        }
-    }
+  }
 }

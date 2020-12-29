@@ -15,6 +15,8 @@ import NotFoundPage from "./components/NotFoundPage";
 import TeamArticlePage from "./components/TeamArticlePage";
 import HackathonTeamsPage from "./components/HackathonTeamsPage";
 import RecruitmentPage from "./components/RecruitmentPage";
+import PastWebinarPage from "./components/PastWebinarPage";
+import Hack4GoodPage from "./components/Hack4GoodPage";
 import { Router, Route, Switch } from "react-router-dom";
 import * as serviceWorker from "./serviceWorker";
 import { createBrowserHistory } from "history";
@@ -65,8 +67,10 @@ class App extends Component {
               path="/hackforgood2020"
               render={() => <TeamArticlePage team={3} key={4} />}
             />
+            <Route path="/hack4good" component={Hack4GoodPage} />
             <Route path="/hackathon-teams" component={HackathonTeamsPage} />
             <Route path="/recruitment" component={RecruitmentPage} />
+            <Route path="/past-webinar" component={PastWebinarPage} />
             <Route component={NotFoundPage} />
           </Switch>
         </div>

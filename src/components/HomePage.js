@@ -8,6 +8,8 @@ import event1 from "../assets/HomePage/event1.jpg";
 import event2 from "../assets/HomePage/event2.jpg";
 import event3 from "../assets/HomePage/event3.jpg";
 import event4 from "../assets/HomePage/hackforgood.jpeg";
+import workshop from "../assets/HomePage/workshop.jpg";
+import talk from "../assets/HomePage/talk.jpg";
 
 class Home extends Component {
   componentDidMount() {
@@ -80,6 +82,18 @@ class Home extends Component {
         <section className="section-vertical">
           <h2 class="heading-secondary recent-events__header">Recent Events</h2>
           <div className="recents">
+            <div className="recents__card">
+              <div className="recents__image-box">
+                <img alt="Tech for Good Workshops" src={workshop} />
+              </div>
+              <h2>Tech for Good Workshops</h2>
+            </div>
+            <div className="recents__card">
+              <div className="recents__image-box">
+                <img alt="Industry Talks" src={talk} />
+              </div>
+              <h2>Industry Talks</h2>
+            </div>
             <div className="recents__card">
               <div className="recents__image-box">
                 <img alt="Hack for good 2020" src={event4} />

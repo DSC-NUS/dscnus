@@ -92,7 +92,27 @@ class PageHeader extends Component {
               </Menu.Item>
 
               <Menu.Item
-                name="contact"
+                name="hack4good"
+                active={this.state.activeItem === "hack4good"}
+                onClick={this.handleItemClick}
+                as={Link}
+                to="/hack4good"
+              >
+                Hack 4 Good
+              </Menu.Item>
+
+              <Menu.Item
+                name="webinars"
+                active={this.state.activeItem === "webinars"}
+                onClick={this.handleItemClick}
+                as={Link}
+                to="/past-webinar"
+              >
+                Past Webinars
+              </Menu.Item>
+
+              <Menu.Item
+                name="recruitment"
                 active={this.state.activeItem === "recruitment"}
                 onClick={this.handleItemClick}
                 as={Link}
@@ -164,6 +184,26 @@ class PageHeader extends Component {
               to="/events"
             >
               Our Upcoming Events
+            </Menu.Item>
+
+            <Menu.Item
+              name="hack4good"
+              active={this.state.activeItem === "hack4good"}
+              onClick={this.handleItemClick}
+              as={Link}
+              to="/hack4good"
+            >
+              Hack 4 Good
+            </Menu.Item>
+
+            <Menu.Item
+              name="webinars"
+              active={this.state.activeItem === "webinars"}
+              onClick={this.handleItemClick}
+              as={Link}
+              to="/past-webinar"
+            >
+              Past Webinars
             </Menu.Item>
 
             <Menu.Item

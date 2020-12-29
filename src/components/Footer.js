@@ -34,9 +34,9 @@ const Footer = () => (
           </ul>
         </div>
         <p className="footer__disclaimer">
-          Disclaimer: DSC NUS is an independent group; the activities and
-          opinions expressed by the group should in no way be linked to Google,
-          the corporation.
+          Disclaimer: DSC is an independent group; the activities and opinions
+          expressed by the group should in no way be linked to Google, the
+          corporation.
         </p>
       </div>
       <div className="footer__right">

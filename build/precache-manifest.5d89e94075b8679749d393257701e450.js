@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ea25dc8ef82d197ba896648c120920ba",
+    "revision": "aed4b3eebbc6fb24a2cd890dbb3edd4f",
     "url": "/index.html"
   },
   {
-    "revision": "9cc565bce5c2d5ab529e",
+    "revision": "3a54acdf827bc634e3b4",
     "url": "/static/css/2.7df41cd5.chunk.css"
   },
   {
-    "revision": "4ca0ec3ed8477de0e57c",
-    "url": "/static/css/main.2be5d287.chunk.css"
+    "revision": "2c86262e2a3d49dda28b",
+    "url": "/static/css/main.c6008831.chunk.css"
   },
   {
-    "revision": "9cc565bce5c2d5ab529e",
-    "url": "/static/js/2.691bb7d1.chunk.js"
+    "revision": "3a54acdf827bc634e3b4",
+    "url": "/static/js/2.c34b4b40.chunk.js"
   },
   {
     "revision": "5879b018a6c7656e08dbc41278ed9b23",
-    "url": "/static/js/2.691bb7d1.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.c34b4b40.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4ca0ec3ed8477de0e57c",
-    "url": "/static/js/main.a2c28c14.chunk.js"
+    "revision": "2c86262e2a3d49dda28b",
+    "url": "/static/js/main.aef08b86.chunk.js"
   },
   {
     "revision": "0d3b8522413ea50bd7ca",
@@ -108,6 +108,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/comingsoon.ca88e015.png"
   },
   {
+    "revision": "bc9c9bcc9dd82ecdc064f5effc05ad22",
+    "url": "/static/media/conjunct.bc9c9bcc.png"
+  },
+  {
     "revision": "85b7f6b11115f3f7fd3b4f2bcba2ef1a",
     "url": "/static/media/contactbg.85b7f6b1.jpg"
   },
@@ -138,6 +142,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "34b35cb0f4b40228e93046ee8e777f10",
     "url": "/static/media/digital-kampong-website-logo.34b35cb0.svg"
+  },
+  {
+    "revision": "90bffbd1a6c265c14ab3857fd5fce3f4",
+    "url": "/static/media/dsclogo.90bffbd1.png"
   },
   {
     "revision": "745383fa7391a3e992dc304b0aa8e877",
@@ -276,6 +284,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/header.bae8c21a.jpg"
   },
   {
+    "revision": "ddf27670f10ec2539a85bc506de98c47",
+    "url": "/static/media/header.ddf27670.png"
+  },
+  {
     "revision": "8688d5bc043b7fb2bf275664c58334f1",
     "url": "/static/media/hglogo.8688d5bc.png"
   },
@@ -356,6 +368,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/sweIcon.9f428d28.svg"
   },
   {
+    "revision": "0128308c9a6133c947541e40df210e89",
+    "url": "/static/media/talk.0128308c.jpg"
+  },
+  {
+    "revision": "3f0770aa99c1dfbe6516af7c04ca379f",
+    "url": "/static/media/talk1.3f0770aa.png"
+  },
+  {
+    "revision": "26ced1ff7f4e112cca4f2c1abb6002ec",
+    "url": "/static/media/talk2.26ced1ff.png"
+  },
+  {
     "revision": "e326e62c346c1125848d238b78f1e5de",
     "url": "/static/media/teamA.e326e62c.jpg"
   },
@@ -420,7 +444,23 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/whoarewe.6a5230ee.jpg"
   },
   {
+    "revision": "7d5ae095e4931a27922274c91d83f53b",
+    "url": "/static/media/workshop.7d5ae095.jpg"
+  },
+  {
     "revision": "c23b4aba8daeb166b830ab5d8043744b",
     "url": "/static/media/workshop.c23b4aba.png"
+  },
+  {
+    "revision": "7c6b0786ce42607dc85b4cc0ebabb7a5",
+    "url": "/static/media/workshop1.7c6b0786.png"
+  },
+  {
+    "revision": "9a481d13ccdaf363958d138c3265c0c8",
+    "url": "/static/media/workshop2.9a481d13.png"
+  },
+  {
+    "revision": "7a8ca1ebda2cd9a9b8437e225fd5a330",
+    "url": "/static/media/workshop3.7a8ca1eb.png"
   }
 ]);

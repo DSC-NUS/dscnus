@@ -15,7 +15,7 @@ class AboutUsPage extends Component {
         <header className="home-header about-header">
           <div className="home-header__text-box">
             <h1 className="heading-primary">
-              <span className="heading-primary--main">About DSC NUS</span>
+              <span className="heading-primary--main">About DSC</span>
             </h1>
             <section>
               <div className="about-header__content">
@@ -68,7 +68,7 @@ class AboutUsPage extends Component {
         <section className="section-home">
           <div className="section-home__content">
             <div className="section-home__text-box">
-              <h2 className="heading-secondary">How is DSC NUS different?</h2>
+              <h2 className="heading-secondary">How is DSC different?</h2>
               <p>
                 We set ourselves apart from the other DSC chapters by focusing
                 on developing diverse solutions (not restricted to mobile and

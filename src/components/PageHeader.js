@@ -88,7 +88,7 @@ class PageHeader extends Component {
                 as={Link}
                 to="/events"
               >
-                Our Upcoming Events
+                Upcoming Workshops
               </Menu.Item>
 
               <Menu.Item
@@ -183,7 +183,7 @@ class PageHeader extends Component {
               as={Link}
               to="/events"
             >
-              Our Upcoming Events
+              Upcoming Workshops
             </Menu.Item>
 
             <Menu.Item

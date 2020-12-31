@@ -1,119 +1,11 @@
-import React, { Component, Fragment } from "react";
-import { Card, Image, Responsive } from "semantic-ui-react";
+import React, { Component } from "react";
 import PageHeader from "./PageHeader";
 import Footer from "./Footer";
-import webdev1 from "../assets/WorkshopsPage/webdev1.png";
-import webdev2 from "../assets/WorkshopsPage/webdev2.png";
-import data0 from "../assets/WorkshopsPage/data0.png";
-import data1 from "../assets/WorkshopsPage/data1.png";
-import data2 from "../assets/WorkshopsPage/data2.png";
-import data3 from "../assets/WorkshopsPage/data3.png";
-import joanna from "../assets/WorkshopsPage/joanna.jpg";
-import kangliang from "../assets/WorkshopsPage/kangliang.jpg";
-import turtletree from "../assets/WorkshopsPage/turtletree.jpg";
-import james from "../assets/WorkshopsPage/james.jpg";
-import gracepark from "../assets/WorkshopsPage/gracepark.jpg";
-import theodoric from "../assets/WorkshopsPage/theodoric.jpg";
-import adila from "../assets/WorkshopsPage/adila.jpg";
-import izzy from "../assets/WorkshopsPage/izzy.jpg";
-import comingsoon from "../assets/WorkshopsPage/comingsoon.png";
-
-const industryTalk1 = [
-  {
-    topic: "Social Good",
-    img: kangliang,
-    name: "Koh Kang Liang",
-    position: "CEO",
-    company: "Swapie",
-  },
-  {
-    topic: "IT Consultancy",
-    img: joanna,
-    name: "Joanna Reijgersberg-Siew",
-    position: "Senior Director, AI & IoT Solutions Lead",
-    company: "Avanade",
-  },
-
-  {
-    topic: "Environment",
-    img: turtletree,
-    name: "Fengru Lin & Max Rye",
-    position: "Founder & Chief Strategist",
-    company: "TurtleTree Labs",
-  },
-];
-
-const industryTalk2 = [
-  {
-    topic: "Health Tech",
-    img: gracepark,
-    name: "Grace Park",
-    position: "Co-Founder & President",
-    company: "DocDoc",
-  },
-  {
-    topic: "Education",
-    img: izzy,
-    img2: adila,
-    name: "Izzy Ngo & Adila Sayyed",
-    position: "Co-Founders",
-    company: "VERE360",
-  },
-  {
-    topic: "Education",
-    img: james,
-    name: "James Chia",
-    position: "CEO",
-    company: "ArcLab",
-  },
-  {
-    topic: "Mental Health",
-    img: theodoric,
-    name: "Theodoric Chew",
-    position: "CEO",
-    company: "Intellect",
-  },
-];
-
-const IndustryTalkSpeakers = ({ arrOfSpeakers, smallerImg }) => {
-  return (
-    <Fragment>
-      {arrOfSpeakers.map((speaker) => (
-        <Card className="speaker-card" raised>
-          <Card.Content extra textAlign="center">
-            <strong>{speaker.topic}</strong>
-          </Card.Content>
-          <Card.Content className="speaker-inner-card" textAlign="center">
-            <Image
-              circular
-              className={"speaker-img"}
-              size="small"
-              style={{ width: speaker.img2 && smallerImg && "120px" }}
-              src={speaker.img}
-            />
-            {speaker.img2 && (
-              <Image
-                circular
-                className={"speaker-img"}
-                size="small"
-                style={{ width: speaker.img2 && smallerImg && "120px" }}
-                src={speaker.img2}
-              />
-            )}
-            <div className="speaker-details">
-              <Card.Header>{speaker.name}</Card.Header>
-              <Card.Meta>
-                {speaker.position}
-                <br />
-                <strong>{speaker.company}</strong>
-              </Card.Meta>
-            </div>
-          </Card.Content>
-        </Card>
-      ))}
-    </Fragment>
-  );
-};
+import finance1 from "../assets/WorkshopsPage/finance1.png";
+import finance2 from "../assets/WorkshopsPage/finance2.png";
+import frontend1 from "../assets/WorkshopsPage/frontend1.png";
+import frontend2 from "../assets/WorkshopsPage/frontend2.png";
+import frontend3 from "../assets/WorkshopsPage/frontend3.png";
 
 class WorkshopsPage extends Component {
   componentDidMount() {
@@ -127,60 +19,52 @@ class WorkshopsPage extends Component {
         <header class="home-header projects-header">
           <div class="home-header__text-box">
             <h1 class="heading-primary">
-              <span class="heading-primary--main">Our Upcoming Events</span>
+              <span class="heading-primary--main">Upcoming Workshops</span>
             </h1>
           </div>
         </header>
 
-        {/* <div className="section-header section-green">
-          <h2 class="heading-secondary">Machine Learning</h2>
+        <div className="section-header section-green">
+          <h2 class="heading-secondary">FRONT-END WEB DEVELOPMENT WORKSHOPS</h2>
           <p>
-            In this academic year, DSC Technology Team will conduct these Data
-            Analytics workshops accessible to any NUS students from any faculty
-            or level.
+            Get a good grasp of how the web works at a fundamental level by
+            build your coding skills with us. By the end you will be able to use
+            multiple languages to create your own mini project.
           </p>
         </div>
         <section className="section">
           <div className="projects">
             <div className="card-horizontal projects__project">
               <div className="card-horizontal__image-box">
-                <img src={data0} alt="event" />
+                <img src={frontend1} alt="event" />
               </div>
               <div className="card-horizontal__content">
-                <h2 class="heading-secondary">
-                  Introduction to Python and Data Science Libraries
-                </h2>
+                <h2 class="heading-secondary">HTML AND CSS CRASH COURSE</h2>
                 <p>
-                  Python is our language of choice for Data Analytics. In our
-                  first introductory workshop, we'll be getting everyone up to
-                  speed with the fundamentals of programming in Python, as well
-                  as to set up a proper data science environment on your
-                  machine. From there, you'll have your bases covered to explore
-                  the rest of the data science ecosystem.
-                </p>
-                <p>
-                  Topics covered: Basic data structures in python, utilizing
-                  third party libraries, Numpy, Matplotlib, Pandas
+                  Want to build your own website from scratch? We will be going
+                  through the basic building blocks to teach you how to style
+                  your very own web page. Topics covered in this workshop will
+                  include HTML DOM Structure, HTML Tag & Attribute, CSS Box
+                  Model, CSS Properties & Values.
                 </p>
                 <br></br>
                 <p>
                   <ul>
                     <li>
-                      <strong>Date</strong>: Week 9, 16 October, Friday
+                      <strong>Date</strong>: Week 1, Thursday 20th January
                     </li>
                     <li>
-                      <strong>Time</strong>: 7.00pm - 10.00pm
+                      <strong>Time</strong>: 7.00pm
                     </li>
                     <li>
-                      <strong>Venue</strong>: Online Workshop (Zoom, live stream
-                      through youtube)
+                      <strong>Venue</strong>: Online Workshop
                     </li>
                   </ul>
                 </p>
                 <br />
                 <p>
                   Click{" "}
-                  <a href="https://nus.syd1.qualtrics.com/jfe/form/SV_5bVWo5WYSngIjTn">
+                  <a href="https://nus.syd1.qualtrics.com/jfe/form/SV_d71XSrZYC2v4DlP">
                     here
                   </a>{" "}
                   to sign up for the workshop.
@@ -189,39 +73,36 @@ class WorkshopsPage extends Component {
             </div>
             <div className="card-horizontal projects__project">
               <div className="card-horizontal__image-box">
-                <img src={data1} alt="event" />
+                <img src={frontend2} alt="event" />
               </div>
               <div className="card-horizontal__content">
-                <h2 class="heading-secondary">Data Science 2</h2>
+                <h2 class="heading-secondary">JAVASCRIPT FOR BEGINNERS</h2>
                 <p>
-                  In this workshop we will build upon the data science libaries
-                  we learnt in workshop 1 to analyse data and draw meaningful
-                  conclusions from it.
+                  Want to become fluent in the world's most popular programming
+                  language? This workshop will help you gain the necessary
+                  background you’ll need to get started on your journey with
+                  JavaScript. We will be covering JavaScript data types,
+                  built-in methods & variables, conditionals and function syntax
+                  just to name a few.
                 </p>
-                <p>Topics covered: Machine Learning and regression.</p>
                 <br></br>
                 <p>
                   <ul>
                     <li>
-                      <strong>Date</strong>: Week 10, 23 October, Friday
+                      <strong>Date</strong>: Week 3, Wednesday 27th January
                     </li>
                     <li>
-                      <strong>Time</strong>: 7.00pm - 10.00pm
+                      <strong>Time</strong>: 7.00pm
                     </li>
                     <li>
-                      <strong>Venue</strong>: Online Workshop (Zoom, live stream
-                      through youtube)
-                    </li>
-                    <li>
-                      <strong>Pre-requisite</strong>: Basic python knowledge OR
-                      our first workshop materials
+                      <strong>Venue</strong>: Online Workshop
                     </li>
                   </ul>
                 </p>
                 <br />
                 <p>
                   Click{" "}
-                  <a href="https://nus.syd1.qualtrics.com/jfe/form/SV_5bVWo5WYSngIjTn">
+                  <a href="https://nus.syd1.qualtrics.com/jfe/form/SV_d71XSrZYC2v4DlP">
                     here
                   </a>{" "}
                   to sign up for the workshop.
@@ -231,43 +112,36 @@ class WorkshopsPage extends Component {
 
             <div className="card-horizontal projects__project">
               <div className="card-horizontal__image-box">
-                <img src={data3} alt="event" />
+                <img src={frontend3} alt="event" />
               </div>
               <div className="card-horizontal__content">
-                <h2 class="heading-secondary">Data Science 3</h2>
+                <h2 class="heading-secondary">
+                  BUILDING INTERACTIVE WEB WITH JAVASCRIPT
+                </h2>
                 <p>
-                  In this workshop we will be extending Machine learning to
-                  cover classification techniques. We will teach you the most
-                  popular classification algorithms and introduce deep learning
-                  to you guys!
-                </p>
-                <p>
-                  Topics covered: Machine Learning, classification and deep
-                  learning.
+                  Curious to learn how to develop a dynamic and interactive
+                  webpage? This workshop will guide you through HTML DOM
+                  Manipulation and JavaScript Event Handling. Get ready to build
+                  you own mini project.
                 </p>
                 <br></br>
                 <p>
                   <ul>
                     <li>
-                      <strong>Date</strong>: Week 11, 30 October, Friday
+                      <strong>Date</strong>: Week 4, Wednesday 3rd February
                     </li>
                     <li>
-                      <strong>Time</strong>: 7.00pm - 10.00pm
+                      <strong>Time</strong>: 7.00pm
                     </li>
                     <li>
-                      <strong>Venue</strong>: Online Workshop (Zoom, live stream
-                      through youtube)
-                    </li>
-                    <li>
-                      <strong>Pre-requisite</strong>: Basic python knowledge OR
-                      our first workshop materials
+                      <strong>Venue</strong>: Online Workshop
                     </li>
                   </ul>
                 </p>
                 <br></br>
                 <p>
                   Click{" "}
-                  <a href="https://nus.syd1.qualtrics.com/jfe/form/SV_5bVWo5WYSngIjTn">
+                  <a href="https://nus.syd1.qualtrics.com/jfe/form/SV_d71XSrZYC2v4DlP">
                     here
                   </a>{" "}
                   to sign up for the workshop.
@@ -277,119 +151,92 @@ class WorkshopsPage extends Component {
           </div>
         </section>
 
-        <div className="section-header section-blue">
-          <h2 class="heading-secondary">Industry Talks</h2>
+        <div className="section-header section-green">
+          <h2 class="heading-secondary">FINANCE & ANALYTICS</h2>
+          <p>
+            Did you know that Python and Finance go hand in hand? Join us to
+            find out how Python can be used to model and solve real-world
+            financial problems.
+          </p>
         </div>
-        <div className="projects">
-          <div className="card-horizontal projects__project">
-            <div className="card-horizontal__image-box">
-              <img src={webdev1} alt="event" />
+        <section className="section">
+          <div className="projects">
+            <div className="card-horizontal projects__project">
+              <div className="card-horizontal__image-box">
+                <img src={finance1} alt="event" />
+              </div>
+              <div className="card-horizontal__content">
+                <h2 class="heading-secondary">INTRO TO FINANCE WITH PYTHON</h2>
+                <p>
+                  Are you a budding finance professional looking to automate and
+                  enhance your work processes? In this workshop, we will be
+                  introducing basic Python applied to financial concepts. Come
+                  learn to handle data analysis on a large scale and automate
+                  highly repetitive tasks.
+                </p>
+                <br></br>
+                <p>
+                  <ul>
+                    <li>
+                      <strong>Date</strong>: Week 3, Tuesday 26th January
+                    </li>
+                    <li>
+                      <strong>Time</strong>: 7.00pm
+                    </li>
+                    <li>
+                      <strong>Venue</strong>: Online Workshop
+                    </li>
+                  </ul>
+                </p>
+                <br />
+                <p>
+                  Click{" "}
+                  <a href="https://nus.syd1.qualtrics.com/jfe/form/SV_dhfXc9mvsOb4CHz">
+                    here
+                  </a>{" "}
+                  to sign up for the workshop.
+                </p>
+              </div>
             </div>
-            <div className="card-horizontal__content full-width">
-              <h2 class="heading-secondary">Industry Talks 1</h2>
-              <p>
-                Want to know the role of technology in the fields of IT
-                Consulting, Volunteering and the Environment? Some of the
-                speakers we are inviting include the CEO of Swappie, Senior
-                Director, AI & IoT Solutions Lead of Avanade and Founder & Chief
-                Strategist of TurtleTree Labs.
-              </p>
-              <br />
-              <Responsive minWidth={800}>
-                <Card.Group>
-                  <IndustryTalkSpeakers arrOfSpeakers={industryTalk1} />
-                </Card.Group>
-              </Responsive>
-              <Responsive maxWidth={799}>
-                <IndustryTalkSpeakers arrOfSpeakers={industryTalk1} />
-              </Responsive>
-              <br />
-              <br />
-              <p>
-                <ul>
-                  <li>
-                    <strong>Date</strong>: Week 10, 22 October, Thursday
-                  </li>
-                  <li>
-                    <strong>Time</strong>: 7.30pm - 9.00pm
-                  </li>
-                  <li>
-                    <strong>Venue</strong>: Online
-                  </li>
-                </ul>
-              </p>
-              <br></br>
-              <p>
-                Click{" "}
-                <a href="https://nus.syd1.qualtrics.com/jfe/form/SV_5ss4dAyqi5wyG21">
-                  here
-                </a>{" "}
-                to sign up for the Industry Talk.
-              </p>
-            </div>
-          </div>
-          <div className="card-horizontal projects__project">
-            <div className="card-horizontal__image-box">
-              <img src={webdev2} alt="event" />
-            </div>
-            <div className="card-horizontal__content full-width">
-              <h2 class="heading-secondary">Industry Talks 2</h2>
-              <p>
-                Find out more about how technology plays a part in these
-                sectors: Health Tech, Education and Mental Health! The speakers
-                include the Co-Founder of DocDoc, Co-Founders of VERE360, and
-                CEO of ArcLab and Intellect.
-              </p>
-              <br />
-              <Responsive minWidth={800}>
-                <Card.Group>
-                  <IndustryTalkSpeakers
-                    arrOfSpeakers={industryTalk2}
-                    smallerImg={true}
-                  />
-                </Card.Group>
-              </Responsive>
-              <Responsive maxWidth={799}>
-                <IndustryTalkSpeakers arrOfSpeakers={industryTalk2} />
-              </Responsive>
-              <br />
-              <br />
-              <p>
-                <ul>
-                  <li>
-                    <strong>Date</strong>: Week 11, 29 October, Thursday
-                  </li>
-                  <li>
-                    <strong>Time</strong>: 7.30pm - 9pm
-                  </li>
-                  <li>
-                    <strong>Venue</strong>: Online
-                  </li>
-                </ul>
-              </p>
-              <br></br>
-              <p>
-                Click{" "}
-                <a href="https://nus.syd1.qualtrics.com/jfe/form/SV_5ss4dAyqi5wyG21">
-                  here
-                </a>{" "}
-                to sign up for the Industry Talk.
-              </p>
+            <div className="card-horizontal projects__project">
+              <div className="card-horizontal__image-box">
+                <img src={finance2} alt="event" />
+              </div>
+              <div className="card-horizontal__content">
+                <h2 class="heading-secondary">
+                  CREATING ALGORITHMS & IMPLEMENTING THEM
+                </h2>
+                <p>
+                  Want to apply your newly acquired Python skills to real-world
+                  financial data? In this workshop you conduct preliminary
+                  backtesting by writing a basic script in python.
+                </p>
+                <br></br>
+                <p>
+                  <ul>
+                    <li>
+                      <strong>Date</strong>: Week 4, Tuesday 2nd February
+                    </li>
+                    <li>
+                      <strong>Time</strong>: 7.00pm
+                    </li>
+                    <li>
+                      <strong>Venue</strong>: Online Workshop
+                    </li>
+                  </ul>
+                </p>
+                <br />
+                <p>
+                  Click{" "}
+                  <a href="https://nus.syd1.qualtrics.com/jfe/form/SV_dhfXc9mvsOb4CHz">
+                    here
+                  </a>{" "}
+                  to sign up for the workshop.
+                </p>
+              </div>
             </div>
           </div>
-        </div> */}
-        <img
-          src={comingsoon}
-          alt="Coming Soon"
-          style={{
-            display: "block",
-            margin: "auto",
-            marginTop: "50px",
-            marginBottom: "50px",
-            width: 400,
-          }}
-        />
-
+        </section>
         {<Footer />}
       </div>
     );

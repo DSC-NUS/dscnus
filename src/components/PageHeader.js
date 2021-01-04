@@ -98,7 +98,7 @@ class PageHeader extends Component {
                 as={Link}
                 to="/hack4good"
               >
-                Hack 4 Good
+                Hack For Good
               </Menu.Item>
 
               <Menu.Item
@@ -193,7 +193,7 @@ class PageHeader extends Component {
               as={Link}
               to="/hack4good"
             >
-              Hack 4 Good
+              Hack For Good
             </Menu.Item>
 
             <Menu.Item

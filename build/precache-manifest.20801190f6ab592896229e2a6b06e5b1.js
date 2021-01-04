@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e676c2ffb513f97296dcbc06d0914e72",
+    "revision": "dc0ac9aa3b298eeb5a2ecd554a050d40",
     "url": "/index.html"
   },
   {
-    "revision": "451bae09245cb8d3901a",
-    "url": "/static/css/2.7df41cd5.chunk.css"
+    "revision": "31504447b78df4761aa0",
+    "url": "/static/css/2.19f0e299.chunk.css"
   },
   {
-    "revision": "fd2d51ed0f357c5bf1ac",
-    "url": "/static/css/main.c6008831.chunk.css"
+    "revision": "2a670593e7fed033f7a0",
+    "url": "/static/css/main.6becd24d.chunk.css"
   },
   {
-    "revision": "451bae09245cb8d3901a",
-    "url": "/static/js/2.ad60f70e.chunk.js"
+    "revision": "31504447b78df4761aa0",
+    "url": "/static/js/2.0d1723fc.chunk.js"
   },
   {
     "revision": "5879b018a6c7656e08dbc41278ed9b23",
-    "url": "/static/js/2.ad60f70e.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.0d1723fc.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fd2d51ed0f357c5bf1ac",
-    "url": "/static/js/main.51764037.chunk.js"
+    "revision": "2a670593e7fed033f7a0",
+    "url": "/static/js/main.481d1c7c.chunk.js"
   },
   {
     "revision": "0d3b8522413ea50bd7ca",
@@ -114,10 +114,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "34b35cb0f4b40228e93046ee8e777f10",
     "url": "/static/media/digital-kampong-website-logo.34b35cb0.svg"
-  },
-  {
-    "revision": "90bffbd1a6c265c14ab3857fd5fce3f4",
-    "url": "/static/media/dsclogo.90bffbd1.png"
   },
   {
     "revision": "745383fa7391a3e992dc304b0aa8e877",

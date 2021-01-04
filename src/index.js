@@ -22,6 +22,7 @@ import * as serviceWorker from "./serviceWorker";
 import { createBrowserHistory } from "history";
 import ReactGA from "react-ga";
 
+import "react-vertical-timeline-component/style.min.css";
 ReactGA.initialize("UA-147601557-4");
 
 const history = createBrowserHistory();

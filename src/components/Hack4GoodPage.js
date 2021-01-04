@@ -2,7 +2,12 @@ import React from "react";
 import PageHeader from "./PageHeader";
 import Footer from "./Footer.js";
 import conjunct from "../assets/Hack4GoodPage/conjunct.png";
-import dsclogo from "../assets/Hack4GoodPage/dsclogo.png";
+import logo from "../assets/ProjectsPage/hglogo.png";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import { Icon } from "semantic-ui-react";
 
 const Hack4GoodPage = () => {
   return (
@@ -11,7 +16,7 @@ const Hack4GoodPage = () => {
       <header class="home-header projects-header">
         <div class="home-header__text-box">
           <h1 class="heading-primary">
-            <span class="heading-primary--main">Hack 4 Good</span>
+            <span class="heading-primary--main">Hack For Good</span>
           </h1>
         </div>
       </header>
@@ -23,7 +28,7 @@ const Hack4GoodPage = () => {
               style={{ textAlign: "center" }}
             >
               <span />
-              <img src={dsclogo} alt="logo" style={{ width: "50%" }} />
+              <img src={logo} alt="logo" style={{ width: "50%" }} />
             </div>
             <div className="card-horizontal__content">
               <p>
@@ -53,6 +58,120 @@ const Hack4GoodPage = () => {
           </div>
         </div>
       </section>
+      <VerticalTimeline style={{ marginBottom: "200" }} className="timeline">
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+          date="22 February"
+          iconStyle={{
+            background: "rgb(33, 150, 243)",
+            color: "#fff",
+          }}
+          icon={
+            <Icon
+              name="pencil alternate"
+              size="large"
+              style={{
+                width: "100%",
+                height: "100%",
+                marginTop: "30%",
+              }}
+            />
+          }
+        >
+          <h3 className="vertical-timeline-element-title">Sign up</h3>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="5 March"
+          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          icon={
+            <Icon
+              name="file alternate outline"
+              size="large"
+              style={{
+                width: "100%",
+                height: "100%",
+                marginTop: "30%",
+              }}
+            />
+          }
+        >
+          <h3 className="vertical-timeline-element-title">
+            Release of problem statements & Briefing
+            <p style={{ display: "inline" }}>
+              {" "}
+              (from problem statement sponsors)
+            </p>
+          </h3>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="9 March"
+          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          icon={
+            <Icon
+              name="tv"
+              size="large"
+              style={{
+                width: "100%",
+                height: "100%",
+                marginTop: "30%",
+              }}
+            />
+          }
+        >
+          <h3 className="vertical-timeline-element-title">Conjunct Workshop</h3>
+          <h4 className="vertical-timeline-element-subtitle">
+            Systematic problem solving for the Social Sector
+          </h4>
+          <p>
+            In this interactive 45 mins workshop, participants will be exposed
+            to an overview of the unique challenges and constraints that
+            charities and social good organisations typically face within the
+            sector, as well as introduced to frameworks and methodologies used
+            to ensure that their ideas and solutions are aligned to the needs of
+            the social sector.
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="17 March"
+          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          icon={
+            <Icon
+              name="calendar check outline"
+              size="large"
+              style={{
+                width: "100%",
+                height: "100%",
+                marginTop: "30%",
+              }}
+            />
+          }
+        >
+          <h3 className="vertical-timeline-element-title">Close submissions</h3>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="20 March"
+          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          icon={
+            <Icon
+              name="paper plane"
+              size="large"
+              style={{
+                width: "90%",
+                height: "90%",
+                marginTop: "30%",
+              }}
+            />
+          }
+        >
+          <h3 className="vertical-timeline-element-title">Finale</h3>
+        </VerticalTimelineElement>
+      </VerticalTimeline>
       <Footer />
     </>
   );

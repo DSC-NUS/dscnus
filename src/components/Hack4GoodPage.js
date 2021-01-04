@@ -58,11 +58,9 @@ const Hack4GoodPage = () => {
           </div>
         </div>
       </section>
-      <VerticalTimeline style={{ marginBottom: "200" }} className="timeline">
+      <VerticalTimeline className="timeline">
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
           date="22 February"
           iconStyle={{
             background: "rgb(33, 150, 243)",

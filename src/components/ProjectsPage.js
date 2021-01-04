@@ -70,7 +70,7 @@ class ProjectsPage extends Component {
                 <br></br>
                 <p>
                   Look out for more updates for HFG 2021{" "}
-                  <Link to="/hackforgood2020">here</Link>
+                  <Link to="/hack4good">here</Link>
                 </p>
               </div>
             </div>

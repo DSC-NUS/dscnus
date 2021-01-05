@@ -34,7 +34,7 @@ class TeamPage extends Component {
           <Card
             style={{ margin: "0 auto", width: "70vh" }}
             image={imagePath(`./Leads/lead.jpg`)}
-            header="Leads and General Secretaries"
+            header="Leads"
           />
         </section>
 

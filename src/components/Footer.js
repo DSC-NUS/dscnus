@@ -42,7 +42,7 @@ const Footer = () => (
       <div className="footer__right">
         <div className="footer__socialmedia-menu">
           <a
-            href="http://www.instagram.com/dscnus"
+            href="http://www.instagram.com/dscsoc_"
             target="_blank"
             rel="noopener noreferrer"
             className="footer__link"

@@ -62,7 +62,13 @@ class TeamPage extends Component {
             Find out more <a href="/projects"> here.</a>
           </p>
         </div>
-        <section className="section">{<CarouselExternalTeam />}</section>
+        <section className="section">
+          <Card
+            style={{ margin: "50px auto", width: "25vw" }}
+            image={imagePath(`./ExternalTeam/external.jpg`)}
+            header="External Team Leads"
+          />
+        </section>
         {<Footer />}
       </div>
     );

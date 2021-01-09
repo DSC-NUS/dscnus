@@ -47,13 +47,7 @@ const Hack4GoodPage = () => {
               </p>
               <br />
               <p>Look out for more details nearer to the event date!</p>
-              <span>
-                In collaboration with{" "}
-                <img
-                  src={conjunct}
-                  style={{ width: "15%", verticalAlign: "middle" }}
-                />
-              </span>
+              <span>In collaboration with Conjunct Consulting</span>
             </div>
           </div>
         </div>

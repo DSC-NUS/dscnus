@@ -51,7 +51,7 @@ class WorkshopsPage extends Component {
                 <p>
                   <ul>
                     <li>
-                      <strong>Date</strong>: Week 1, Thursday 20th January
+                      <strong>Date</strong>: Week 2, Wednesday 20th January
                     </li>
                     <li>
                       <strong>Time</strong>: 7.00pm

@@ -71,15 +71,29 @@ class PageHeader extends Component {
                 </Dropdown.Menu>
               </Dropdown>
 
-              <Menu.Item
-                name="projects"
-                active={this.state.activeItem === "projects"}
-                onClick={this.handleItemClick}
-                as={Link}
-                to="/projects"
-              >
-                Our Projects
-              </Menu.Item>
+              <Dropdown item text="Our Projects">
+                <Dropdown.Menu>
+                  <Dropdown.Item
+                    name="projects"
+                    active={this.state.activeItem === "projects"}
+                    onClick={this.handleItemClick}
+                    as={Link}
+                    to="/projects"
+                  >
+                    Our Projects
+                  </Dropdown.Item>
+
+                  <Dropdown.Item
+                    name="blog"
+                    active={this.state.activeItem === "blog"}
+                    onClick={this.handleItemClick}
+                    as={Link}
+                    to="/blog"
+                  >
+                    Blog
+                  </Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
 
               <Menu.Item
                 name="workshops"
@@ -111,7 +125,7 @@ class PageHeader extends Component {
                 Past Webinars
               </Menu.Item>
 
-              <Menu.Item
+              {/* <Menu.Item
                 name="recruitment"
                 active={this.state.activeItem === "recruitment"}
                 onClick={this.handleItemClick}
@@ -120,17 +134,7 @@ class PageHeader extends Component {
                 to="/recruitment"
               >
                 Recruitment
-              </Menu.Item>
-
-              <Menu.Item
-                name="blog"
-                active={this.state.activeItem === "blog"}
-                onClick={this.handleItemClick}
-                as={Link}
-                to="/blog"
-              >
-                Blog
-              </Menu.Item>
+              </Menu.Item> */}
             </Menu.Menu>
           </Menu>
         </Responsive>
@@ -177,6 +181,16 @@ class PageHeader extends Component {
             </Menu.Item>
 
             <Menu.Item
+              name="blog"
+              active={this.state.activeItem === "blog"}
+              onClick={this.handleItemClick}
+              as={Link}
+              to="/blog"
+            >
+              Blog
+            </Menu.Item>
+
+            <Menu.Item
               name="workshops"
               active={this.state.activeItem === "workshops"}
               onClick={this.handleItemClick}
@@ -206,7 +220,7 @@ class PageHeader extends Component {
               Past Webinars
             </Menu.Item>
 
-            <Menu.Item
+            {/* <Menu.Item
               name="recruitment"
               active={this.state.activeItem === "recruitment"}
               onClick={this.handleItemClick}
@@ -214,17 +228,7 @@ class PageHeader extends Component {
               to="/recruitment"
             >
               Recruitment
-            </Menu.Item>
-
-            <Menu.Item
-              name="blog"
-              active={this.state.activeItem === "blog"}
-              onClick={this.handleItemClick}
-              as={Link}
-              to="/blog"
-            >
-              Blog
-            </Menu.Item>
+            </Menu.Item> */}
           </Burger>
           {/* <Menu inverted>
                         <Menu.Item header onClick={()=>this.setState({showMenu: true})}><Icon name="bars" size="large"/></Menu.Item>

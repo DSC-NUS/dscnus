@@ -36,7 +36,9 @@ const PastWebinarPage = () => (
             <img src={workshop1} alt="event" />
           </div>
           <div className="card-horizontal__content">
-            <h2 class="heading-secondary">WORKSHOP 1</h2>
+            <h2 class="heading-secondary">
+              Introduction to Python and Data Science Libraries Workshop
+            </h2>
             <p>
               Seeking to become an experts Python? Re-watch our first
               #TechForGood workshop on Introduction to Python and Data Science
@@ -58,7 +60,7 @@ const PastWebinarPage = () => (
             <img src={workshop2} alt="event" />
           </div>
           <div className="card-horizontal__content">
-            <h2 class="heading-secondary">WORKSHOP 2</h2>
+            <h2 class="heading-secondary">Data Science 2 Workshop</h2>
             <p>
               Check out our second Python Programming and Data Science Workshop
               will further enhance your proficiency in python programming and
@@ -80,7 +82,7 @@ const PastWebinarPage = () => (
             <img src={workshop3} alt="event" />
           </div>
           <div className="card-horizontal__content">
-            <h2 class="heading-secondary">WORKSHOP 3</h2>
+            <h2 class="heading-secondary">Data Science 3 Workshop</h2>
             <p>
               Gain more exposure and practice the various classification of
               alogorithms by watching out final Tech for Good Data Science

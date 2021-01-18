@@ -118,7 +118,7 @@ const Hack4GoodPage = () => {
           <h4 className="vertical-timeline-element-subtitle">
             Systematic problem solving for the Social Sector
           </h4>
-          <p>
+          <p className="vertical-timeline-element-body">
             In this interactive 45 mins workshop, participants will be exposed
             to an overview of the unique challenges and constraints that
             charities and social good organisations typically face within the

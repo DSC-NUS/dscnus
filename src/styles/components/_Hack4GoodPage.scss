@@ -2,4 +2,24 @@
   padding-top: 0 !important;
   margin-bottom: 70px !important;
   width: 75% !important;
+
+  @media only screen and (min-width: 1920px) {
+    max-width: 1600px !important;
+  }
+}
+
+.vertical-timeline-element-date {
+  font-size: 16px !important;
+}
+
+.vertical-timeline-element-subtitle {
+  font-size: 16px !important;
+}
+
+.vertical-timeline-element-title {
+  font-size: 20px;
+}
+
+.vertical-timeline-element-body {
+  font-size: 14px !important;
 }

@@ -31,23 +31,29 @@ const Hack4GoodPage = () => {
               <img src={logo} alt="logo" style={{ width: "50%" }} />
             </div>
             <div className="card-horizontal__content">
-              <p>
-                Date of Event: <b>March</b>
-              </p>
+              <h2>HACK FOR GOOD</h2>
               <br></br>
               <p>
-                Developer Students' Club presents Hack For Good, a student-run
-                virtual hackathon which seeks to inspire students to learn and
-                use technology for social causes. Our innovation challenge is
-                unique in that we are posing real problem statements provided by
-                NPOs in Singapore. Participating teams are expected to create
-                technological prototypes as part of their solution to tackle
-                their chosen statement and directly benefit the NPO backing each
-                statement.
+                In collaboration with Conjunct Consulting, DSC SoC presents Hack
+                For Good, a student-run hackathon which seeks to inspire
+                students to learn and use technology for social causes. Our
+                innovation challenge is unique in that we are posing real
+                problem statements provided by NPOs in Singapore.
               </p>
               <br />
-              <p>Look out for more details nearer to the event date!</p>
-              <span>In collaboration with Conjunct Consulting</span>
+              <p>
+                Participating teams are expected to create technological
+                prototypes as part of their solution to tackle their chosen
+                statement and directly benefit the NPO backing it. We want to be
+                practical and do real good with this initiative. We are hoping
+                to foster collaborations between the club, corporate sponsors,
+                NPOs and the students in this event!
+              </p>
+              <br />
+              <p>
+                Click <a href="http://bit.ly/hackforgood2021">here</a> to sign
+                up for the event!!
+              </p>
             </div>
           </div>
         </div>

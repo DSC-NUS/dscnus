@@ -7,9 +7,9 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 
 function PdfLoader() {
   return (
-    <Segment>
+    <Segment className="pdf-renderer-loading">
       <Dimmer active inverted>
-        <Loader inverted content="Loading" />
+        <Loader inverted content="Loading booklet" />
       </Dimmer>
     </Segment>
   );

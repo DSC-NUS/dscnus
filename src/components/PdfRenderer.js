@@ -1,9 +1,19 @@
 import React, { useRef, useState } from "react";
-import { Button } from "semantic-ui-react";
+import { Button, Segment, Dimmer, Loader } from "semantic-ui-react";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+
+function PdfLoader() {
+  return (
+    <Segment>
+      <Dimmer active inverted>
+        <Loader inverted content="Loading" />
+      </Dimmer>
+    </Segment>
+  );
+}
 
 export default function PdfRenderer({ file, className }) {
   const documentWrapperRef = useRef(null);
@@ -53,6 +63,7 @@ export default function PdfRenderer({ file, className }) {
         onMouseLeave={() => {
           setCanDisplayButton(false);
         }}
+        loading={PdfLoader}
       >
         <Page pageNumber={pageNumber} loading="" width={calculateWidth()}>
           {canDisplayButton && (

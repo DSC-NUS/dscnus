@@ -54,20 +54,13 @@ button:disabled {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  // .button {
-  //   max-width: 100px;
-  //   width: 10%;
-  //   height: fit-content;
-  // }
+  display: flex !important;
+  justify-content: center;
 
-  // @media only screen and (max-width: $bp-smallest) {
-  //   bottom: 20px;
-
-  //   .button {
-  //     max-height: 20px;
-  //     font-size: 0.7rem !important;
-  //   }
-  // }
+  @media only screen and (max-width: $bp-small) {
+    padding: 7px !important;
+    width: 0;
+  }
 }
 
 .pdf-renderer-left-button {
@@ -81,6 +74,10 @@ button:disabled {
   @media only screen and (max-width: 768px) {
     left: 15px;
   }
+
+  @media only screen and (max-width: $bp-small) {
+    left: 7px;
+  }
 }
 
 .pdf-renderer-right-button {
@@ -93,6 +90,10 @@ button:disabled {
 
   @media only screen and (max-width: 768px) {
     right: 15px;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    right: 7px;
   }
 }
 

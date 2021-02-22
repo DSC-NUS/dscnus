@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5a6b9a4f6c78e4f9d1b39bcab8f06d5c",
+    "revision": "faeaf58a3c067e36d294d6db8db0397e",
     "url": "/index.html"
   },
   {
-    "revision": "f4c87a591aca2da9435a",
-    "url": "/static/css/2.19f0e299.chunk.css"
+    "revision": "e52bc52860bce35d4d00",
+    "url": "/static/css/2.5b016202.chunk.css"
   },
   {
-    "revision": "08195fc801129fe6d0eb",
-    "url": "/static/css/main.f7926c6d.chunk.css"
+    "revision": "858d7c1ebf35b315db93",
+    "url": "/static/css/main.6ec2487c.chunk.css"
   },
   {
-    "revision": "f4c87a591aca2da9435a",
-    "url": "/static/js/2.ac08e39e.chunk.js"
+    "revision": "e52bc52860bce35d4d00",
+    "url": "/static/js/2.bf5d7280.chunk.js"
   },
   {
-    "revision": "5879b018a6c7656e08dbc41278ed9b23",
-    "url": "/static/js/2.ac08e39e.chunk.js.LICENSE.txt"
+    "revision": "b38e1fa4a1f4f3c58dae236529bb0c69",
+    "url": "/static/js/2.bf5d7280.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "08195fc801129fe6d0eb",
-    "url": "/static/js/main.3743db8e.chunk.js"
+    "revision": "858d7c1ebf35b315db93",
+    "url": "/static/js/main.46d65f94.chunk.js"
   },
   {
     "revision": "0d3b8522413ea50bd7ca",
@@ -76,6 +76,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/blogbg.9b7c4205.jpg"
   },
   {
+    "revision": "1e0ee9af04c10dae8be95b38fe9e9157",
+    "url": "/static/media/booklet.1e0ee9af.pdf"
+  },
+  {
     "revision": "13db00b7a34fee4d819ab7f9838cc428",
     "url": "/static/media/brand-icons.13db00b7.eot"
   },
@@ -94,10 +98,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e8c322de9658cbeb8a774b6624167c2c",
     "url": "/static/media/brand-icons.e8c322de.woff2"
-  },
-  {
-    "revision": "bc9c9bcc9dd82ecdc064f5effc05ad22",
-    "url": "/static/media/conjunct.bc9c9bcc.png"
   },
   {
     "revision": "85b7f6b11115f3f7fd3b4f2bcba2ef1a",
@@ -130,6 +130,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6cd5b075495f74a7e483c86b91530595",
     "url": "/static/media/external.6cd5b075.jpg"
+  },
+  {
+    "revision": "99debedf0354f18c146166fc6c03b8ab",
+    "url": "/static/media/finance-algo.99debedf.png"
   },
   {
     "revision": "57f4073c9bce9fcee4891cfb3471fdb2",
@@ -304,6 +308,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/internal.60e087e3.jpg"
   },
   {
+    "revision": "68ce096af70cda1f56f9f4a54c06bfd0",
+    "url": "/static/media/intro-to-finance.68ce096a.png"
+  },
+  {
+    "revision": "48653961e12504e5e6f8fe7d43323160",
+    "url": "/static/media/intro-to-html-css.48653961.png"
+  },
+  {
     "revision": "73b52dad06e7f38e3d0cf8b237985985",
     "url": "/static/media/journey-website-logo.73b52dad.svg"
   },
@@ -350,6 +362,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9d9f46e3bf84e37a1c00bb1acbe64ebf",
     "url": "/static/media/shawnten.9d9f46e3.jpg"
+  },
+  {
+    "revision": "0331bb3c53574e553854fb4c7b3b8c0f",
+    "url": "/static/media/sponsor-osa.0331bb3c.png"
+  },
+  {
+    "revision": "15f8d633c2758695af5738702452d956",
+    "url": "/static/media/sponsor-paypal.15f8d633.png"
+  },
+  {
+    "revision": "9484634a9790735d9d096f971d5528ef",
+    "url": "/static/media/sponsor-sl2.9484634a.png"
   },
   {
     "revision": "9f428d28e54580cf05d1d625c6b89f8e",

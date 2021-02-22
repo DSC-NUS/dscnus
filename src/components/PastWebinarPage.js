@@ -3,6 +3,9 @@ import PageHeader from "./PageHeader.js";
 import workshop1 from "../assets/PastWebinarPage/workshop1.png";
 import workshop2 from "../assets/PastWebinarPage/workshop2.png";
 import workshop3 from "../assets/PastWebinarPage/workshop3.png";
+import introToFinance from "../assets/PastWebinarPage/intro-to-finance.png";
+import financeAlgo from "../assets/PastWebinarPage/finance-algo.png";
+import introToHtmlCss from "../assets/PastWebinarPage/intro-to-html-css.png";
 import talk1 from "../assets/PastWebinarPage/talk1.png";
 import talk2 from "../assets/PastWebinarPage/talk2.png";
 import Footer from "./Footer.js";
@@ -147,6 +150,94 @@ const PastWebinarPage = () => (
             <p>
               Rewatch it{" "}
               <a href="https://www.youtube.com/watch?v=XQtxCabo05o">here</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div className="section-header section-green">
+      <h2 class="heading-secondary">Tech-for-good v2 Workshops</h2>
+      <p>
+        In this round of Tech-For-Good, we bring you series of workshops to
+        learn different programming languages and delve in application among
+        areas such as web development and finance.
+      </p>
+    </div>
+    <section className="section">
+      <div className="projects">
+        <div className="card-horizontal projects__project">
+          <div className="card-horizontal__image-box">
+            <span />
+            <img src={introToFinance} alt="event" />
+          </div>
+          <div className="card-horizontal__content">
+            <h2 class="heading-secondary">
+              FINANCE & ANALYTICS: INTRO TO FINANCE
+            </h2>
+            <p>
+              We all know the importance of managing our finances, though how
+              well can we actually do it? You can rewatch our workshop for some
+              helpful advice to improve your financial journey by using Python{" "}
+              <a href="https://www.youtube.com/watch?v=f5L1QBX9Bow">here</a>.
+            </p>
+            <br></br>
+            <p>
+              Download the accompanying materials{" "}
+              <a href="https://drive.google.com/drive/folders/1wPLcT8xgoY_bkeUReQTxcaPNbe43Hcfm?usp=sharing">
+                here.
+              </a>
+            </p>
+          </div>
+        </div>
+        <div className="card-horizontal projects__project">
+          <div className="card-horizontal__image-box">
+            <span />
+            <img src={financeAlgo} alt="event" />
+          </div>
+          <div className="card-horizontal__content">
+            <h2 class="heading-secondary">
+              FINANCE & ANALYTICS: CREATING AND IMPLEMENTING ALGORITHMS
+            </h2>
+            <p>
+              Keen to enter the world of trading but lack the time to manage
+              your portfolio? Why not automate your trading decisions? Learn to
+              write a basic back testing script in python by rewatching the
+              workshop{" "}
+              <a href="https://www.youtube.com/watch?v=pBTGY3nWJ9k">here</a>.
+            </p>
+            <br></br>
+            <p>
+              Download the accompanying materials{" "}
+              <a href="https://drive.google.com/drive/folders/1wPLcT8xgoY_bkeUReQTxcaPNbe43Hcfm?usp=sharing">
+                here.
+              </a>
+            </p>
+          </div>
+        </div>
+        <div className="card-horizontal projects__project">
+          <div className="card-horizontal__image-box">
+            <span />
+            <img src={introToHtmlCss} alt="event" />
+          </div>
+          <div className="card-horizontal__content">
+            <h2 class="heading-secondary">
+              FRONT-END WEB DEVELOPMENT: INTRO TO HTML & CSS PART 1
+            </h2>
+            <p>
+              Ever wanted to learn a new coding language? This workshop covers
+              just that. Join our team as the share their knowledge and
+              learnings about HTML and CSS{" "}
+              <a href="https://drive.google.com/drive/folders/1nu0xa748LRRiiZi8rI17wjHgoMfCEjRb?usp=sharing">
+                here
+              </a>
+              .
+            </p>
+            <br></br>
+            <p>
+              Download the accompanying materials{" "}
+              <a href="https://drive.google.com/drive/folders/1nu0xa748LRRiiZi8rI17wjHgoMfCEjRb?usp=sharing">
+                here
+              </a>
             </p>
           </div>
         </div>

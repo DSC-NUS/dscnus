@@ -23,3 +23,38 @@
 .vertical-timeline-element-body {
   font-size: 14px !important;
 }
+
+.vertical-timeline-element-body-list {
+  padding-top: 10px;
+  padding-left: 40px;
+}
+
+.h4g-sponsor-logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 700px;
+
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+  h3 {
+    align-self: flex-start;
+    font-size: large;
+  }
+
+  @media screen and (max-width: $bp-medium) {
+    max-width: 250px;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+.h4g-sponsor-osa-logo {
+  width: 220px !important;
+}

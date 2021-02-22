@@ -1,13 +1,17 @@
 import React from "react";
 import PageHeader from "./PageHeader";
 import Footer from "./Footer.js";
-import conjunct from "../assets/Hack4GoodPage/conjunct.png";
 import logo from "../assets/ProjectsPage/hglogo.png";
+import sponsorOsa from "../assets/Hack4GoodPage/sponsor-osa.png";
+import sponsorSl2 from "../assets/Hack4GoodPage/sponsor-sl2.png";
+import sponsorPaypal from "../assets/Hack4GoodPage/sponsor-paypal.png";
+import booklet from "../assets/Hack4GoodPage/booklet.pdf";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import { Icon } from "semantic-ui-react";
+import { Icon, Image } from "semantic-ui-react";
+import PdfRenderer from "./PdfRenderer";
 
 const Hack4GoodPage = () => {
   return (
@@ -34,11 +38,11 @@ const Hack4GoodPage = () => {
               <h2>HACK FOR GOOD</h2>
               <br></br>
               <p>
-                In collaboration with Conjunct Consulting, DSC SoC presents Hack
-                For Good, a student-run hackathon which seeks to inspire
-                students to learn and use technology for social causes. Our
-                innovation challenge is unique in that we are posing real
-                problem statements provided by NPOs in Singapore.
+                In collaboration with Conjunct Consulting, and sponsored by NUS
+                OSA, DSC SoC presents Hack For Good, a student-run hackathon
+                which seeks to inspire students to learn and use technology for
+                social causes. Our innovation challenge is unique in that we are
+                posing real problem statements provided by NPOs in Singapore.
               </p>
               <br />
               <p>
@@ -103,6 +107,17 @@ const Hack4GoodPage = () => {
               (from problem statement sponsors)
             </p>
           </h3>
+          <p className="vertical-timeline-element-body">
+            Problem statement will be release during our first briefing.
+          </p>
+          <ul className="vertical-timeline-element-body-list">
+            <li>
+              <b>Time</b>: 7:00 - 9:30 pm
+            </li>
+            <li>
+              <b>Venue</b>: Online via Zoom (link will be sent to participants)
+            </li>
+          </ul>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -132,6 +147,14 @@ const Hack4GoodPage = () => {
             to ensure that their ideas and solutions are aligned to the needs of
             the social sector.
           </p>
+          <ul className="vertical-timeline-element-body-list">
+            <li>
+              <b>Time</b>: 8:00 pm
+            </li>
+            <li>
+              <b>Venue</b>: Online workshop
+            </li>
+          </ul>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -168,8 +191,28 @@ const Hack4GoodPage = () => {
           }
         >
           <h3 className="vertical-timeline-element-title">Finale</h3>
+          <p className="vertical-timeline-element-body">
+            Wrap up of our Hack for Good event and winners will be announced.
+          </p>
+          <ul className="vertical-timeline-element-body-list">
+            <li>
+              <b>Time</b>: 1:30 pm
+            </li>
+            <li>
+              <b>Venue</b>: Online workshop
+            </li>
+          </ul>
         </VerticalTimelineElement>
       </VerticalTimeline>
+      <div className="h4g-sponsor-logos">
+        <h3>Sponsors:</h3>
+        <Image.Group size="small">
+          <Image src={sponsorOsa} className="h4g-sponsor-osa-logo" />
+          <Image src={sponsorSl2} />
+          <Image src={sponsorPaypal} />
+        </Image.Group>
+      </div>
+      <PdfRenderer file={booklet} />
       <Footer />
     </>
   );

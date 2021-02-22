@@ -1,41 +1,105 @@
-@import './settings';
-@import './mixins';
+@import "./settings";
+@import "./mixins";
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
 }
 
 body {
-    color: $color-dark-grey;
-    line-height: 1.6;
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
-    box-sizing: border-box;
+  color: $color-dark-grey;
+  line-height: 1.6;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
 }
 
 p {
-    font-size: $font-size-small;
+  font-size: $font-size-small;
 }
 
 html {
-    font-size: 68%;
-    @media only screen and (max-width: $bp-medium) {
-        font-size: 62%;
-    }
-    @media only screen and (max-width: $bp-small) {
-        font-size: 56%;
-    }
+  font-size: 68%;
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 62%;
+  }
+  @media only screen and (max-width: $bp-small) {
+    font-size: 56%;
+  }
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 button:disabled {
-    cursor: default;
+  cursor: default;
 }
 
 .is-active {
-    font-weight: bold;   
+  font-weight: bold;
+}
+
+.pdf-renderer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  canvas {
+    margin: auto;
+  }
+  margin-bottom: 100px;
+}
+
+.pdf-renderer-buttons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  // .button {
+  //   max-width: 100px;
+  //   width: 10%;
+  //   height: fit-content;
+  // }
+
+  // @media only screen and (max-width: $bp-smallest) {
+  //   bottom: 20px;
+
+  //   .button {
+  //     max-height: 20px;
+  //     font-size: 0.7rem !important;
+  //   }
+  // }
+}
+
+.pdf-renderer-left-button {
+  @extend .pdf-renderer-buttons;
+  left: 25px;
+
+  @media only screen and (max-width: $bp-large) {
+    left: 20px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    left: 15px;
+  }
+}
+
+.pdf-renderer-right-button {
+  @extend .pdf-renderer-buttons;
+  right: 25px;
+
+  @media only screen and (max-width: $bp-large) {
+    right: 20px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    right: 15px;
+  }
+}
+
+.pdf-renderer-document {
+  width: 50vw;
+
+  @media only screen and (max-width: 768px) {
+    width: 70vw;
+  }
 }

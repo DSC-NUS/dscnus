@@ -24,7 +24,7 @@ class WorkshopsPage extends Component {
           </div>
         </header>
 
-        <div className="section-header section-green">
+        {/* <div className="section-header section-green">
           <h2 class="heading-secondary">FRONT-END WEB DEVELOPMENT WORKSHOPS</h2>
           <p>
             Get a good grasp of how the web works at a fundamental level by
@@ -236,7 +236,7 @@ class WorkshopsPage extends Component {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         {<Footer />}
       </div>
     );

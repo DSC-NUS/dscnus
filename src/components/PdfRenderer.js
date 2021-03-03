@@ -15,7 +15,12 @@ function PdfLoader() {
   );
 }
 
-export default function PdfRenderer({ file, className }) {
+export default function PdfRenderer({
+  file,
+  className,
+  willGoNextPage,
+  willGoPreviousPage,
+}) {
   const documentWrapperRef = useRef(null);
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
@@ -34,14 +39,26 @@ export default function PdfRenderer({ file, className }) {
     if (pageNumber === 1) {
       return;
     }
-    changePage(-1);
+    let pageChange = -1;
+
+    if (willGoPreviousPage) {
+      pageChange = willGoPreviousPage(pageNumber) ?? pageChange;
+    }
+
+    changePage(pageChange);
   }
 
   function nextPage() {
     if (pageNumber === numPages) {
       return;
     }
-    changePage(1);
+    let pageChange = 1;
+
+    if (willGoNextPage) {
+      pageChange = willGoNextPage(pageNumber) ?? pageChange;
+    }
+
+    changePage(pageChange);
   }
 
   const width = documentWrapperRef.current?.getBoundingClientRect().width;

@@ -366,7 +366,11 @@ const Hack4GoodPage = () => {
           <Image src={sponsorPaypal} />
         </Image.Group>
       </div>
-      <PdfRenderer file={booklet} />
+      <PdfRenderer
+        file={booklet}
+        willGoNextPage={(pageNumber) => (pageNumber == 3 ? 2 : null)}
+        willGoPreviousPage={(pageNumber) => (pageNumber == 5 ? -2 : null)}
+      />
       <Footer />
     </>
   );

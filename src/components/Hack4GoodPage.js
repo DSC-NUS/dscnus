@@ -5,13 +5,144 @@ import logo from "../assets/ProjectsPage/hglogo.png";
 import sponsorOsa from "../assets/Hack4GoodPage/sponsor-osa.png";
 import sponsorSl2 from "../assets/Hack4GoodPage/sponsor-sl2.png";
 import sponsorPaypal from "../assets/Hack4GoodPage/sponsor-paypal.png";
+import sponsorQuest from "../assets/Hack4GoodPage/sponsor-quest.png";
+import monk from "../assets/Hack4GoodPage/panel-company-monk.png";
+import better from "../assets/Hack4GoodPage/panel-company-better.png";
+import ogp from "../assets/Hack4GoodPage/panel-company-ogp.png";
+import jeremy from "../assets/Hack4GoodPage/panel-jeremy.jpg";
+import shawn from "../assets/Hack4GoodPage/panel-shawn.jpg";
+import alexis from "../assets/Hack4GoodPage/panel-alexis.jpg";
+import gift from "../assets/Hack4GoodPage/ps-gift.jpg";
+import girls from "../assets/Hack4GoodPage/ps-girls.png";
+import access from "../assets/Hack4GoodPage/ps-access.jpg";
 import booklet from "../assets/Hack4GoodPage/booklet.pdf";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import { Icon, Image } from "semantic-ui-react";
+import { Grid, Icon, Image } from "semantic-ui-react";
 import PdfRenderer from "./PdfRenderer";
+
+const panelJudges = [
+  {
+    profileImg: jeremy,
+    name: "Jeremy Au",
+    accreditations: [
+      "Head of Strategic Projects, Monk's Hill Ventures.",
+      "Harvard MBA.",
+      "Forbes 30 Under 30.",
+    ],
+    companyImg: monk,
+  },
+  {
+    profileImg: shawn,
+    name: "Shawn Loh",
+    accreditations: [
+      "Co-founder of Better.com, valued at $4 billion as of their Series D raise.",
+      "Amongst Better’s accolades include LinkedIn's #1 Start-Up in the US, Forbes Fintech 50 and CNBC Disruptor 50.",
+      "BCG Consultant",
+    ],
+    companyImg: better,
+  },
+  {
+    profileImg: alexis,
+    name: "Alexis Goh",
+    accreditations: [
+      "Software Engineer at Open Government Products.",
+      "Stanford Master of Computer Science (Artificial Intelligence).",
+      "Previously a computer vision researcher at Whiterabbit.ai",
+    ],
+    companyImg: ogp,
+  },
+];
+
+const PanelJudgeComponent = ({ judge }) => (
+  <div class="h4g-panel-judges-component">
+    <img
+      src={judge.profileImg}
+      alt="judge"
+      class="h4g-panel-judges-component-profile-img"
+    />
+    <h4 class="h4g-panel-judges-component-name">{judge.name}</h4>
+    <ul>
+      {judge.accreditations.map((accreditation) => (
+        <li>{accreditation}</li>
+      ))}
+    </ul>
+    <img
+      src={judge.companyImg}
+      alt="company"
+      style={{ width: "50%" }}
+      class="h4g-panel-judges-component-company-img"
+    />
+  </div>
+);
+
+const problemStatements = [
+  {
+    img: access,
+    description: (
+      <p>
+        <b>Access</b> is a ground-up organisation providing non-academic
+        opportunities to underserved students through externships and
+        mentorships.
+      </p>
+    ),
+    problem:
+      "Traditionally, industry interest and understanding have been assessed by looking at past experiences on the resumes of youths. How can we better reflect their interest and understanding of different industries and jobs for better job matching?",
+  },
+  {
+    img: girls,
+    description: (
+      <p>
+        Founded in 2007 by Adriana Gascoigne, <b>Girls in Tech</b> is a
+        nonprofit organization dedicated to eliminating the gender gap in tech.
+      </p>
+    ),
+    problem:
+      "How do we get young girls interested in STEM (Science, Technology, Engineering, and Mathematics) from an early age? (Ideas for solutions can be STEM-related gamification, toys, video content etc.)",
+  },
+  {
+    img: gift,
+    description: (
+      <p>
+        <b>Gift-It-Forward</b> is a social enterprise in Singapore. It aims to
+        create more meaningful gifts and teach kids about generosity and helping
+        others, while simplifying the event planning and gift giving experience
+        for parents.
+      </p>
+    ),
+    problem:
+      "Kids, who receive most of these gifts through birthday celebrations should also learn to think about the impact this has on their environment and community. Design a solution that makes gifting more meaningful for both the recipient and communities in need, while reducing gift waste.",
+  },
+  {
+    img: sponsorOsa,
+    description: (
+      <p>
+        The <b>NUS Office of Student Affairs (OSA)</b> seizes every opportunity
+        and dedicates itself to provide and support the NUS student community in
+        all aspects of student life outside-of-the-classroom, including student
+        services, housing admission and residential life, student organisations,
+        student leaders’ training, community engagement, integration and service
+        learning, student support and wellness, as well as disability support.
+      </p>
+    ),
+    problem:
+      "How can we engage youths to adopt and use Asset-Based Community Development or a strength-based approach for community projects instead of the usual problem/gaps-based approach?\nHow can we tap on technology to get youths to learn, understand and appreciate diversity/difference and participate in creating a more inclusive space?",
+  },
+];
+
+const ProblemStatementsComponent = ({ problemStatement }) => (
+  <div class="h4g-problem-statement-component">
+    <div class="h4g-problem-statement-component-img-container">
+      <img src={problemStatement.img} />
+    </div>
+    <div class="h4g-problem-statement-description-container">
+      {problemStatement.description}
+      {/* {problemStatement.problem} */}
+    </div>
+  </div>
+);
 
 const Hack4GoodPage = () => {
   return (
@@ -102,10 +233,6 @@ const Hack4GoodPage = () => {
         >
           <h3 className="vertical-timeline-element-title">
             Release of problem statements & Briefing
-            <p style={{ display: "inline" }}>
-              {" "}
-              (from problem statement sponsors)
-            </p>
           </h3>
           <p className="vertical-timeline-element-body">
             Problem statement will be release during our first briefing.
@@ -199,15 +326,42 @@ const Hack4GoodPage = () => {
               <b>Time</b>: 1:30 pm
             </li>
             <li>
-              <b>Venue</b>: Online workshop
+              <b>Venue</b>: Online
             </li>
           </ul>
         </VerticalTimelineElement>
       </VerticalTimeline>
+      <h3 class="h4g-section-title">Problem Statements</h3>
+      <div class="h4g-problem-statements-container">
+        {problemStatements.map((problemStatement) => (
+          <ProblemStatementsComponent problemStatement={problemStatement} />
+        ))}
+      </div>
+      <h3 class="h4g-section-title">Panel Judges</h3>
+      <Grid
+        stackable
+        centered
+        padded
+        columns={3}
+        className="h4g-panel-judges-component-grid"
+      >
+        {panelJudges.map((judge) => (
+          <Grid.Column
+            centered
+            tablet={16}
+            largeScreen={5}
+            widescreen={5}
+            class="h4g-panel-judges-component-grid-column"
+          >
+            <PanelJudgeComponent judge={judge} />
+          </Grid.Column>
+        ))}
+      </Grid>
       <div className="h4g-sponsor-logos">
         <h3>Sponsors:</h3>
         <Image.Group size="small">
           <Image src={sponsorOsa} className="h4g-sponsor-osa-logo" />
+          <Image src={sponsorQuest} />
           <Image src={sponsorSl2} />
           <Image src={sponsorPaypal} />
         </Image.Group>

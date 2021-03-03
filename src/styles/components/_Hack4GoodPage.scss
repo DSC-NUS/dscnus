@@ -35,9 +35,7 @@
   align-items: center;
   max-width: 700px;
 
-  margin-bottom: 50px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 50px auto;
 
   h3 {
     align-self: flex-start;
@@ -57,4 +55,91 @@
 
 .h4g-sponsor-osa-logo {
   width: 220px !important;
+}
+
+.h4g-panel-judges-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: center;
+  margin-bottom: 70px;
+  max-width: 400px;
+  margin: auto;
+
+  @media screen and (min-width: 1200px) {
+    ul {
+      min-height: 120px;
+    }
+  }
+}
+
+.h4g-panel-judges-component-profile-img {
+  max-width: 200px;
+}
+
+.h4g-panel-judges-component-company-img {
+  margin-top: 20px;
+  max-width: 100px;
+}
+
+.h4g-section-title {
+  text-align: center;
+  font-size: large;
+  margin-bottom: 50px;
+  text-decoration: underline;
+}
+
+.h4g-panel-judges-component-name {
+  font-size: 1.2em;
+}
+
+.h4g-panel-judges-component-grid-column {
+  > div {
+    text-align: center;
+  }
+}
+
+.h4g-panel-judges-component-grid {
+  max-width: 2600px;
+  &#{&}#{&}#{&}#{&} {
+    margin: auto !important;
+  }
+}
+
+.h4g-problem-statement-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.h4g-problem-statement-component-img-container {
+  img {
+    max-width: 200px;
+    max-height: 100px;
+  }
+
+  @media screen and (max-width: $bp-small) {
+    img {
+      max-width: 100px;
+      max-height: 50px;
+    }
+
+    min-width: 150px;
+    margin: 10px;
+  }
+
+  margin: 30px;
+  min-width: 230px;
+  text-align: center;
+}
+
+.h4g-problem-statements-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.h4g-problem-statement-description-container {
+  max-width: 900px;
 }

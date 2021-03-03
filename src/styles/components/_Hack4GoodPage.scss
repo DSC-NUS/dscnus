@@ -63,9 +63,20 @@
   align-items: center;
   justify-content: flex-start;
   align-self: center;
-  margin-bottom: 70px;
   max-width: 400px;
-  margin: auto;
+  margin: 0 auto 30px;
+
+  @media screen and (max-width: $bp-small) {
+    max-width: 300px;
+  }
+
+  @media screen and (max-width: $bp-smallest) {
+    max-width: 250px;
+  }
+
+  // @media screen and (max-width: 1200px) {
+  //   margin-bottom: ;
+  // }
 
   @media screen and (min-width: 1200px) {
     ul {
@@ -111,7 +122,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
+  margin: 0 20px 40px;
 }
 
 .h4g-problem-statement-component-img-container {
@@ -127,6 +138,16 @@
     }
 
     min-width: 150px;
+    margin: 10px;
+  }
+
+  @media screen and (max-width: $bp-smallest) {
+    img {
+      max-width: 100px;
+      max-height: 50px;
+    }
+
+    min-width: 120px;
     margin: 10px;
   }
 

@@ -20,7 +20,7 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import { Grid, Icon, Image } from "semantic-ui-react";
+import { Grid, Icon, Image, Divider } from "semantic-ui-react";
 import PdfRenderer from "./PdfRenderer";
 
 const panelJudges = [
@@ -128,18 +128,29 @@ const problemStatements = [
       </p>
     ),
     problem:
-      "How can we engage youths to adopt and use Asset-Based Community Development or a strength-based approach for community projects instead of the usual problem/gaps-based approach?\nHow can we tap on technology to get youths to learn, understand and appreciate diversity/difference and participate in creating a more inclusive space?",
+      "How can we engage youths to adopt and use Asset-Based Community Development or a strength-based approach for community projects instead of the usual problem/gaps-based approach?",
+    problem2:
+      "How can we tap on technology to get youths to learn, understand and appreciate diversity/difference and participate in creating a more inclusive space?",
   },
 ];
 
 const ProblemStatementsComponent = ({ problemStatement }) => (
-  <div class="h4g-problem-statement-component">
+  <div class="h4g-problem-statement-component card-horizontal projects__project">
     <div class="h4g-problem-statement-component-img-container">
       <img src={problemStatement.img} />
     </div>
     <div class="h4g-problem-statement-description-container">
       {problemStatement.description}
-      {/* {problemStatement.problem} */}
+      <Divider />
+      {problemStatement.problem}
+
+      {problemStatement.problem2 && (
+        <>
+          <br />
+          <br />
+          {problemStatement.problem2}
+        </>
+      )}
     </div>
   </div>
 );
@@ -366,11 +377,7 @@ const Hack4GoodPage = () => {
           <Image src={sponsorPaypal} />
         </Image.Group>
       </div>
-      <PdfRenderer
-        file={booklet}
-        willGoNextPage={(pageNumber) => (pageNumber == 3 ? 2 : null)}
-        willGoPreviousPage={(pageNumber) => (pageNumber == 5 ? -2 : null)}
-      />
+      <PdfRenderer file={booklet} />
       <Footer />
     </>
   );

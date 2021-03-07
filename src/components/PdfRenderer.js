@@ -82,7 +82,11 @@ export default function PdfRenderer({
         }}
         loading={PdfLoader}
       >
-        <Page pageNumber={pageNumber} loading="" width={calculateWidth()}>
+        <Page
+          pageNumber={pageNumber}
+          loading={PdfLoader}
+          width={calculateWidth()}
+        >
           {canDisplayButton && (
             <>
               <Button

@@ -36,11 +36,11 @@ const panelJudges = [
   },
   {
     profileImg: shawn,
-    name: "Shawn Loh",
+    name: "Shawn Low",
     accreditations: [
       "Co-founder of Better.com, valued at $4 billion as of their Series D raise.",
       "Amongst Better’s accolades include LinkedIn's #1 Start-Up in the US, Forbes Fintech 50 and CNBC Disruptor 50.",
-      "BCG Consultant",
+      "Former BCG Consultant",
     ],
     companyImg: better,
   },

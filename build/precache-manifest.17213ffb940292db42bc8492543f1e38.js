@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "251659008cdbac340e83d87b8019c502",
+    "revision": "c3743bddd6604688c745c30271906f9b",
     "url": "/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.5b016202.chunk.css"
   },
   {
-    "revision": "ebd12864091ee1593126",
+    "revision": "ce4794fe028bc10b757e",
     "url": "/static/css/main.fad91ae2.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.a98a535d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ebd12864091ee1593126",
-    "url": "/static/js/main.98fb646a.chunk.js"
+    "revision": "ce4794fe028bc10b757e",
+    "url": "/static/js/main.15ed6246.chunk.js"
   },
   {
     "revision": "0d3b8522413ea50bd7ca",
@@ -76,8 +76,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/blogbg.9b7c4205.jpg"
   },
   {
-    "revision": "eebaaebe0cd8ae8df8d347b73b7ccf02",
-    "url": "/static/media/booklet.eebaaebe.pdf"
+    "revision": "17573a4e7ca93b07628a2748a8da018d",
+    "url": "/static/media/booklet.17573a4e.pdf"
   },
   {
     "revision": "13db00b7a34fee4d819ab7f9838cc428",

@@ -31,6 +31,7 @@ const panelJudges = [
       "Head of Strategic Projects, Monk's Hill Ventures.",
       "Harvard MBA.",
       "Forbes 30 Under 30.",
+      "Cofounder, Conjunct Consulting",
     ],
     companyImg: monk,
   },

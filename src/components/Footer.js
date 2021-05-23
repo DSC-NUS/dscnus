@@ -22,8 +22,13 @@ const Footer = () => (
               </a>
             </li>
             <li className="footer__item">
-              <a href="/projects" className="footer__link">
-                Our Projects
+              <a href="/internalprojects" className="footer__link">
+                Internal Projects
+              </a>
+            </li>
+            <li className="footer__item">
+              <a href="/externalprojects" className="footer__link">
+                External Projects
               </a>
             </li>
             <li className="footer__item">

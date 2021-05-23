@@ -18,6 +18,11 @@ p {
   font-size: $font-size-small;
 }
 
+ol,
+ul {
+  padding-left: 40px;
+}
+
 html {
   font-size: 68%;
   @media only screen and (max-width: $bp-medium) {

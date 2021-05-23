@@ -23,6 +23,8 @@ import { createBrowserHistory } from "history";
 import ReactGA from "react-ga";
 
 import "react-vertical-timeline-component/style.min.css";
+import InternalTeamPage from "./components/InternalTeamPage";
+import ExternalTeamPage from "./components/ExternalTeamPage";
 ReactGA.initialize("UA-147601557-4");
 
 const history = createBrowserHistory();
@@ -48,7 +50,8 @@ class App extends Component {
             <Route path="/team" component={TeamPage} />
             <Route path="/post" component={PostPage} />
             <Route path="/contact" component={ContactPage} />
-            <Route path="/projects" component={ProjectsPage} />
+            <Route path="/internalprojects" component={InternalTeamPage} />
+            <Route path="/externalprojects" component={ExternalTeamPage} />
             <Route path="/events" component={WorkshopsPage} />
             <Route path="/blog/:id" component={ArticlePage} />
             <Route path="/blog" component={BlogPage} exact={true} />

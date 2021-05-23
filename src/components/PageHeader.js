@@ -74,13 +74,23 @@ class PageHeader extends Component {
               <Dropdown item text="Our Projects">
                 <Dropdown.Menu>
                   <Dropdown.Item
-                    name="projects"
-                    active={this.state.activeItem === "projects"}
+                    name="internalprojects"
+                    active={this.state.activeItem === "internalprojects"}
                     onClick={this.handleItemClick}
                     as={Link}
-                    to="/projects"
+                    to="/internalprojects"
                   >
-                    Our Projects
+                    Internal Projects
+                  </Dropdown.Item>
+
+                  <Dropdown.Item
+                    name="externalprojects"
+                    active={this.state.activeItem === "externalprojects"}
+                    onClick={this.handleItemClick}
+                    as={Link}
+                    to="/externalprojects"
+                  >
+                    External Projects
                   </Dropdown.Item>
 
                   <Dropdown.Item
@@ -171,13 +181,23 @@ class PageHeader extends Component {
             </Menu.Item>
 
             <Menu.Item
-              name="projects"
-              active={this.state.activeItem === "projects"}
+              name="internalprojects"
+              active={this.state.activeItem === "internalprojects"}
               onClick={this.handleItemClick}
               as={Link}
-              to="/projects"
+              to="/internalprojects"
             >
-              Our Projects
+              Internal Projects
+            </Menu.Item>
+
+            <Menu.Item
+              name="externalprojects"
+              active={this.state.activeItem === "externalprojects"}
+              onClick={this.handleItemClick}
+              as={Link}
+              to="/externalprojects"
+            >
+              External Projects
             </Menu.Item>
 
             <Menu.Item

@@ -44,7 +44,7 @@
 .card-horizontal {
   display: flex;
   background-color: $color-white;
-  padding: $m-size;
+  padding: $m-size $l-size;
   border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.2);
@@ -65,9 +65,11 @@
 
   &__content {
     padding: $l-size;
+    padding-right: 0;
 
     @media only screen and (max-width: $bp-medium) {
       padding: $m-size;
+      padding-right: 0;
     }
   }
 

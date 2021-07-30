@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import { Card } from "semantic-ui-react";
 import PageHeader from "./PageHeader";
 import Footer from "./Footer";
-import CarouselInternalTeam from "./CarouselInternalTeam.js";
-import CarouselExternalTeam from "./CarouselExternalTeam.js";
 
 const imagePath = require.context("./../assets/TeamPage/", true);
 

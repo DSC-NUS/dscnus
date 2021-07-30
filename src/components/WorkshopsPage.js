@@ -1,11 +1,6 @@
 import React, { Component } from "react";
 import PageHeader from "./PageHeader";
 import Footer from "./Footer";
-import finance1 from "../assets/WorkshopsPage/finance1.png";
-import finance2 from "../assets/WorkshopsPage/finance2.png";
-import frontend1 from "../assets/WorkshopsPage/frontend1.png";
-import frontend2 from "../assets/WorkshopsPage/frontend2.png";
-import frontend3 from "../assets/WorkshopsPage/frontend3.png";
 
 class WorkshopsPage extends Component {
   componentDidMount() {
@@ -23,6 +18,13 @@ class WorkshopsPage extends Component {
             </h1>
           </div>
         </header>
+
+        <section className="section-header">
+          <h2 class="heading-secondary">Watch this space for future workshops!</h2>
+          <p>
+            Follow us on <a href="https://instagram.com/dscnus">Instagram</a> for updates.
+          </p>
+        </section>
 
         {/* <div className="section-header section-green">
           <h2 class="heading-secondary">FRONT-END WEB DEVELOPMENT WORKSHOPS</h2>

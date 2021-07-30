@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import moment from 'moment';
-import { Icon, Message } from 'semantic-ui-react';
+import { Message } from 'semantic-ui-react';
 import ReactLoading from 'react-loading';
 import ArticleCard from './ArticleCard';
 import PageHeader from './PageHeader';
 import Footer from './Footer';
 import teamarticledata from '../data/teamarticledata';
-import constants from '../data/constants';
 
 class BlogPage extends Component {
     state = {

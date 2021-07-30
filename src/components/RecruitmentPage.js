@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import PageHeader from "./PageHeader.js";
+import { Divider } from "semantic-ui-react";
 import Footer from "./Footer.js";
 import { Link } from "react-router-dom";
+import { appOpen } from "../utils/utils.js";
 import financeIcon from "../assets/RecruitmentPage/financeIcon.svg";
 import operationsIcon from "../assets/RecruitmentPage/operationsIcon.svg";
 import partnershipsIcon from "../assets/RecruitmentPage/partnershipsIcon.svg";
@@ -16,11 +18,6 @@ class RecruitmentPage extends Component {
     window.scrollTo(0, 0);
   }
   render() {
-    const currDateTime = new Date();
-    const appOpenDateTime = new Date(2020, 7, 4, 0, 0, 0, 0);
-    const appCloseDateTime = new Date(2020, 7, 24, 0, 0, 0, 0);
-    const appOpen =
-      currDateTime > appOpenDateTime && currDateTime < appCloseDateTime;
     return (
       <div>
         {<PageHeader />}
@@ -28,12 +25,32 @@ class RecruitmentPage extends Component {
           <div class="recruitment-header__text-box align-center">
             <h1 className="heading-primary">
               <span className="heading-primary--main">Join DSC</span>
+              <Divider />
             </h1>
             <p className="subtitle">
               We are looking for passionate leaders to help us push the mission
-              of #TECHFORGOOD
+              of
+            </p>
+            <p className="heading-primary--sub">
+              #TECHFOR
+              <span style={{ color: "#ea3f31" }}>G</span>
+              <span style={{ color: "#4285f4" }}>O</span>
+              <span style={{ color: "#f4b400" }}>O</span>
+              <span style={{ color: "#0f9d58" }}>D</span>
+            </p>
+            <p className="subtitle">
+              Sign ups close 21 August 2359hrs
             </p>
           </div>
+          <br/>
+          { appOpen ?
+            <a href="https://bit.ly/DSCNUS2021" target="blank" className="btn btn-yellow">
+              Apply here
+            </a> :
+            <h2 className="subtitle">
+              Sign ups have closed on 21 August. Thank you for your interest!
+            </h2>
+          }
         </header>
 
         <div className="section-header section-blue">
@@ -47,7 +64,7 @@ class RecruitmentPage extends Component {
         <section className="section-recruitment">
           <h3 className="section-recruitment__title">Internal Team</h3>
           <p className="section-recruitment__description">
-            The Internal Division focuses on running the club and managing
+            The Internal Team focuses on running the club and managing
             activities and events related to the school and students. We
             organize technology workshops that aim to upskill NUS students
             across all faculties, and the annual Hack for Good hackathon that
@@ -55,23 +72,9 @@ class RecruitmentPage extends Component {
             technology.
           </p>
           <h3 className="section-recruitment__roles-title">
-            Our Roles Available:
+            Roles Available:
           </h3>
           <div className="section-recruitment__roles-group">
-            <div className="section-recruitment__role">
-              <img alt="finance" src={financeIcon} />
-              <h4>Finance</h4>
-              <ul>
-                <li>
-                  Assist the Internal Lead and Deputy Internal Lead on financial
-                  planning and resource allocation
-                </li>
-                <li>
-                  Responsible for financial planning and providing
-                  accountability reports for all transactions conducted
-                </li>
-              </ul>
-            </div>
             <div className="section-recruitment__role">
               <img alt="workshops" src={techIcon} />
               <h4>Technology</h4>
@@ -79,6 +82,16 @@ class RecruitmentPage extends Component {
                 <li>
                   Conduct <Link to="/events">technology workshops</Link>{" "}
                   organized by DSC for NUS students and beyond
+                </li>
+              </ul>
+            </div>
+            <div className="section-recruitment__role">
+              <img alt="finance" src={financeIcon} />
+              <h4>Finance</h4>
+              <ul>
+                <li>
+                  Responsible for financial planning, resource allocation and providing
+                  accountability reports for all transactions conducted
                 </li>
               </ul>
             </div>
@@ -123,22 +136,20 @@ class RecruitmentPage extends Component {
             implementing real-world projects in partnership with non-profit
             organisations.
             <br />
-            Check out our upcoming projects for AY 2020/2021 and the roles
-            available below.
+            Check out our past projects <a href="externalprojects">here</a>.
           </p>
         </div>
 
         <section className="section-recruitment">
           <h3 className="section-recruitment__title">
-            Project Digital Kampong
+            External Team
           </h3>
           <p className="section-recruitment__description">
-            Digital Kampong is a digital platform that aims to connect the
-            20,000 SMEs under the Federation of Merchants' Associations,
-            Singapore (FMAS), and consumers. Besides expanding the digital
-            footprint of heartland businesses, Digital Kampong will also serve
-            as a community where SMEs and FMAS can find opportunities for
-            collaboration and support online.
+            The External Team is dedicated to harnessing technology for social good.
+            Through partnerships with non-profit organizations, external team members work together
+            to implement tech solutions to solve real-world problems. Each external division consists
+            of a closely-knit team with members handling different aspects of the project,
+            from planning to development to marketing and design.
           </p>
           <h3 className="section-recruitment__roles-title">
             Our Roles Available:
@@ -147,15 +158,16 @@ class RecruitmentPage extends Component {
             <div className="section-recruitment__role">
               <img alt="swe" src={sweIcon} />
               <h4>Software Engineer</h4>
-              We are looking for Software Engineers who understand
-              frontend/backend development. As a Software Engineer, you will:
+              We are looking for Software Engineers who are interested in
+              creating beautiful applications that make a difference! As a
+              Software Engineer, you will:
               <ul>
                 <li>
-                  Create website layout/interface using React/HTML/CSS/Redux
+                  Create website layout/interface using Frontend development frameworks
                 </li>
                 <li>
-                  Create backend services with knowledge of REST APIs and
-                  databases (NodeJS, MongoDB)
+                  Create Backend services with knowledge of REST APIs and
+                  databases
                 </li>
                 <li>
                   Deploy and manage application on cloud services such as
@@ -170,170 +182,9 @@ class RecruitmentPage extends Component {
               user experience. As a Product Designer, you will:
               <ul>
                 <li>
-                  Produce high quality UI/UX wireframes using Adobe/Figma/other
-                  software
-                </li>
-                <li>
-                  Apply the principles of user experience and conduct relevant
-                  experiments for prototypes
-                </li>
-                <li>
-                  Collaborate with developers and stakeholders on an agile
-                  methodology to iterate and improve product
-                </li>
-              </ul>
-            </div>
-            <div className="section-recruitment__role">
-              <img alt="biz" src={bizIcon} />
-              <h4>Business Associate</h4>
-              We are looking for passionate Business Associates who can engage
-              with others effectively. As a Business Associate, you will:
-              <ul>
-                <li>
-                  Lead an end-to-end workstream under Digital Kampong (i.e.
-                  Platform feature).
-                </li>
-                <li>
-                  Coordinate between our partner non-profit, platform users and
-                  the technology team{" "}
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <hr />
-        <section className="section-recruitment">
-          <h3 className="section-recruitment__title">Project Quest</h3>
-          <p className="section-recruitment__description">
-            Quest is a progressive web app that enables non-profit organisations
-            (NPOs) to conduct effective and customisable program evaluation, and
-            empowers youths through interactive "quests" and engaging journaling
-            features. We will be collaborating with CampusImpact, an NPO that
-            aims to guide youths through the transitional phase of their lives.
-          </p>
-          <h3 className="section-recruitment__roles-title">
-            Our Roles Available:
-          </h3>
-          <div className="section-recruitment__roles-group">
-            <div className="section-recruitment__role">
-              <img alt="swe" src={sweIcon} />
-              <h4>Software Engineer</h4>
-              We are looking for Software Engineers who are interested in
-              creating beautiful applications that make a difference! As a
-              Software Engineer, you will:
-              <ul>
-                <li>
-                  Build a Progressive Web App that supports development of
-                  youths, and data analytics of the staff members.
-                </li>
-                <li>
-                  Create engaging frontend interfaces using React and Redux.
-                </li>
-                <li>
-                  Develop modern backend infrastructure using technologies such
-                  as Node, GraphQL and MongoDB
-                </li>
-              </ul>
-            </div>
-            <div className="section-recruitment__role">
-              <img alt="design" src={designIcon} />
-              <h4>Product Designer (UI/UX)</h4>
-              We are looking for a UI/UX designer passionate about delivering a
-              smooth and enjoyable experience to the youths using our app. As a
-              UI/UX designer, you will:
-              <ul>
-                <li>
-                  Design interfaces such as journals and dashboards with
-                  technologies such as Figma or Adobe XD
-                </li>
-                <li>
-                  Conduct user research and perform user testing with youths on
-                  the ground
-                </li>
-              </ul>
-            </div>
-            <div className="section-recruitment__role">
-              <img alt="design" src={designIcon} />
-              <h4>Product Designer (Graphic)</h4>
-              We are looking for a Graphic Designer with experience in creating
-              digital art that captivates youths. We are looking to make our app
-              as fun and entertaining as possible, and we will need your help
-              with that. As a Graphic Designer, you will:
-              <ul>
-                <li>
-                  Design static assets to be used in various parts of the
-                  application
-                </li>
-                <li>
-                  Develop animations for web applications using technologies
-                  such as After Effects and Lottie
-                </li>
-              </ul>
-            </div>
-            <div className="section-recruitment__role">
-              <img alt="biz" src={bizIcon} />
-              <h4>Business Associate</h4>
-              We are looking for Business Associates who are good at client
-              management. As a Business Associate, you will:
-              <ul>
-                <li>
-                  Manage the partnership with the NPO and ensure the alignment
-                  of goals between the NPO and the tech team
-                </li>
-                <li>Define requirements for the app’s features.</li>
-                <li>
-                  Facilitate user acceptance testing and ensure that the final
-                  product addresses the NPO’s needs.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <hr />
-        <section className="section-recruitment">
-          <h3 className="section-recruitment__title">Project Journey</h3>
-          <p className="section-recruitment__description">
-            Journey is a web application that aims to enable NPOs to manage
-            volunteers and build a holistic development plan for their
-            volunteering program. The application will be used to empower
-            Blessings in a Bag - a community organisation serving troubled and
-            less fortunate youths - to further build on their volunteer
-            community and guide their volunteers in achieving fulfilment from
-            their volunteering journey.
-          </p>
-          <h3 className="section-recruitment__roles-title">
-            Our Roles Available:
-          </h3>
-          <div className="section-recruitment__roles-group">
-            <div className="section-recruitment__role">
-              <img alt="swe" src={sweIcon} />
-              <h4>Software Engineer</h4>
-              We are looking for Software Engineers with experience creating web
-              applications. As a Software Engineer, you will:
-              <ul>
-                <li>
-                  Create website layout/user interfaces with HTML, CSS, ReactJS,
-                  React-Redux
-                </li>
-                <li>
-                  Integrate back-end services and databases with SQL, NodeJS
-                </li>
-                <li>
-                  Build application on top of GCP tools such as App Engine,
-                  CloudSQL, GCS
-                </li>
-              </ul>
-            </div>
-            <div className="section-recruitment__role">
-              <img alt="design" src={designIcon} />
-              <h4>Product Designer</h4>
-              We are looking for creative individuals to do the design work. As
-              a Product Designer, you will:
-              <ul>
-                <li>
                   Produce high quality UI/UX design solutions through
                   wireframes, visual and graphic designs, and prototypes with
-                  Figma/Adobe{" "}
+                  Figma/Adobe
                 </li>
                 <li>
                   Investigate user experience design requirements with
@@ -348,8 +199,8 @@ class RecruitmentPage extends Component {
             <div className="section-recruitment__role">
               <img alt="biz" src={bizIcon} />
               <h4>Business Associate</h4>
-              We are looking for Business Associates who will be able to drive
-              the delivery of the product. As a Business Associate, you will:
+              We are looking for passionate Business Associates who can engage
+              with others effectively. As a Business Associate, you will:
               <ul>
                 <li>
                   Be responsible for coordination and communication with the
@@ -358,8 +209,8 @@ class RecruitmentPage extends Component {
                   requirements
                 </li>
                 <li>
-                  Develop product with technology team by providing any
-                  business-related input{" "}
+                  Develop product with technology team by providing
+                  business-related inputs
                 </li>
                 <li>
                   Track project progress and prioritise requirements for

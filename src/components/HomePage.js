@@ -1,13 +1,17 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import { Divider } from "semantic-ui-react";
 import PageHeader from "./PageHeader.js";
 import Footer from "./Footer.js";
+import { appOpen } from "../utils/utils.js";
+import signup from "../assets/HomePage/signup.png";
 import whoarewe from "../assets/HomePage/whoarewe.jpg";
 import whatwedo from "../assets/HomePage/whatwedo.jpg";
 import event1 from "../assets/HomePage/event1.jpg";
 import event2 from "../assets/HomePage/event2.jpg";
 import event3 from "../assets/HomePage/event3.jpg";
 import event4 from "../assets/HomePage/hackforgood.jpeg";
+import h4g2021 from "../assets/HomePage/hackforgood2021.png";
 import workshop from "../assets/HomePage/workshop.jpg";
 import talk from "../assets/HomePage/talk.jpg";
 
@@ -34,7 +38,32 @@ class Home extends Component {
             </h1>
           </div>
         </header>
-        <section className="section-home">
+        {appOpen && <section className="section-home">
+          <div className="section-home__content section-home__content-reverse">
+            <div class="section-home__image-box">
+              <img
+                className="section-home__image"
+                alt="Sign Up"
+                src={signup}
+              />
+            </div>
+            <div class="section-home__text-box">
+              <h2 class="heading-secondary">Sign ups for AY21/22 are open!</h2>
+              <p>
+                We are so excited to welcome you to the DSC family!
+                <br />
+                Find out more about our teams and roles below.
+                <br />
+                <br />
+                Sign ups close 21 August 2359.
+              </p>
+              <a href="/recruitment" className="btn btn-yellow">
+                Apply now
+              </a>
+            </div>
+          </div>
+        </section> }
+        <section className="section-home section-blue">
           <div className="section-home__content">
             <div class="section-home__text-box">
               <h2 class="heading-secondary">Who Are We?</h2>
@@ -57,7 +86,7 @@ class Home extends Component {
             </div>
           </div>
         </section>
-        <section className="section-home section-blue">
+        <section className="section-home">
           <div className="section-home__content section-home__content-reverse">
             <div class="section-home__image-box">
               <img
@@ -82,24 +111,30 @@ class Home extends Component {
         <section className="section-vertical">
           <h2 class="heading-secondary recent-events__header">Recent Events</h2>
           <div className="recents">
-            <div className="recents__card">
+            <Link to="/hack4good" className="recents__card">
+              <div className="recents__image-box">
+                <img alt="Hack for good 2020" src={h4g2021} />
+              </div>
+              <h2>Hack for Good 2021</h2>
+            </Link>
+            <Link to="/past-webinar" className="recents__card">
               <div className="recents__image-box">
                 <img alt="Tech for Good Workshops" src={workshop} />
               </div>
               <h2>Tech for Good Workshops</h2>
-            </div>
-            <div className="recents__card">
+            </Link>
+            <Link to="/past-webinar" className="recents__card">
               <div className="recents__image-box">
                 <img alt="Industry Talks" src={talk} />
               </div>
               <h2>Industry Talks</h2>
-            </div>
-            <div className="recents__card">
+            </Link>
+            <Link to="/hack4good2020" className="recents__card">
               <div className="recents__image-box">
                 <img alt="Hack for good 2020" src={event4} />
               </div>
-              <h2>Hack for good 2020!</h2>
-            </div>
+              <h2>Hack for Good 2020</h2>
+            </Link>
             <div className="recents__card">
               <div className="recents__image-box">
                 <img alt="SEA Google Developers Submit" src={event1} />

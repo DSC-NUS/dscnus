@@ -55,7 +55,7 @@ class TeamArticlePage extends Component {
                                 )
                             }
                         </div>
-                        <div className="" className={this.state.deckLink ? '' : 'display-none'}>
+                        <div className={this.state.deckLink ? '' : 'display-none'}>
                             <a href={this.state.deckLink} className="btn btn-yellow" target="_blank" rel="noopener noreferrer">Our Pitch Deck</a>
                         </div>
                     </div>

@@ -202,7 +202,7 @@ class ContactPage extends Component {
             </p>
             <div className="contact__icons-box">
               <a
-                href="http://www.instagram.com/dscsoc_"
+                href="http://www.instagram.com/dscnus"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="footer__link contact__link"

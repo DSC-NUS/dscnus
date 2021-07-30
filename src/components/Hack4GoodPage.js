@@ -138,7 +138,7 @@ const problemStatements = [
 const ProblemStatementsComponent = ({ problemStatement }) => (
   <div class="h4g-problem-statement-component card-horizontal projects__project">
     <div class="h4g-problem-statement-component-img-container">
-      <img src={problemStatement.img} />
+      <img alt="problem statement" src={problemStatement.img} />
     </div>
     <div class="h4g-problem-statement-description-container">
       {problemStatement.description}
@@ -178,8 +178,9 @@ const Hack4GoodPage = () => {
               <img src={logo} alt="logo" style={{ width: "50%" }} />
             </div>
             <div className="card-horizontal__content">
-              <h2>HACK FOR GOOD</h2>
-              <br></br>
+              <h2 class="heading-secondary">Hack for Good will return in 2022!</h2>
+              <h2>Find out more about our 2021 edition below.</h2>
+              <br />
               <p>
                 In collaboration with Conjunct Consulting, and sponsored by NUS
                 OSA, DSC SoC presents Hack For Good, a student-run hackathon
@@ -187,7 +188,6 @@ const Hack4GoodPage = () => {
                 social causes. Our innovation challenge is unique in that we are
                 posing real problem statements provided by NPOs in Singapore.
               </p>
-              <br />
               <p>
                 Participating teams are expected to create technological
                 prototypes as part of their solution to tackle their chosen
@@ -195,11 +195,6 @@ const Hack4GoodPage = () => {
                 practical and do real good with this initiative. We are hoping
                 to foster collaborations between the club, corporate sponsors,
                 NPOs and the students in this event!
-              </p>
-              <br />
-              <p>
-                Click <a href="http://bit.ly/hackforgood2021">here</a> to sign
-                up for the event!!
               </p>
             </div>
           </div>

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { slide as Burger } from "react-burger-menu";
 import { Menu, Dropdown, Segment, Responsive } from "semantic-ui-react";
 import { Link } from "react-router-dom";
+import { appOpen } from "../utils/utils.js";
 import logo from "../assets/PageHeader/dscnuslogo.png";
 
 class PageHeader extends Component {
@@ -49,6 +50,16 @@ class PageHeader extends Component {
               >
                 Home
               </Menu.Item>
+
+              { appOpen && <Menu.Item
+                name="home"
+                active={this.state.activeItem === "apply"}
+                as={Link}
+                to="/recruitment"
+                onClick={this.handleItemClick}
+              >
+                Apply to DSC
+              </Menu.Item> }
 
               <Dropdown item text="About">
                 <Dropdown.Menu>
@@ -112,7 +123,7 @@ class PageHeader extends Component {
                 as={Link}
                 to="/events"
               >
-                Upcoming Workshops
+                Workshops
               </Menu.Item>
 
               <Menu.Item

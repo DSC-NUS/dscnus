@@ -6,7 +6,6 @@ import ArticlePage from "./components/ArticlePage";
 import HomePage from "./components/HomePage";
 import TeamPage from "./components/TeamPage";
 import AboutUsPage from "./components/AboutUsPage";
-import ProjectsPage from "./components/ProjectsPage";
 import WorkshopsPage from "./components/WorkshopsPage";
 import PostPage from "./components/PostPage";
 import ContactPage from "./components/ContactPage";

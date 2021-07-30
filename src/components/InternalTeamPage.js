@@ -71,7 +71,7 @@ class InternalTeamPage extends Component {
                 <img src={seminar} alt="event" />
               </div>
               <div className="card-horizontal__content">
-                <h2 class="heading-secondary">Thematic Seminars</h2>
+                <h2 class="heading-secondary">Industry Talks</h2>
                 <p>
                   We will be hosting several seminars throughout the semester on
                   how we can use technology to help improve social issues in

@@ -119,7 +119,7 @@
   align-items: center;
   justify-content: flex-start;
   overflow: auto;
-  padding: 5px 10px 30px;
+  padding: 20px 10px 30px;
 
   @media only screen and (max-width: 62.5em) {
     flex-direction: column;
@@ -147,10 +147,17 @@
   &__card {
     flex: 0 0 22%;
     padding: $l-size $m-size;
-    box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.2);
-
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    width: 450px;
     display: flex;
     flex-direction: column;
+    transition: all .2s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
 
     &:not(:last-child) {
       margin-right: $m-size;
@@ -161,7 +168,8 @@
     }
 
     @media only screen and (max-width: $bp-smallest) {
-      padding: $m-size $s-size;
+      width: 100%;
+      padding: $s-size $s-size;
     }
   }
 }
